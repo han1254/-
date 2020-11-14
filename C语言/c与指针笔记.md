@@ -14,3 +14,8 @@
 
 ![test](c与指针笔记.assets/test.png)
 
+## 6.指针
+
+the type of a value cannot be determined simply by examing its bits.
+
+ 
