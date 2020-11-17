@@ -1,3 +1,9 @@
+strassen_matrix_multiply.py# -*- coding: utf-8 -*-
+"""
+Created on Sat Nov 14 11:00:23 2020
+
+@author: han1254
+"""
 import sys
 import math
 
@@ -48,5 +54,11 @@ if __name__ == '__main__':
     tempA = a[:len(a) - 1]
     for i in range(len(A)):
         A[i] = A[i] - tempA[i]
-
-    print(find_maximum_subarray(A, 0, len(A) - 1))
+    result = find_maximum_subarray(A, 0, len(A) - 1)
+    # (result[0] + 1) - 1)：比如我们计算的结果是7-10，本质意思是A[7] + ... + A[10]的这个子数组和最大，但是
+    # A[7]记录的是第8（数组下标从零开始，所以A[7]是第8个数据）天的价格与第7天的差值，我们应该从第7天买入，所以
+    # 减一（加一只是为了还原在数组中本来的位置）；
+    # 
+    # 而result[1]不变，只需要加一还原真实的位置即可
+    #
+    print(str((result[0] + 1) - 1) + '--->' + str(result[1] + 1) + '==>' + str(result[2]))
