@@ -18,4 +18,22 @@
 
 the type of a value cannot be determined simply by examing its bits.
 
- 
+ ## 8. 数组
+
+### 数组作为函数参数
+
+一维:
+
+```c
+void func1(int *vec);
+void func1(int vec[]);
+```
+
+多维：
+
+```c
+void func2(int (*mat)[10]);
+void func2(int mat[][10]);
+```
+
+这里的关键在于编译器必须知道第2个及以后各维的长度才能对各下标进行求值，因此在原型中必须声明这些维度的长度，第1维的长度并不需要。
