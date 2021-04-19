@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/LinkStackMain.dir/_3_stack_and_queue/stack/LinkStackMain.c.o  -o LinkStackMain 

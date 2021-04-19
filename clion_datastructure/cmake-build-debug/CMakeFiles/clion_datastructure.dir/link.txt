@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/clion_datastructure.dir/main.c.o CMakeFiles/clion_datastructure.dir/_3_stack_and_queue/stack/LinkStackMain.c.o  -o clion_datastructure 

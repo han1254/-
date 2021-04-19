@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/stack/LinkStack.h
+stack_common.h
+/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/stack/stack_common.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/stack/LinkStackImpl.h
+LinkStack.h
+/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/stack/LinkStack.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/stack/LinkStackMain.c
+LinkStackImpl.h
+/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/stack/LinkStackImpl.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/stack/stack_common.h
+malloc.h
+/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/stack/malloc.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/main.c
+

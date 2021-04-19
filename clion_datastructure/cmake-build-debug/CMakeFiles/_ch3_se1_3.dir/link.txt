@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/_ch3_se1_3.dir/_3_stack_and_queue/stack/_ch3_se1_3.c.o  -o _ch3_se1_3 
