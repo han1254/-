@@ -1,11 +1,9 @@
 //
 // Created by han1254 on 4/18/21.
 //
-#ifndef SQ_STACK_MAIN_H
-#define SQ_STACK_MAIN_H
 #include "SqStackImpl.h"
 
-void doSth_SqStackMain()
+int main()
 {
     SqStack s;
     InitStack(&s);
@@ -18,4 +16,3 @@ void doSth_SqStackMain()
     PrintStack(s);
 }
 
-#endif

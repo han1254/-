@@ -1,0 +1,19 @@
+## 第三章 栈和队列
+
+### 编程问题汇总
+程序编译是出现"field has incomplete type"问题的解决
+
+> 类或结构体的前向声明只能用来定义指针对象或引用，因为编译到这里时还没有发现定义，不知道该类或者结构的内部成员，没有办法具体的构造一个对象，所以会报错。
+将类成员改成指针就好了。 程序中使用incomplete type实现前置声明有助与实现数据的隐藏。要求调用对象的程序段只能使用声明对象的引用或者指针。
+在显式声明异常规范的时候不能使用incomplete type。
+————————————————
+版权声明：本文为CSDN博主「wangchuang2017」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/u010608296/article/details/102393543
+
+```c
+typedef struct LinkQNode {
+    int data;
+    struct LinkQNode next;
+} LinkQueueNode;
+```
+这种定义方式是错误的

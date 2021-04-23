@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/link_queue_main.dir/_3_stack_and_queue/queue/LinkQueueMain.c.o  -o link_queue_main 

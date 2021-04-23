@@ -73,8 +73,12 @@ CMAKE_BINARY_DIR = /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/ch3_s1_3.dir/all
+all: CMakeFiles/sq_queue_main.dir/all
 all: CMakeFiles/clion_datastructure.dir/all
+all: CMakeFiles/ch3_s1_4.dir/all
+all: CMakeFiles/ch3_s2_1.dir/all
+all: CMakeFiles/ch3_s1_3.dir/all
+all: CMakeFiles/link_stack_main.dir/all
 
 .PHONY : all
 
@@ -84,37 +88,41 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/ch3_s1_3.dir/clean
+clean: CMakeFiles/sq_queue_main.dir/clean
 clean: CMakeFiles/clion_datastructure.dir/clean
+clean: CMakeFiles/ch3_s1_4.dir/clean
+clean: CMakeFiles/ch3_s2_1.dir/clean
+clean: CMakeFiles/ch3_s1_3.dir/clean
+clean: CMakeFiles/link_stack_main.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/ch3_s1_3.dir
+# Target rules for target CMakeFiles/sq_queue_main.dir
 
 # All Build rule for target.
-CMakeFiles/ch3_s1_3.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target ch3_s1_3"
-.PHONY : CMakeFiles/ch3_s1_3.dir/all
+CMakeFiles/sq_queue_main.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sq_queue_main.dir/build.make CMakeFiles/sq_queue_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sq_queue_main.dir/build.make CMakeFiles/sq_queue_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=14,15 "Built target sq_queue_main"
+.PHONY : CMakeFiles/sq_queue_main.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/ch3_s1_3.dir/rule: cmake_check_build_system
+CMakeFiles/sq_queue_main.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ch3_s1_3.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sq_queue_main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/ch3_s1_3.dir/rule
+.PHONY : CMakeFiles/sq_queue_main.dir/rule
 
 # Convenience name for target.
-ch3_s1_3: CMakeFiles/ch3_s1_3.dir/rule
+sq_queue_main: CMakeFiles/sq_queue_main.dir/rule
 
-.PHONY : ch3_s1_3
+.PHONY : sq_queue_main
 
 # clean rule for target.
-CMakeFiles/ch3_s1_3.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/clean
-.PHONY : CMakeFiles/ch3_s1_3.dir/clean
+CMakeFiles/sq_queue_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sq_queue_main.dir/build.make CMakeFiles/sq_queue_main.dir/clean
+.PHONY : CMakeFiles/sq_queue_main.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/clion_datastructure.dir
@@ -123,7 +131,7 @@ CMakeFiles/ch3_s1_3.dir/clean:
 CMakeFiles/clion_datastructure.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clion_datastructure.dir/build.make CMakeFiles/clion_datastructure.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clion_datastructure.dir/build.make CMakeFiles/clion_datastructure.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=3,4,5 "Built target clion_datastructure"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=9,10,11 "Built target clion_datastructure"
 .PHONY : CMakeFiles/clion_datastructure.dir/all
 
 # Build rule for subdir invocation for target.
@@ -142,6 +150,114 @@ clion_datastructure: CMakeFiles/clion_datastructure.dir/rule
 CMakeFiles/clion_datastructure.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clion_datastructure.dir/build.make CMakeFiles/clion_datastructure.dir/clean
 .PHONY : CMakeFiles/clion_datastructure.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ch3_s1_4.dir
+
+# All Build rule for target.
+CMakeFiles/ch3_s1_4.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_4.dir/build.make CMakeFiles/ch3_s1_4.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_4.dir/build.make CMakeFiles/ch3_s1_4.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target ch3_s1_4"
+.PHONY : CMakeFiles/ch3_s1_4.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ch3_s1_4.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ch3_s1_4.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ch3_s1_4.dir/rule
+
+# Convenience name for target.
+ch3_s1_4: CMakeFiles/ch3_s1_4.dir/rule
+
+.PHONY : ch3_s1_4
+
+# clean rule for target.
+CMakeFiles/ch3_s1_4.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_4.dir/build.make CMakeFiles/ch3_s1_4.dir/clean
+.PHONY : CMakeFiles/ch3_s1_4.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ch3_s2_1.dir
+
+# All Build rule for target.
+CMakeFiles/ch3_s2_1.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_1.dir/build.make CMakeFiles/ch3_s2_1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_1.dir/build.make CMakeFiles/ch3_s2_1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target ch3_s2_1"
+.PHONY : CMakeFiles/ch3_s2_1.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ch3_s2_1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ch3_s2_1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ch3_s2_1.dir/rule
+
+# Convenience name for target.
+ch3_s2_1: CMakeFiles/ch3_s2_1.dir/rule
+
+.PHONY : ch3_s2_1
+
+# clean rule for target.
+CMakeFiles/ch3_s2_1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_1.dir/build.make CMakeFiles/ch3_s2_1.dir/clean
+.PHONY : CMakeFiles/ch3_s2_1.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ch3_s1_3.dir
+
+# All Build rule for target.
+CMakeFiles/ch3_s1_3.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target ch3_s1_3"
+.PHONY : CMakeFiles/ch3_s1_3.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ch3_s1_3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ch3_s1_3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ch3_s1_3.dir/rule
+
+# Convenience name for target.
+ch3_s1_3: CMakeFiles/ch3_s1_3.dir/rule
+
+.PHONY : ch3_s1_3
+
+# clean rule for target.
+CMakeFiles/ch3_s1_3.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/clean
+.PHONY : CMakeFiles/ch3_s1_3.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/link_stack_main.dir
+
+# All Build rule for target.
+CMakeFiles/link_stack_main.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/link_stack_main.dir/build.make CMakeFiles/link_stack_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/link_stack_main.dir/build.make CMakeFiles/link_stack_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=12,13 "Built target link_stack_main"
+.PHONY : CMakeFiles/link_stack_main.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/link_stack_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/link_stack_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/link_stack_main.dir/rule
+
+# Convenience name for target.
+link_stack_main: CMakeFiles/link_stack_main.dir/rule
+
+.PHONY : link_stack_main
+
+# clean rule for target.
+CMakeFiles/link_stack_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/link_stack_main.dir/build.make CMakeFiles/link_stack_main.dir/clean
+.PHONY : CMakeFiles/link_stack_main.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

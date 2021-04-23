@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/sq_queue_main.dir/_3_stack_and_queue/queue/SqQueueMain.c.o  -o sq_queue_main 
