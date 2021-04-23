@@ -170,6 +170,19 @@ ch3_s1_4/fast:
 .PHONY : ch3_s1_4/fast
 
 #=============================================================================
+# Target rules for targets named ch3_s2_2
+
+# Build rule for target.
+ch3_s2_2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch3_s2_2
+.PHONY : ch3_s2_2
+
+# fast build rule for target.
+ch3_s2_2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_2.dir/build.make CMakeFiles/ch3_s2_2.dir/build
+.PHONY : ch3_s2_2/fast
+
+#=============================================================================
 # Target rules for targets named ch3_s2_1
 
 # Build rule for target.
@@ -291,6 +304,36 @@ _3_stack_and_queue/queue/_ch3_se2_1.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_1.dir/build.make CMakeFiles/ch3_s2_1.dir/_3_stack_and_queue/queue/_ch3_se2_1.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/queue/_ch3_se2_1.c.s
 .PHONY : _3_stack_and_queue/queue/_ch3_se2_1.c.s
+
+_3_stack_and_queue/queue/_ch3_se2_2.o: _3_stack_and_queue/queue/_ch3_se2_2.c.o
+
+.PHONY : _3_stack_and_queue/queue/_ch3_se2_2.o
+
+# target to build an object file
+_3_stack_and_queue/queue/_ch3_se2_2.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_2.dir/build.make CMakeFiles/ch3_s2_2.dir/_3_stack_and_queue/queue/_ch3_se2_2.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/queue/_ch3_se2_2.c.o
+.PHONY : _3_stack_and_queue/queue/_ch3_se2_2.c.o
+
+_3_stack_and_queue/queue/_ch3_se2_2.i: _3_stack_and_queue/queue/_ch3_se2_2.c.i
+
+.PHONY : _3_stack_and_queue/queue/_ch3_se2_2.i
+
+# target to preprocess a source file
+_3_stack_and_queue/queue/_ch3_se2_2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_2.dir/build.make CMakeFiles/ch3_s2_2.dir/_3_stack_and_queue/queue/_ch3_se2_2.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/queue/_ch3_se2_2.c.i
+.PHONY : _3_stack_and_queue/queue/_ch3_se2_2.c.i
+
+_3_stack_and_queue/queue/_ch3_se2_2.s: _3_stack_and_queue/queue/_ch3_se2_2.c.s
+
+.PHONY : _3_stack_and_queue/queue/_ch3_se2_2.s
+
+# target to generate assembly for a file
+_3_stack_and_queue/queue/_ch3_se2_2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_2.dir/build.make CMakeFiles/ch3_s2_2.dir/_3_stack_and_queue/queue/_ch3_se2_2.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/queue/_ch3_se2_2.c.s
+.PHONY : _3_stack_and_queue/queue/_ch3_se2_2.c.s
 
 _3_stack_and_queue/stack/LinkStackMain.o: _3_stack_and_queue/stack/LinkStackMain.c.o
 
@@ -414,6 +457,7 @@ help:
 	@echo "... ch3_s1_3"
 	@echo "... ch3_s1_4"
 	@echo "... ch3_s2_1"
+	@echo "... ch3_s2_2"
 	@echo "... clion_datastructure"
 	@echo "... link_stack_main"
 	@echo "... sq_queue_main"
@@ -426,6 +470,9 @@ help:
 	@echo "... _3_stack_and_queue/queue/_ch3_se2_1.o"
 	@echo "... _3_stack_and_queue/queue/_ch3_se2_1.i"
 	@echo "... _3_stack_and_queue/queue/_ch3_se2_1.s"
+	@echo "... _3_stack_and_queue/queue/_ch3_se2_2.o"
+	@echo "... _3_stack_and_queue/queue/_ch3_se2_2.i"
+	@echo "... _3_stack_and_queue/queue/_ch3_se2_2.s"
 	@echo "... _3_stack_and_queue/stack/LinkStackMain.o"
 	@echo "... _3_stack_and_queue/stack/LinkStackMain.i"
 	@echo "... _3_stack_and_queue/stack/LinkStackMain.s"

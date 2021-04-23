@@ -1,5 +1,6 @@
 //
 // Created by han1254 on 4/23/21.
+// 在Queue中设置Tag域
 //
 #include <stdio.h>
 #define MaxSize 10
@@ -10,22 +11,18 @@ typedef struct Queue {
 } TagQueue;
 
 void PrintTagQueue(TagQueue tagQueue) {
-    if (tagQueue.tag == 0) {
+    if (tagQueue.tag == 0 && tagQueue.front == tagQueue.rear) {
         printf("TagQueue is empty\n");
         return;
     }
     int start = tagQueue.front;
-    int end = tagQueue.rear;
+    int end = (tagQueue.rear - 1 + MaxSize) % MaxSize;
     printf("<");
-//    if (start == end && tagQueue.tag > 0) {
-//        end = (start - 1 + MaxSize) % MaxSize;
-//    }
-    int count = tagQueue.tag;
-    while(count >= 1) {
+    while(start != end) {
         printf("%d ", tagQueue.data[start]);
         start = (start + 1) % MaxSize;
-        count--;
     }
+    printf("%d", tagQueue.data[start]);
     printf("<\n");
     printf("front: %d, rear: %d, tag: %d\n", tagQueue.front, tagQueue.rear, tagQueue.tag);
 }
@@ -37,25 +34,33 @@ void InitQueue_Tag(TagQueue* tagQueue) {
 }
 
 int EnQueue_Tag(TagQueue* tagQueue, int e) {
-    if (tagQueue->tag > 0 && tagQueue->rear == tagQueue->front) {
+    if (tagQueue->tag == 1 && tagQueue->rear == tagQueue->front) {
         printf("TagQueue is full.\n");
         return 0;
     }
     tagQueue->data[tagQueue->rear] = e;
     tagQueue->rear = (tagQueue->rear + 1) % MaxSize;
-    tagQueue->tag++;
+    tagQueue->tag = 1;
     return 1;
 }
 
 int DeQueue_Tag(TagQueue* tagQueue, int* res) {
-    if (tagQueue->tag == 0) {
+    if (tagQueue->front == tagQueue->rear && tagQueue->tag == 0) {
         printf("TagQueue is Empty.\n");
         return 0;
     }
     *res = tagQueue->data[tagQueue->front];
     tagQueue->front = (tagQueue->front + 1) % MaxSize;
-    tagQueue->tag--;
+    tagQueue->tag = 0;
     return 1;
+}
+
+void dequeue(TagQueue* queue, int* res) {
+    printf("**********************\n");
+    DeQueue_Tag(queue, res);
+    printf("dequeue, %d\n", *res);
+    PrintTagQueue(*queue);
+    printf("**********************\n");
 }
 
 int main() {
@@ -73,6 +78,8 @@ int main() {
     EnQueue_Tag(&queue, 10);
     PrintTagQueue(queue);
     int res;
-    DeQueue_Tag(&queue, &res);
-    printf("dequeue, ")
+
+    for (int i = 0; i < 10; ++i) {
+        dequeue(&queue, &res);
+    }
 }
