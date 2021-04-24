@@ -247,6 +247,49 @@ ch3_s2_4/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_4.dir/build.make CMakeFiles/ch3_s2_4.dir/build
 .PHONY : ch3_s2_4/fast
 
+#=============================================================================
+# Target rules for targets named expression_change
+
+# Build rule for target.
+expression_change: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 expression_change
+.PHONY : expression_change
+
+# fast build rule for target.
+expression_change/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/expression_change.dir/build.make CMakeFiles/expression_change.dir/build
+.PHONY : expression_change/fast
+
+_3_stack_and_queue/application/expression_change.o: _3_stack_and_queue/application/expression_change.c.o
+
+.PHONY : _3_stack_and_queue/application/expression_change.o
+
+# target to build an object file
+_3_stack_and_queue/application/expression_change.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/expression_change.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/expression_change.dir/build.make CMakeFiles/expression_change.dir/_3_stack_and_queue/application/expression_change.c.o
+.PHONY : _3_stack_and_queue/application/expression_change.c.o
+
+_3_stack_and_queue/application/expression_change.i: _3_stack_and_queue/application/expression_change.c.i
+
+.PHONY : _3_stack_and_queue/application/expression_change.i
+
+# target to preprocess a source file
+_3_stack_and_queue/application/expression_change.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/expression_change.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/expression_change.dir/build.make CMakeFiles/expression_change.dir/_3_stack_and_queue/application/expression_change.c.i
+.PHONY : _3_stack_and_queue/application/expression_change.c.i
+
+_3_stack_and_queue/application/expression_change.s: _3_stack_and_queue/application/expression_change.c.s
+
+.PHONY : _3_stack_and_queue/application/expression_change.s
+
+# target to generate assembly for a file
+_3_stack_and_queue/application/expression_change.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/expression_change.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/expression_change.dir/build.make CMakeFiles/expression_change.dir/_3_stack_and_queue/application/expression_change.c.s
+.PHONY : _3_stack_and_queue/application/expression_change.c.s
+
 _3_stack_and_queue/queue/LinkQueueMain.o: _3_stack_and_queue/queue/LinkQueueMain.c.o
 
 .PHONY : _3_stack_and_queue/queue/LinkQueueMain.o
@@ -547,8 +590,12 @@ help:
 	@echo "... ch3_s2_3"
 	@echo "... ch3_s2_4"
 	@echo "... clion_datastructure"
+	@echo "... expression_change"
 	@echo "... link_stack_main"
 	@echo "... sq_queue_main"
+	@echo "... _3_stack_and_queue/application/expression_change.o"
+	@echo "... _3_stack_and_queue/application/expression_change.i"
+	@echo "... _3_stack_and_queue/application/expression_change.s"
 	@echo "... _3_stack_and_queue/queue/LinkQueueMain.o"
 	@echo "... _3_stack_and_queue/queue/LinkQueueMain.i"
 	@echo "... _3_stack_and_queue/queue/LinkQueueMain.s"

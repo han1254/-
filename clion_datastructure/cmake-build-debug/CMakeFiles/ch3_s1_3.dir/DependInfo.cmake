@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/application/expression_change.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/expression_change.c.o"
   "/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/queue/LinkQueueMain.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/queue/LinkQueueMain.c.o"
   "/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/queue/_ch3_se2_1.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/queue/_ch3_se2_1.c.o"
   "/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/queue/_ch3_se2_2.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/queue/_ch3_se2_2.c.o"

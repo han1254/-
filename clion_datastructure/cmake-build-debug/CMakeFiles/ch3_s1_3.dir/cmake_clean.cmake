@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/expression_change.c.o"
   "CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/queue/LinkQueueMain.c.o"
   "CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/queue/_ch3_se2_1.c.o"
   "CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/queue/_ch3_se2_2.c.o"

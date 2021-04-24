@@ -27,6 +27,16 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="link_stack_main">
 				<Option output="/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/link_stack_main" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug"/>
@@ -267,16 +277,6 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="sq_queue_main">
 				<Option output="/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/sq_queue_main" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug"/>
@@ -397,7 +397,54 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="expression_change">
+				<Option output="/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/expression_change" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 expression_change"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="expression_change/fast">
+				<Option output="/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/expression_change" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 expression_change/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
+		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/application/common_header.h">
+			<Option target="ch3_s1_3"/>
+		</Unit>
+		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/application/expression_change.c">
+			<Option target="ch3_s1_3"/>
+			<Option target="expression_change"/>
+		</Unit>
 		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/queue/LinkQueue.h">
 			<Option target="ch3_s1_3"/>
 		</Unit>
