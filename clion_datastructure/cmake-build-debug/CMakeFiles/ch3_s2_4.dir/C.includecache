@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/queue/_ch3_se2_4.c
+stdlib.h
+/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/queue/stdlib.h
+stdio.h
+/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/queue/stdio.h
+
