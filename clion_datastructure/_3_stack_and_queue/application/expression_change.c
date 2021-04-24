@@ -1,6 +1,8 @@
 //
 // Created by han1254 on 4/24/21.
-// 终追表达式
+// 中缀表达式->后缀表达式
+// 运行项目，输入例如：a+b*c#
+// 结果为：abc*+
 //
 
 #include <stdlib.h>
@@ -112,20 +114,27 @@ void expression_change() {
     char ch = (char)getchar();
     char op;
     while (ch != '#' || (!StackEmpty(OPTR) && GetTop(OPTR) != '#')) {
+        printf("****************\n");
+        printf("ch=%c\n", ch);
+        printf("OPTR_STACk:");
+        PrintStack(OPTR);
         if (!is_op(ch)) {
             Push(&RESULT, ch);
             ch = (char)getchar();
         } else {
             switch (precede(GetTop(OPTR), ch)) {
                 case '<':
+                    printf("OPTR.top <· %c, ch=%c enters the OPTR stack.\n", ch, ch);
                     Push(&OPTR, ch);
                     ch = (char)getchar();
                     break;
                 case '='://脱括号并且接受下一个字符
+                    printf("OPTR.top =·= %c, OPTR pop the top element.\n", ch);
                     Pop(&OPTR, &op);
                     ch = (char)getchar();
                     break;
                 case '>':
+                    printf("OPTR.top ·> %c, OPTR.top enters the Result stack.\n", ch);
                     Pop(&OPTR, &op);
                     Push(&RESULT, op);
                     break;
@@ -135,6 +144,9 @@ void expression_change() {
 
             }
         }
+        printf("Current RESULT_STACK:");
+        PrintStack(RESULT);
+        printf("****************\n");
     }
 }
 
