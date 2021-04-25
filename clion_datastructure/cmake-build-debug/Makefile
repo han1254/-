@@ -131,6 +131,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named io_test
+
+# Build rule for target.
+io_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 io_test
+.PHONY : io_test
+
+# fast build rule for target.
+io_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/io_test.dir/build.make CMakeFiles/io_test.dir/build
+.PHONY : io_test/fast
+
+#=============================================================================
+# Target rules for targets named ch3_s3_4
+
+# Build rule for target.
+ch3_s3_4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch3_s3_4
+.PHONY : ch3_s3_4
+
+# fast build rule for target.
+ch3_s3_4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s3_4.dir/build.make CMakeFiles/ch3_s3_4.dir/build
+.PHONY : ch3_s3_4/fast
+
+#=============================================================================
+# Target rules for targets named parent_match
+
+# Build rule for target.
+parent_match: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parent_match
+.PHONY : parent_match
+
+# fast build rule for target.
+parent_match/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parent_match.dir/build.make CMakeFiles/parent_match.dir/build
+.PHONY : parent_match/fast
+
+#=============================================================================
 # Target rules for targets named link_stack_main
 
 # Build rule for target.
@@ -260,6 +299,63 @@ expression_change/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/expression_change.dir/build.make CMakeFiles/expression_change.dir/build
 .PHONY : expression_change/fast
 
+_3_stack_and_queue/application/_ch3_se3_3.o: _3_stack_and_queue/application/_ch3_se3_3.c.o
+
+.PHONY : _3_stack_and_queue/application/_ch3_se3_3.o
+
+# target to build an object file
+_3_stack_and_queue/application/_ch3_se3_3.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/_ch3_se3_3.c.o
+.PHONY : _3_stack_and_queue/application/_ch3_se3_3.c.o
+
+_3_stack_and_queue/application/_ch3_se3_3.i: _3_stack_and_queue/application/_ch3_se3_3.c.i
+
+.PHONY : _3_stack_and_queue/application/_ch3_se3_3.i
+
+# target to preprocess a source file
+_3_stack_and_queue/application/_ch3_se3_3.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/_ch3_se3_3.c.i
+.PHONY : _3_stack_and_queue/application/_ch3_se3_3.c.i
+
+_3_stack_and_queue/application/_ch3_se3_3.s: _3_stack_and_queue/application/_ch3_se3_3.c.s
+
+.PHONY : _3_stack_and_queue/application/_ch3_se3_3.s
+
+# target to generate assembly for a file
+_3_stack_and_queue/application/_ch3_se3_3.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/_ch3_se3_3.c.s
+.PHONY : _3_stack_and_queue/application/_ch3_se3_3.c.s
+
+_3_stack_and_queue/application/_ch3_se3_4.o: _3_stack_and_queue/application/_ch3_se3_4.c.o
+
+.PHONY : _3_stack_and_queue/application/_ch3_se3_4.o
+
+# target to build an object file
+_3_stack_and_queue/application/_ch3_se3_4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s3_4.dir/build.make CMakeFiles/ch3_s3_4.dir/_3_stack_and_queue/application/_ch3_se3_4.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/_ch3_se3_4.c.o
+.PHONY : _3_stack_and_queue/application/_ch3_se3_4.c.o
+
+_3_stack_and_queue/application/_ch3_se3_4.i: _3_stack_and_queue/application/_ch3_se3_4.c.i
+
+.PHONY : _3_stack_and_queue/application/_ch3_se3_4.i
+
+# target to preprocess a source file
+_3_stack_and_queue/application/_ch3_se3_4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s3_4.dir/build.make CMakeFiles/ch3_s3_4.dir/_3_stack_and_queue/application/_ch3_se3_4.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/_ch3_se3_4.c.i
+.PHONY : _3_stack_and_queue/application/_ch3_se3_4.c.i
+
+_3_stack_and_queue/application/_ch3_se3_4.s: _3_stack_and_queue/application/_ch3_se3_4.c.s
+
+.PHONY : _3_stack_and_queue/application/_ch3_se3_4.s
+
+# target to generate assembly for a file
+_3_stack_and_queue/application/_ch3_se3_4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s3_4.dir/build.make CMakeFiles/ch3_s3_4.dir/_3_stack_and_queue/application/_ch3_se3_4.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/_ch3_se3_4.c.s
+.PHONY : _3_stack_and_queue/application/_ch3_se3_4.c.s
+
 _3_stack_and_queue/application/expression_change.o: _3_stack_and_queue/application/expression_change.c.o
 
 .PHONY : _3_stack_and_queue/application/expression_change.o
@@ -289,6 +385,36 @@ _3_stack_and_queue/application/expression_change.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/expression_change.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/expression_change.dir/build.make CMakeFiles/expression_change.dir/_3_stack_and_queue/application/expression_change.c.s
 .PHONY : _3_stack_and_queue/application/expression_change.c.s
+
+_3_stack_and_queue/application/parentheses_match.o: _3_stack_and_queue/application/parentheses_match.c.o
+
+.PHONY : _3_stack_and_queue/application/parentheses_match.o
+
+# target to build an object file
+_3_stack_and_queue/application/parentheses_match.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parent_match.dir/build.make CMakeFiles/parent_match.dir/_3_stack_and_queue/application/parentheses_match.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/parentheses_match.c.o
+.PHONY : _3_stack_and_queue/application/parentheses_match.c.o
+
+_3_stack_and_queue/application/parentheses_match.i: _3_stack_and_queue/application/parentheses_match.c.i
+
+.PHONY : _3_stack_and_queue/application/parentheses_match.i
+
+# target to preprocess a source file
+_3_stack_and_queue/application/parentheses_match.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parent_match.dir/build.make CMakeFiles/parent_match.dir/_3_stack_and_queue/application/parentheses_match.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/parentheses_match.c.i
+.PHONY : _3_stack_and_queue/application/parentheses_match.c.i
+
+_3_stack_and_queue/application/parentheses_match.s: _3_stack_and_queue/application/parentheses_match.c.s
+
+.PHONY : _3_stack_and_queue/application/parentheses_match.s
+
+# target to generate assembly for a file
+_3_stack_and_queue/application/parentheses_match.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parent_match.dir/build.make CMakeFiles/parent_match.dir/_3_stack_and_queue/application/parentheses_match.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/parentheses_match.c.s
+.PHONY : _3_stack_and_queue/application/parentheses_match.c.s
 
 _3_stack_and_queue/queue/LinkQueueMain.o: _3_stack_and_queue/queue/LinkQueueMain.c.o
 
@@ -575,6 +701,36 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clion_datastructure.dir/build.make CMakeFiles/clion_datastructure.dir/main.c.s
 .PHONY : main.c.s
 
+test/io_test.o: test/io_test.c.o
+
+.PHONY : test/io_test.o
+
+# target to build an object file
+test/io_test.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/io_test.dir/build.make CMakeFiles/io_test.dir/test/io_test.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/test/io_test.c.o
+.PHONY : test/io_test.c.o
+
+test/io_test.i: test/io_test.c.i
+
+.PHONY : test/io_test.i
+
+# target to preprocess a source file
+test/io_test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/io_test.dir/build.make CMakeFiles/io_test.dir/test/io_test.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/test/io_test.c.i
+.PHONY : test/io_test.c.i
+
+test/io_test.s: test/io_test.c.s
+
+.PHONY : test/io_test.s
+
+# target to generate assembly for a file
+test/io_test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/io_test.dir/build.make CMakeFiles/io_test.dir/test/io_test.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/test/io_test.c.s
+.PHONY : test/io_test.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -589,13 +745,25 @@ help:
 	@echo "... ch3_s2_2"
 	@echo "... ch3_s2_3"
 	@echo "... ch3_s2_4"
+	@echo "... ch3_s3_4"
 	@echo "... clion_datastructure"
 	@echo "... expression_change"
+	@echo "... io_test"
 	@echo "... link_stack_main"
+	@echo "... parent_match"
 	@echo "... sq_queue_main"
+	@echo "... _3_stack_and_queue/application/_ch3_se3_3.o"
+	@echo "... _3_stack_and_queue/application/_ch3_se3_3.i"
+	@echo "... _3_stack_and_queue/application/_ch3_se3_3.s"
+	@echo "... _3_stack_and_queue/application/_ch3_se3_4.o"
+	@echo "... _3_stack_and_queue/application/_ch3_se3_4.i"
+	@echo "... _3_stack_and_queue/application/_ch3_se3_4.s"
 	@echo "... _3_stack_and_queue/application/expression_change.o"
 	@echo "... _3_stack_and_queue/application/expression_change.i"
 	@echo "... _3_stack_and_queue/application/expression_change.s"
+	@echo "... _3_stack_and_queue/application/parentheses_match.o"
+	@echo "... _3_stack_and_queue/application/parentheses_match.i"
+	@echo "... _3_stack_and_queue/application/parentheses_match.s"
 	@echo "... _3_stack_and_queue/queue/LinkQueueMain.o"
 	@echo "... _3_stack_and_queue/queue/LinkQueueMain.i"
 	@echo "... _3_stack_and_queue/queue/LinkQueueMain.s"
@@ -626,6 +794,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... test/io_test.o"
+	@echo "... test/io_test.i"
+	@echo "... test/io_test.s"
 .PHONY : help
 
 

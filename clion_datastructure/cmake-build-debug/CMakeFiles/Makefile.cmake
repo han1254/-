@@ -44,6 +44,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/io_test.dir/DependInfo.cmake"
+  "CMakeFiles/ch3_s3_4.dir/DependInfo.cmake"
+  "CMakeFiles/parent_match.dir/DependInfo.cmake"
   "CMakeFiles/link_stack_main.dir/DependInfo.cmake"
   "CMakeFiles/ch3_s2_1.dir/DependInfo.cmake"
   "CMakeFiles/ch3_s2_2.dir/DependInfo.cmake"
