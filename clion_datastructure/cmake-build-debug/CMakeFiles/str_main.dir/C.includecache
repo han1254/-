@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/han1254/Documents/PGEE/clion_datastructure/_4_string/SString.h
+stdlib.h
+-
+stdio.h
+/home/han1254/Documents/PGEE/clion_datastructure/_4_string/stdio.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_4_string/StrMain.c
+SString.h
+/home/han1254/Documents/PGEE/clion_datastructure/_4_string/SString.h
+

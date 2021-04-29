@@ -14,6 +14,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/queue/_ch3_se2_3.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/queue/_ch3_se2_3.c.o"
   "/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/queue/_ch3_se2_4.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/queue/_ch3_se2_4.c.o"
   "/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/stack/_ch3_se1_3.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/stack/_ch3_se1_3.c.o"
+  "/home/han1254/Documents/PGEE/clion_datastructure/_4_string/StrMain.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch3_s1_3.dir/_4_string/StrMain.c.o"
+  "/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/_ch5_se2_5.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch3_s1_3.dir/_5_tree/_ch5_se2_5.c.o"
   "/home/han1254/Documents/PGEE/clion_datastructure/test/io_test.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch3_s1_3.dir/test/io_test.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

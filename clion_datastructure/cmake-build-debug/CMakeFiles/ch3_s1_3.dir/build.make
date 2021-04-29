@@ -220,6 +220,32 @@ CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/_ch3_se3_4.c.s: cmake_for
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/_ch3_se3_4.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/application/_ch3_se3_4.c -o CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/_ch3_se3_4.c.s
 
+CMakeFiles/ch3_s1_3.dir/_4_string/StrMain.c.o: CMakeFiles/ch3_s1_3.dir/flags.make
+CMakeFiles/ch3_s1_3.dir/_4_string/StrMain.c.o: ../_4_string/StrMain.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/ch3_s1_3.dir/_4_string/StrMain.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ch3_s1_3.dir/_4_string/StrMain.c.o   -c /home/han1254/Documents/PGEE/clion_datastructure/_4_string/StrMain.c
+
+CMakeFiles/ch3_s1_3.dir/_4_string/StrMain.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ch3_s1_3.dir/_4_string/StrMain.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/han1254/Documents/PGEE/clion_datastructure/_4_string/StrMain.c > CMakeFiles/ch3_s1_3.dir/_4_string/StrMain.c.i
+
+CMakeFiles/ch3_s1_3.dir/_4_string/StrMain.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ch3_s1_3.dir/_4_string/StrMain.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/han1254/Documents/PGEE/clion_datastructure/_4_string/StrMain.c -o CMakeFiles/ch3_s1_3.dir/_4_string/StrMain.c.s
+
+CMakeFiles/ch3_s1_3.dir/_5_tree/_ch5_se2_5.c.o: CMakeFiles/ch3_s1_3.dir/flags.make
+CMakeFiles/ch3_s1_3.dir/_5_tree/_ch5_se2_5.c.o: ../_5_tree/_ch5_se2_5.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/ch3_s1_3.dir/_5_tree/_ch5_se2_5.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ch3_s1_3.dir/_5_tree/_ch5_se2_5.c.o   -c /home/han1254/Documents/PGEE/clion_datastructure/_5_tree/_ch5_se2_5.c
+
+CMakeFiles/ch3_s1_3.dir/_5_tree/_ch5_se2_5.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ch3_s1_3.dir/_5_tree/_ch5_se2_5.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/han1254/Documents/PGEE/clion_datastructure/_5_tree/_ch5_se2_5.c > CMakeFiles/ch3_s1_3.dir/_5_tree/_ch5_se2_5.c.i
+
+CMakeFiles/ch3_s1_3.dir/_5_tree/_ch5_se2_5.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ch3_s1_3.dir/_5_tree/_ch5_se2_5.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/han1254/Documents/PGEE/clion_datastructure/_5_tree/_ch5_se2_5.c -o CMakeFiles/ch3_s1_3.dir/_5_tree/_ch5_se2_5.c.s
+
 # Object files for target ch3_s1_3
 ch3_s1_3_OBJECTS = \
 "CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/stack/_ch3_se1_3.c.o" \
@@ -232,7 +258,9 @@ ch3_s1_3_OBJECTS = \
 "CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/parentheses_match.c.o" \
 "CMakeFiles/ch3_s1_3.dir/test/io_test.c.o" \
 "CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/_ch3_se3_3.c.o" \
-"CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/_ch3_se3_4.c.o"
+"CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/_ch3_se3_4.c.o" \
+"CMakeFiles/ch3_s1_3.dir/_4_string/StrMain.c.o" \
+"CMakeFiles/ch3_s1_3.dir/_5_tree/_ch5_se2_5.c.o"
 
 # External object files for target ch3_s1_3
 ch3_s1_3_EXTERNAL_OBJECTS =
@@ -248,9 +276,11 @@ ch3_s1_3: CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/parentheses_mat
 ch3_s1_3: CMakeFiles/ch3_s1_3.dir/test/io_test.c.o
 ch3_s1_3: CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/_ch3_se3_3.c.o
 ch3_s1_3: CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/_ch3_se3_4.c.o
+ch3_s1_3: CMakeFiles/ch3_s1_3.dir/_4_string/StrMain.c.o
+ch3_s1_3: CMakeFiles/ch3_s1_3.dir/_5_tree/_ch5_se2_5.c.o
 ch3_s1_3: CMakeFiles/ch3_s1_3.dir/build.make
 ch3_s1_3: CMakeFiles/ch3_s1_3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable ch3_s1_3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking C executable ch3_s1_3"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ch3_s1_3.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

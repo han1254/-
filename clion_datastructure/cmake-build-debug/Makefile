@@ -209,6 +209,19 @@ ch3_s2_2/fast:
 .PHONY : ch3_s2_2/fast
 
 #=============================================================================
+# Target rules for targets named str_main
+
+# Build rule for target.
+str_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 str_main
+.PHONY : str_main
+
+# fast build rule for target.
+str_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/str_main.dir/build.make CMakeFiles/str_main.dir/build
+.PHONY : str_main/fast
+
+#=============================================================================
 # Target rules for targets named ch3_s1_3
 
 # Build rule for target.
@@ -272,6 +285,19 @@ ch3_s2_3: cmake_check_build_system
 ch3_s2_3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_3.dir/build.make CMakeFiles/ch3_s2_3.dir/build
 .PHONY : ch3_s2_3/fast
+
+#=============================================================================
+# Target rules for targets named ch5_s2_5
+
+# Build rule for target.
+ch5_s2_5: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch5_s2_5
+.PHONY : ch5_s2_5
+
+# fast build rule for target.
+ch5_s2_5/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/build
+.PHONY : ch5_s2_5/fast
 
 #=============================================================================
 # Target rules for targets named ch3_s2_4
@@ -674,6 +700,66 @@ _3_stack_and_queue/stack/_ch3_se1_4.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_4.dir/build.make CMakeFiles/ch3_s1_4.dir/_3_stack_and_queue/stack/_ch3_se1_4.c.s
 .PHONY : _3_stack_and_queue/stack/_ch3_se1_4.c.s
 
+_4_string/StrMain.o: _4_string/StrMain.c.o
+
+.PHONY : _4_string/StrMain.o
+
+# target to build an object file
+_4_string/StrMain.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/str_main.dir/build.make CMakeFiles/str_main.dir/_4_string/StrMain.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_4_string/StrMain.c.o
+.PHONY : _4_string/StrMain.c.o
+
+_4_string/StrMain.i: _4_string/StrMain.c.i
+
+.PHONY : _4_string/StrMain.i
+
+# target to preprocess a source file
+_4_string/StrMain.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/str_main.dir/build.make CMakeFiles/str_main.dir/_4_string/StrMain.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_4_string/StrMain.c.i
+.PHONY : _4_string/StrMain.c.i
+
+_4_string/StrMain.s: _4_string/StrMain.c.s
+
+.PHONY : _4_string/StrMain.s
+
+# target to generate assembly for a file
+_4_string/StrMain.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/str_main.dir/build.make CMakeFiles/str_main.dir/_4_string/StrMain.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_4_string/StrMain.c.s
+.PHONY : _4_string/StrMain.c.s
+
+_5_tree/_ch5_se2_5.o: _5_tree/_ch5_se2_5.c.o
+
+.PHONY : _5_tree/_ch5_se2_5.o
+
+# target to build an object file
+_5_tree/_ch5_se2_5.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_5_tree/_ch5_se2_5.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se2_5.c.o
+.PHONY : _5_tree/_ch5_se2_5.c.o
+
+_5_tree/_ch5_se2_5.i: _5_tree/_ch5_se2_5.c.i
+
+.PHONY : _5_tree/_ch5_se2_5.i
+
+# target to preprocess a source file
+_5_tree/_ch5_se2_5.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_5_tree/_ch5_se2_5.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se2_5.c.i
+.PHONY : _5_tree/_ch5_se2_5.c.i
+
+_5_tree/_ch5_se2_5.s: _5_tree/_ch5_se2_5.c.s
+
+.PHONY : _5_tree/_ch5_se2_5.s
+
+# target to generate assembly for a file
+_5_tree/_ch5_se2_5.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_5_tree/_ch5_se2_5.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se2_5.c.s
+.PHONY : _5_tree/_ch5_se2_5.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -746,12 +832,14 @@ help:
 	@echo "... ch3_s2_3"
 	@echo "... ch3_s2_4"
 	@echo "... ch3_s3_4"
+	@echo "... ch5_s2_5"
 	@echo "... clion_datastructure"
 	@echo "... expression_change"
 	@echo "... io_test"
 	@echo "... link_stack_main"
 	@echo "... parent_match"
 	@echo "... sq_queue_main"
+	@echo "... str_main"
 	@echo "... _3_stack_and_queue/application/_ch3_se3_3.o"
 	@echo "... _3_stack_and_queue/application/_ch3_se3_3.i"
 	@echo "... _3_stack_and_queue/application/_ch3_se3_3.s"
@@ -791,6 +879,12 @@ help:
 	@echo "... _3_stack_and_queue/stack/_ch3_se1_4.o"
 	@echo "... _3_stack_and_queue/stack/_ch3_se1_4.i"
 	@echo "... _3_stack_and_queue/stack/_ch3_se1_4.s"
+	@echo "... _4_string/StrMain.o"
+	@echo "... _4_string/StrMain.i"
+	@echo "... _4_string/StrMain.s"
+	@echo "... _5_tree/_ch5_se2_5.o"
+	@echo "... _5_tree/_ch5_se2_5.i"
+	@echo "... _5_tree/_ch5_se2_5.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

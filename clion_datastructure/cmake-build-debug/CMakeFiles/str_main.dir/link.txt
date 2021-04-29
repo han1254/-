@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/str_main.dir/_4_string/StrMain.c.o  -o str_main 

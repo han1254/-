@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/SqBiTree.h
+memory.h
+-
+stdio.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/stdio.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/_ch5_se2_5.c
+SqBiTree.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/SqBiTree.h
+stdio.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/stdio.h
+
