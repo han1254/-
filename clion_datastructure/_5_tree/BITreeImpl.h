@@ -17,7 +17,13 @@ void visit(BiTree tree) {
     }
 }
 
-void GenerateTreeByStr(BiTree* root, const char* s, int len) {
+/**
+ * 通过字符串方式创建树
+ * @param root
+ * @param s
+ * @param len
+ */
+void GenerateTree(BiTree* root, const char* s, int len) {
     int index = 0;
     int n = 2;
     TreeQueue queue;
@@ -29,32 +35,37 @@ void GenerateTreeByStr(BiTree* root, const char* s, int len) {
         int parentCount = queue.rear - queue.front;
         for (int j = 0; j < parentCount; ++j) {
             Dequeue(&queue, &tempTree);
-            BiTNode* nodeL = (BiTree)malloc(sizeof(BiTNode));
-            BiTNode* nodeR = (BiTree)malloc(sizeof(BiTNode));
-            nodeL->data = s[index++];
-            tempTree->lchild = nodeL;
+            BiTNode* nodeL = NULL;
+            BiTNode* nodeR = NULL;
+            if (tempTree != NULL) {
+                if (s[index] != '#') {
+                    nodeL = (BiTree)malloc(sizeof(BiTNode));
+                    nodeL->data = s[index];
+                }
+                index++;
+                if (index >= len) break;
+                if (s[index] != '#') {
+                    nodeR = (BiTree)malloc(sizeof(BiTNode));
+                    nodeR->data = s[index];
+                }
+                index++;
+                tempTree->lchild = nodeL;
+                tempTree->rchild = nodeR;
+            } else {
+                index += 2;
+            }
             Enqueue(&queue, nodeL);
-
-            if (index >= len) break;
-
-            tempTree->rchild = nodeR;
-            nodeR->data = s[index++];
             Enqueue(&queue, nodeR);
         }
         n *= 2;
     }
-    while (!QueueEmpty(queue)) {
-        Dequeue(&queue, &tempTree);
-        BiTNode* nodeL = (BiTree)malloc(sizeof(BiTNode));
-        BiTNode* nodeR = (BiTree)malloc(sizeof(BiTNode));
-        nodeL->data = '#';
-        nodeR->data = '#';
-        tempTree->lchild = nodeL;
-        tempTree->rchild = nodeR;
-    }
 }
 
-void GenerateTree(BiTree* root) {
+/**
+ * 通过输入的方式创建树
+ * @param root
+ */
+void GenerateTreeByInput(BiTree* root) {
     int i = 2;
     int n = 2;
     char ch;
@@ -71,33 +82,36 @@ void GenerateTree(BiTree* root) {
         int parentCount = queue.rear - queue.front;
         for (int j = 0; j < parentCount; ++j) {
             Dequeue(&queue, &tempTree);
+            BiTNode* nodeL = NULL;
+            BiTNode* nodeR = NULL;
             ch = (char)getchar();
-            BiTNode *nodeL = (BiTree)malloc(sizeof(BiTNode));
-            nodeL->data = ch;
+            if (tempTree != NULL) {
+                if (ch != '#') {
+                    nodeL = (BiTree)malloc(sizeof(BiTNode));
+                    nodeL->data = ch;
+                }
+                tempTree->lchild = nodeL;
+            }
+
             ch = (char)getchar();
-            BiTNode *nodeR = (BiTree)malloc(sizeof(BiTNode));
-            nodeR->data = ch;
-            tempTree->lchild = nodeL;
-            tempTree->rchild = nodeR;
+            if (tempTree != NULL) {
+                if (ch != '#') {
+                    nodeR = (BiTree)malloc(sizeof(BiTNode));
+                    nodeR->data = ch;
+                }
+                tempTree->rchild = nodeR;
+            }
+
             Enqueue(&queue, nodeL);
             Enqueue(&queue, nodeR);
         }
-        while(getchar()!='\n');
         i++;
         n *= 2;
+        while(getchar()!='\n');
         printf("end the input?(y or n)\n");
         if (getchar() == 'y' || getchar() == 'Y') {
             break;
         }
-    }
-    while (!QueueEmpty(queue)) {
-        Dequeue(&queue, &tempTree);
-        BiTNode* nodeL = (BiTree)malloc(sizeof(BiTNode));
-        BiTNode* nodeR = (BiTree)malloc(sizeof(BiTNode));
-        nodeL->data = '#';
-        nodeR->data = '#';
-        tempTree->lchild = nodeL;
-        tempTree->rchild = nodeR;
     }
 }
 
