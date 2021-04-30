@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BITreeImpl.h
+stdlib.h
+-
+BiTNode.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTNode.h
+TreeQueueImpl.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/TreeQueueImpl.h
+stdio.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/stdio.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTNode.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/TreeMain.c
+BITreeImpl.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BITreeImpl.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/TreeQueueImpl.h
+BiTNode.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTNode.h
+stdio.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/stdio.h
+

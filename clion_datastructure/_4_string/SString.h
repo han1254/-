@@ -69,26 +69,27 @@ void get_next(const SString T, int next[]) {
     }
 }
 
-void get_next_clear(const SString T, int next[]) {
-    next[1] = 0;
-    if (T[0] < 2) return;
-    next[2] = 1;
-    int i = 2, j = 1;
+
+void get_next_val(const SString T, int nextval[]) {
+    nextval[1] = 0;
+    int i = 1, j = 0;
     while(i < T[0]) {
         if (j == 0 || T[i] == T[j]) {
-            next[i + 1] = j + 1;
+            if (T[i + 1] != T[j + 1]) {
+                nextval[i + 1] = j + 1;
+            } else nextval[i + 1] = nextval[j + 1];
             i++;
             j++;
         } else {
-            j = next[j];
+            j = nextval[j];
         }
     }
 }
 
 int Index_KMP(const SString S, const SString T, int pos) {
     int* next = (int*)malloc(sizeof(int));
-    get_next_clear(T, next);
-
+    get_next(T, next);
+    //get_next_val(T, next);
     int i = pos, j = 1;
     while (i <= S[0] && j <= T[0]) {
         if (j == 0 || S[i] == T[j]) {
@@ -103,9 +104,5 @@ int Index_KMP(const SString S, const SString T, int pos) {
 }
 
 
-void get_next_2(SString T, int next[]) {
-    next[1] = 1;
-    
-}
 
 #endif //CLION_DATASTRUCTURE_SSTRING_H

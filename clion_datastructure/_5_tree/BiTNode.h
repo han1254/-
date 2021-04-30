@@ -6,8 +6,10 @@
 #define CLION_DATASTRUCTURE_BITNODE_H
 
 typedef struct BiTNode {
-    int data;
+    char data;
     struct BiTNode *lchild, *rchild;
 }BiTNode, *BiTree;
+
+
 
 #endif //CLION_DATASTRUCTURE_BITNODE_H

@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named tree_main
+
+# Build rule for target.
+tree_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tree_main
+.PHONY : tree_main
+
+# fast build rule for target.
+tree_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_main.dir/build.make CMakeFiles/tree_main.dir/build
+.PHONY : tree_main/fast
+
+#=============================================================================
 # Target rules for targets named io_test
 
 # Build rule for target.
@@ -730,6 +743,36 @@ _4_string/StrMain.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_4_string/StrMain.c.s
 .PHONY : _4_string/StrMain.c.s
 
+_5_tree/TreeMain.o: _5_tree/TreeMain.c.o
+
+.PHONY : _5_tree/TreeMain.o
+
+# target to build an object file
+_5_tree/TreeMain.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_main.dir/build.make CMakeFiles/tree_main.dir/_5_tree/TreeMain.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_5_tree/TreeMain.c.o
+.PHONY : _5_tree/TreeMain.c.o
+
+_5_tree/TreeMain.i: _5_tree/TreeMain.c.i
+
+.PHONY : _5_tree/TreeMain.i
+
+# target to preprocess a source file
+_5_tree/TreeMain.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_main.dir/build.make CMakeFiles/tree_main.dir/_5_tree/TreeMain.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_5_tree/TreeMain.c.i
+.PHONY : _5_tree/TreeMain.c.i
+
+_5_tree/TreeMain.s: _5_tree/TreeMain.c.s
+
+.PHONY : _5_tree/TreeMain.s
+
+# target to generate assembly for a file
+_5_tree/TreeMain.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_main.dir/build.make CMakeFiles/tree_main.dir/_5_tree/TreeMain.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_5_tree/TreeMain.c.s
+.PHONY : _5_tree/TreeMain.c.s
+
 _5_tree/_ch5_se2_5.o: _5_tree/_ch5_se2_5.c.o
 
 .PHONY : _5_tree/_ch5_se2_5.o
@@ -840,6 +883,7 @@ help:
 	@echo "... parent_match"
 	@echo "... sq_queue_main"
 	@echo "... str_main"
+	@echo "... tree_main"
 	@echo "... _3_stack_and_queue/application/_ch3_se3_3.o"
 	@echo "... _3_stack_and_queue/application/_ch3_se3_3.i"
 	@echo "... _3_stack_and_queue/application/_ch3_se3_3.s"
@@ -882,6 +926,9 @@ help:
 	@echo "... _4_string/StrMain.o"
 	@echo "... _4_string/StrMain.i"
 	@echo "... _4_string/StrMain.s"
+	@echo "... _5_tree/TreeMain.o"
+	@echo "... _5_tree/TreeMain.i"
+	@echo "... _5_tree/TreeMain.s"
 	@echo "... _5_tree/_ch5_se2_5.o"
 	@echo "... _5_tree/_ch5_se2_5.i"
 	@echo "... _5_tree/_ch5_se2_5.s"

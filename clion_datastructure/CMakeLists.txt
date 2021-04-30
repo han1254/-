@@ -4,7 +4,7 @@ project(clion_datastructure C)
 set(CMAKE_C_STANDARD 99)
 
 add_executable(clion_datastructure main.c _3_stack_and_queue/stack/SqStack.h _3_stack_and_queue/stack/SqStackImpl.h _3_stack_and_queue/stack/SqStackMain.h _3_stack_and_queue/stack/LinkStack.h _3_stack_and_queue/stack/stack_common.h _3_stack_and_queue/stack/LinkStackImpl.h _3_stack_and_queue/stack/LinkStackMain.c)
-add_executable(ch3_s1_3 ../clion_datastructure/_3_stack_and_queue/stack/_ch3_se1_3.c _3_stack_and_queue/queue/LinkQueue.h _3_stack_and_queue/queue/LinkQueueImpl.h _3_stack_and_queue/queue/LinkQueueMain.c _3_stack_and_queue/queue/_ch3_se2_1.c _3_stack_and_queue/queue/_ch3_se2_2.c _3_stack_and_queue/queue/_ch3_se2_3.c _3_stack_and_queue/queue/problem_common.h _3_stack_and_queue/queue/_ch3_se2_4.c _3_stack_and_queue/application/common_header.h _3_stack_and_queue/application/expression_change.c _3_stack_and_queue/application/parentheses_match.c test/io_test.c _3_stack_and_queue/application/_ch3_se3_3.c _3_stack_and_queue/application/_ch3_se3_4.c _4_string/SString.h _4_string/StrMain.c _5_tree/BiTNode.h _5_tree/SqBiTree.h _5_tree/_ch5_se2_5.c)
+add_executable(ch3_s1_3 ../clion_datastructure/_3_stack_and_queue/stack/_ch3_se1_3.c _3_stack_and_queue/queue/LinkQueue.h _3_stack_and_queue/queue/LinkQueueImpl.h _3_stack_and_queue/queue/LinkQueueMain.c _3_stack_and_queue/queue/_ch3_se2_1.c _3_stack_and_queue/queue/_ch3_se2_2.c _3_stack_and_queue/queue/_ch3_se2_3.c _3_stack_and_queue/queue/problem_common.h _3_stack_and_queue/queue/_ch3_se2_4.c _3_stack_and_queue/application/common_header.h _3_stack_and_queue/application/expression_change.c _3_stack_and_queue/application/parentheses_match.c test/io_test.c _3_stack_and_queue/application/_ch3_se3_3.c _3_stack_and_queue/application/_ch3_se3_4.c _4_string/SString.h _4_string/StrMain.c _5_tree/BiTNode.h _5_tree/SqBiTree.h _5_tree/_ch5_se2_5.c _5_tree/BITreeImpl.h _5_tree/TreeQueueImpl.h _5_tree/TreeMain.c)
 add_executable(ch3_s1_4 ../clion_datastructure/_3_stack_and_queue/stack/_ch3_se1_4.c)
 add_executable(link_stack_main ../clion_datastructure/_3_stack_and_queue/stack/LinkStackMain.c _3_stack_and_queue/stack/LinkStack.h _3_stack_and_queue/stack/LinkStackImpl.h)
 add_executable(sq_queue_main _3_stack_and_queue/queue/SqQueueMain.c)
@@ -17,5 +17,6 @@ add_executable(parent_match _3_stack_and_queue/application/parentheses_match.c)
 add_executable(ch3_s3_4 _3_stack_and_queue/application/_ch3_se3_4.c)
 add_executable(str_main _4_string/StrMain.c)
 add_executable(io_test test/io_test.c)
-
 add_executable(ch5_s2_5 _5_tree/_ch5_se2_5.c)
+
+add_executable(tree_main _5_tree/TreeMain.c)
