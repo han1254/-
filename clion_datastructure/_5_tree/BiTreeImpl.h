@@ -7,7 +7,9 @@
 
 #include <stdlib.h>
 #include "BiTNode.h"
+#include "TreeStackImpl.h"
 #include "TreeQueueImpl.h"
+
 #include "stdio.h"
 void visit(BiTree tree) {
     if (tree == NULL || tree->data == '#') {
@@ -115,6 +117,10 @@ void GenerateTreeByInput(BiTree* root) {
     }
 }
 
+/**
+ * 递归实现中序遍历
+ * @param tree
+ */
 void InOrder(BiTree tree) {
     if (tree == NULL || tree->data == '#') {
         return;
@@ -124,6 +130,10 @@ void InOrder(BiTree tree) {
     InOrder(tree->rchild);
 }
 
+/**
+ * 递归实现前序遍历
+ * @param tree
+ */
 void PreOrder(BiTree tree) {
     if (tree == NULL || tree->data == '#') {
         return;
@@ -133,6 +143,10 @@ void PreOrder(BiTree tree) {
     PreOrder(tree->rchild);
 }
 
+/**
+ * 递归实现后序遍历
+ * @param tree
+ */
 void PostOrder(BiTree tree) {
     if (tree == NULL || tree->data == '#') {
         return;
@@ -140,6 +154,83 @@ void PostOrder(BiTree tree) {
     PostOrder(tree->lchild);
     PostOrder(tree->rchild);
     visit(tree);
+}
+
+void InOrder_Iter(BiTree root) {
+    printf("非递归中序遍历\n");
+    TreeStack stack;
+    InitTreeStack(&stack);
+    BiTree ptr = root;
+    while (ptr || !StackEmpty(stack)) {//为何这里要判断ptr不为空的时候也可以？因为栈初始的时候是空的，必须通过这个
+        //条件进入循环
+        if (ptr) {
+            Push(&stack, ptr);
+            ptr = ptr->lchild;
+        } else {
+            Pop(&stack, &ptr);
+            visit(ptr);
+            ptr = ptr->rchild;
+        }
+    }
+}
+
+void PreOrder_Iter(BiTree tree) {
+    printf("非递归先序遍历\n");
+    TreeStack stack;
+    InitTreeStack(&stack);
+    BiTree ptr = tree;
+    while(ptr || !StackEmpty(stack)) {
+        if (ptr) {
+            visit(ptr);//他与中序遍历的区别就在打印节点的时刻
+            Push(&stack, ptr);
+            ptr = ptr->lchild;
+        } else {
+            Pop(&stack, &ptr);
+            ptr = ptr->rchild;
+        }
+    }
+}
+
+void PostOrder_Iter(BiTree tree) {
+    printf("非递归后序遍历\n");
+    TreeStack stack;
+    InitTreeStack(&stack);
+    BiTree ptr = tree;
+    BiTree from = NULL;
+    while (ptr || !StackEmpty(stack)) {
+        if (ptr) {
+            Push(&stack, ptr);
+            ptr = ptr->lchild;
+        } else {
+            GetTop(stack, &ptr);
+            if (ptr->rchild && from != ptr->rchild) {
+                ptr = ptr->rchild;
+                Push(&stack, ptr);
+                ptr = ptr->lchild;
+            } else {
+                Pop(&stack, &ptr);
+                visit(ptr);
+                from = ptr;
+                ptr = NULL;
+            }
+        }
+    }
+}
+
+void LevelOrder(BiTree tree) {
+    printf("层次遍历\n");
+    TreeQueue queue;
+    InitQueue(&queue);
+    Enqueue(&queue, tree);
+    BiTree node;
+    while(!QueueEmpty(queue)) {
+        Dequeue(&queue, &node);
+        visit(node);
+        if (node->lchild != NULL)
+            Enqueue(&queue, node->lchild);
+        if (node->rchild != NULL)
+            Enqueue(&queue, node->rchild);
+    }
 }
 
 #endif //CLION_DATASTRUCTURE_BITREEIMPL_H

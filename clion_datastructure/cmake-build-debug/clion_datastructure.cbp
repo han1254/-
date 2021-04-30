@@ -764,10 +764,10 @@
 			<Option target="str_main"/>
 			<Option target="ch3_s1_3"/>
 		</Unit>
-		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BITreeImpl.h">
+		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTNode.h">
 			<Option target="ch3_s1_3"/>
 		</Unit>
-		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTNode.h">
+		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTreeImpl.h">
 			<Option target="ch3_s1_3"/>
 		</Unit>
 		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/SqBiTree.h">
@@ -778,6 +778,9 @@
 			<Option target="ch3_s1_3"/>
 		</Unit>
 		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/TreeQueueImpl.h">
+			<Option target="ch3_s1_3"/>
+		</Unit>
+		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/TreeStackImpl.h">
 			<Option target="ch3_s1_3"/>
 		</Unit>
 		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/_ch5_se2_5.c">

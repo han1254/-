@@ -6,25 +6,33 @@
 
 #IncludeRegexTransform: 
 
-/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BITreeImpl.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTNode.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTreeImpl.h
 stdlib.h
 -
 BiTNode.h
 /home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTNode.h
+TreeStackImpl.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/TreeStackImpl.h
 TreeQueueImpl.h
 /home/han1254/Documents/PGEE/clion_datastructure/_5_tree/TreeQueueImpl.h
 stdio.h
 /home/han1254/Documents/PGEE/clion_datastructure/_5_tree/stdio.h
 
-/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTNode.h
-
 /home/han1254/Documents/PGEE/clion_datastructure/_5_tree/TreeMain.c
 memory.h
 -
-BITreeImpl.h
-/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BITreeImpl.h
+BiTreeImpl.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTreeImpl.h
 
 /home/han1254/Documents/PGEE/clion_datastructure/_5_tree/TreeQueueImpl.h
+BiTNode.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTNode.h
+stdio.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/stdio.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/TreeStackImpl.h
 BiTNode.h
 /home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTNode.h
 stdio.h
