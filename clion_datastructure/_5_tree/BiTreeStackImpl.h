@@ -2,9 +2,9 @@
 // Created by han1254 on 4/30/21.
 //
 
-#ifndef CLION_DATASTRUCTURE_TREESTACKIMPL_H
-#define CLION_DATASTRUCTURE_TREESTACKIMPL_H
-#include "BiTNode.h"
+#ifndef CLION_DATASTRUCTURE_BITREESTACKIMPL_H
+#define CLION_DATASTRUCTURE_BITREESTACKIMPL_H
+#include "BiTree.h"
 #include "stdio.h"
 #define MaxTreeStackSize 100
 /**
@@ -13,14 +13,14 @@
 typedef struct {
     BiTree stack[MaxTreeStackSize];
     int top;
-} TreeStack;
+} ThreadTreeStack;
 
 
-void InitTreeStack(TreeStack* stack) {
+void InitTreeStack(ThreadTreeStack* stack) {
     stack->top = -1;
 }
 
-int Pop(TreeStack* stack, BiTree* tree) {
+int Pop(ThreadTreeStack* stack, BiTree* tree) {
     if (stack->top == -1) {
         printf("Stack is empty\n");
         return 0;
@@ -29,7 +29,7 @@ int Pop(TreeStack* stack, BiTree* tree) {
     return 1;
 }
 
-int Push(TreeStack* stack, BiTree tree) {
+int Push(ThreadTreeStack* stack, BiTree tree) {
     if (stack->top == MaxTreeStackSize - 1) {
         printf("Stack is full\n");
         return 0;
@@ -38,7 +38,7 @@ int Push(TreeStack* stack, BiTree tree) {
     return 1;
 }
 
-int GetTop(TreeStack stack, BiTree* tree) {
+int GetTop(ThreadTreeStack stack, BiTree* tree) {
     if (stack.top == -1) {
         return 0;
     }
@@ -46,9 +46,9 @@ int GetTop(TreeStack stack, BiTree* tree) {
     return 1;
 }
 
-int StackEmpty(TreeStack stack) {
+int StackEmpty(ThreadTreeStack stack) {
     if (stack.top == -1) return 1;
     return 0;
 }
 
-#endif //CLION_DATASTRUCTURE_TREESTACKIMPL_H
+#endif //CLION_DATASTRUCTURE_BITREESTACKIMPL_H

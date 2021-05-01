@@ -246,18 +246,31 @@ CMakeFiles/ch3_s1_3.dir/_5_tree/_ch5_se2_5.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ch3_s1_3.dir/_5_tree/_ch5_se2_5.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/han1254/Documents/PGEE/clion_datastructure/_5_tree/_ch5_se2_5.c -o CMakeFiles/ch3_s1_3.dir/_5_tree/_ch5_se2_5.c.s
 
-CMakeFiles/ch3_s1_3.dir/_5_tree/TreeMain.c.o: CMakeFiles/ch3_s1_3.dir/flags.make
-CMakeFiles/ch3_s1_3.dir/_5_tree/TreeMain.c.o: ../_5_tree/TreeMain.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/ch3_s1_3.dir/_5_tree/TreeMain.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ch3_s1_3.dir/_5_tree/TreeMain.c.o   -c /home/han1254/Documents/PGEE/clion_datastructure/_5_tree/TreeMain.c
+CMakeFiles/ch3_s1_3.dir/_5_tree/BiTreeMain.c.o: CMakeFiles/ch3_s1_3.dir/flags.make
+CMakeFiles/ch3_s1_3.dir/_5_tree/BiTreeMain.c.o: ../_5_tree/BiTreeMain.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/ch3_s1_3.dir/_5_tree/BiTreeMain.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ch3_s1_3.dir/_5_tree/BiTreeMain.c.o   -c /home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTreeMain.c
 
-CMakeFiles/ch3_s1_3.dir/_5_tree/TreeMain.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ch3_s1_3.dir/_5_tree/TreeMain.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/han1254/Documents/PGEE/clion_datastructure/_5_tree/TreeMain.c > CMakeFiles/ch3_s1_3.dir/_5_tree/TreeMain.c.i
+CMakeFiles/ch3_s1_3.dir/_5_tree/BiTreeMain.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ch3_s1_3.dir/_5_tree/BiTreeMain.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTreeMain.c > CMakeFiles/ch3_s1_3.dir/_5_tree/BiTreeMain.c.i
 
-CMakeFiles/ch3_s1_3.dir/_5_tree/TreeMain.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ch3_s1_3.dir/_5_tree/TreeMain.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/han1254/Documents/PGEE/clion_datastructure/_5_tree/TreeMain.c -o CMakeFiles/ch3_s1_3.dir/_5_tree/TreeMain.c.s
+CMakeFiles/ch3_s1_3.dir/_5_tree/BiTreeMain.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ch3_s1_3.dir/_5_tree/BiTreeMain.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTreeMain.c -o CMakeFiles/ch3_s1_3.dir/_5_tree/BiTreeMain.c.s
+
+CMakeFiles/ch3_s1_3.dir/_5_tree/ThreadTreeMain.c.o: CMakeFiles/ch3_s1_3.dir/flags.make
+CMakeFiles/ch3_s1_3.dir/_5_tree/ThreadTreeMain.c.o: ../_5_tree/ThreadTreeMain.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/ch3_s1_3.dir/_5_tree/ThreadTreeMain.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ch3_s1_3.dir/_5_tree/ThreadTreeMain.c.o   -c /home/han1254/Documents/PGEE/clion_datastructure/_5_tree/ThreadTreeMain.c
+
+CMakeFiles/ch3_s1_3.dir/_5_tree/ThreadTreeMain.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ch3_s1_3.dir/_5_tree/ThreadTreeMain.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/han1254/Documents/PGEE/clion_datastructure/_5_tree/ThreadTreeMain.c > CMakeFiles/ch3_s1_3.dir/_5_tree/ThreadTreeMain.c.i
+
+CMakeFiles/ch3_s1_3.dir/_5_tree/ThreadTreeMain.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ch3_s1_3.dir/_5_tree/ThreadTreeMain.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/han1254/Documents/PGEE/clion_datastructure/_5_tree/ThreadTreeMain.c -o CMakeFiles/ch3_s1_3.dir/_5_tree/ThreadTreeMain.c.s
 
 # Object files for target ch3_s1_3
 ch3_s1_3_OBJECTS = \
@@ -274,7 +287,8 @@ ch3_s1_3_OBJECTS = \
 "CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/_ch3_se3_4.c.o" \
 "CMakeFiles/ch3_s1_3.dir/_4_string/StrMain.c.o" \
 "CMakeFiles/ch3_s1_3.dir/_5_tree/_ch5_se2_5.c.o" \
-"CMakeFiles/ch3_s1_3.dir/_5_tree/TreeMain.c.o"
+"CMakeFiles/ch3_s1_3.dir/_5_tree/BiTreeMain.c.o" \
+"CMakeFiles/ch3_s1_3.dir/_5_tree/ThreadTreeMain.c.o"
 
 # External object files for target ch3_s1_3
 ch3_s1_3_EXTERNAL_OBJECTS =
@@ -292,10 +306,11 @@ ch3_s1_3: CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/_ch3_se3_3.c.o
 ch3_s1_3: CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/_ch3_se3_4.c.o
 ch3_s1_3: CMakeFiles/ch3_s1_3.dir/_4_string/StrMain.c.o
 ch3_s1_3: CMakeFiles/ch3_s1_3.dir/_5_tree/_ch5_se2_5.c.o
-ch3_s1_3: CMakeFiles/ch3_s1_3.dir/_5_tree/TreeMain.c.o
+ch3_s1_3: CMakeFiles/ch3_s1_3.dir/_5_tree/BiTreeMain.c.o
+ch3_s1_3: CMakeFiles/ch3_s1_3.dir/_5_tree/ThreadTreeMain.c.o
 ch3_s1_3: CMakeFiles/ch3_s1_3.dir/build.make
 ch3_s1_3: CMakeFiles/ch3_s1_3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking C executable ch3_s1_3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking C executable ch3_s1_3"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ch3_s1_3.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

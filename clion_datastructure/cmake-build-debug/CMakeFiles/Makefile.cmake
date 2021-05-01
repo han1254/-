@@ -57,6 +57,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/clion_datastructure.dir/DependInfo.cmake"
   "CMakeFiles/sq_queue_main.dir/DependInfo.cmake"
   "CMakeFiles/ch3_s2_3.dir/DependInfo.cmake"
+  "CMakeFiles/thread_tree_main.dir/DependInfo.cmake"
   "CMakeFiles/ch5_s2_5.dir/DependInfo.cmake"
   "CMakeFiles/ch3_s2_4.dir/DependInfo.cmake"
   "CMakeFiles/expression_change.dir/DependInfo.cmake"

@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/tree_main.dir/_5_tree/TreeMain.c.o  -o tree_main 
+/usr/bin/cc -g   CMakeFiles/tree_main.dir/_5_tree/BiTreeMain.c.o  -o tree_main 

@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTree.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/ThreadTree.h
+BiTree.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTree.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/ThreadTreeImpl.h
+ThreadTree.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/ThreadTree.h
+ThreadTreeQueue.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/ThreadTreeQueue.h
+stdlib.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/stdlib.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/ThreadTreeMain.c
+ThreadTreeImpl.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/ThreadTreeImpl.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/ThreadTreeQueue.h
+ThreadTree.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/ThreadTree.h
+stdio.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/stdio.h
+

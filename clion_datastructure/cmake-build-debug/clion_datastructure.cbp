@@ -557,6 +557,46 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="thread_tree_main">
+				<Option output="/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/thread_tree_main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 thread_tree_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="thread_tree_main/fast">
+				<Option output="/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/thread_tree_main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 thread_tree_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="ch5_s2_5">
 				<Option output="/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/ch5_s2_5" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug"/>
@@ -764,23 +804,39 @@
 			<Option target="str_main"/>
 			<Option target="ch3_s1_3"/>
 		</Unit>
-		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTNode.h">
+		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTree.h">
 			<Option target="ch3_s1_3"/>
 		</Unit>
 		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTreeImpl.h">
 			<Option target="ch3_s1_3"/>
 		</Unit>
-		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/SqBiTree.h">
-			<Option target="ch3_s1_3"/>
-		</Unit>
-		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/TreeMain.c">
+		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTreeMain.c">
 			<Option target="tree_main"/>
 			<Option target="ch3_s1_3"/>
 		</Unit>
-		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/TreeQueueImpl.h">
+		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTreeQueueImpl.h">
 			<Option target="ch3_s1_3"/>
 		</Unit>
-		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/TreeStackImpl.h">
+		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTreeStackImpl.h">
+			<Option target="ch3_s1_3"/>
+		</Unit>
+		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/SqBiTree.h">
+			<Option target="ch3_s1_3"/>
+		</Unit>
+		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/ThreadTree.h">
+			<Option target="ch3_s1_3"/>
+		</Unit>
+		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/ThreadTreeImpl.h">
+			<Option target="ch3_s1_3"/>
+		</Unit>
+		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/ThreadTreeMain.c">
+			<Option target="ch3_s1_3"/>
+			<Option target="thread_tree_main"/>
+		</Unit>
+		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/ThreadTreeQueue.h">
+			<Option target="ch3_s1_3"/>
+		</Unit>
+		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/ThreadTreeStack.h">
 			<Option target="ch3_s1_3"/>
 		</Unit>
 		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/_ch5_se2_5.c">

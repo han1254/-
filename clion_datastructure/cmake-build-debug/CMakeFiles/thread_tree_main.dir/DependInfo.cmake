@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTreeMain.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/tree_main.dir/_5_tree/BiTreeMain.c.o"
+  "/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/ThreadTreeMain.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/thread_tree_main.dir/_5_tree/ThreadTreeMain.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

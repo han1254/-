@@ -77,27 +77,27 @@ include CMakeFiles/tree_main.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/tree_main.dir/flags.make
 
-CMakeFiles/tree_main.dir/_5_tree/TreeMain.c.o: CMakeFiles/tree_main.dir/flags.make
-CMakeFiles/tree_main.dir/_5_tree/TreeMain.c.o: ../_5_tree/TreeMain.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/tree_main.dir/_5_tree/TreeMain.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tree_main.dir/_5_tree/TreeMain.c.o   -c /home/han1254/Documents/PGEE/clion_datastructure/_5_tree/TreeMain.c
+CMakeFiles/tree_main.dir/_5_tree/BiTreeMain.c.o: CMakeFiles/tree_main.dir/flags.make
+CMakeFiles/tree_main.dir/_5_tree/BiTreeMain.c.o: ../_5_tree/BiTreeMain.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/tree_main.dir/_5_tree/BiTreeMain.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tree_main.dir/_5_tree/BiTreeMain.c.o   -c /home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTreeMain.c
 
-CMakeFiles/tree_main.dir/_5_tree/TreeMain.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tree_main.dir/_5_tree/TreeMain.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/han1254/Documents/PGEE/clion_datastructure/_5_tree/TreeMain.c > CMakeFiles/tree_main.dir/_5_tree/TreeMain.c.i
+CMakeFiles/tree_main.dir/_5_tree/BiTreeMain.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tree_main.dir/_5_tree/BiTreeMain.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTreeMain.c > CMakeFiles/tree_main.dir/_5_tree/BiTreeMain.c.i
 
-CMakeFiles/tree_main.dir/_5_tree/TreeMain.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tree_main.dir/_5_tree/TreeMain.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/han1254/Documents/PGEE/clion_datastructure/_5_tree/TreeMain.c -o CMakeFiles/tree_main.dir/_5_tree/TreeMain.c.s
+CMakeFiles/tree_main.dir/_5_tree/BiTreeMain.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tree_main.dir/_5_tree/BiTreeMain.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTreeMain.c -o CMakeFiles/tree_main.dir/_5_tree/BiTreeMain.c.s
 
 # Object files for target tree_main
 tree_main_OBJECTS = \
-"CMakeFiles/tree_main.dir/_5_tree/TreeMain.c.o"
+"CMakeFiles/tree_main.dir/_5_tree/BiTreeMain.c.o"
 
 # External object files for target tree_main
 tree_main_EXTERNAL_OBJECTS =
 
-tree_main: CMakeFiles/tree_main.dir/_5_tree/TreeMain.c.o
+tree_main: CMakeFiles/tree_main.dir/_5_tree/BiTreeMain.c.o
 tree_main: CMakeFiles/tree_main.dir/build.make
 tree_main: CMakeFiles/tree_main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable tree_main"

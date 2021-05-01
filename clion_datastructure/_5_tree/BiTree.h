@@ -2,8 +2,8 @@
 // Created by han1254 on 4/27/21.
 //
 
-#ifndef CLION_DATASTRUCTURE_BITNODE_H
-#define CLION_DATASTRUCTURE_BITNODE_H
+#ifndef CLION_DATASTRUCTURE_BITREE_H
+#define CLION_DATASTRUCTURE_BITREE_H
 
 typedef struct BiTNode {
     char data;
@@ -12,4 +12,4 @@ typedef struct BiTNode {
 
 
 
-#endif //CLION_DATASTRUCTURE_BITNODE_H
+#endif //CLION_DATASTRUCTURE_BITREE_H

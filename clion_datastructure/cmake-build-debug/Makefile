@@ -300,6 +300,19 @@ ch3_s2_3/fast:
 .PHONY : ch3_s2_3/fast
 
 #=============================================================================
+# Target rules for targets named thread_tree_main
+
+# Build rule for target.
+thread_tree_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 thread_tree_main
+.PHONY : thread_tree_main
+
+# fast build rule for target.
+thread_tree_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_tree_main.dir/build.make CMakeFiles/thread_tree_main.dir/build
+.PHONY : thread_tree_main/fast
+
+#=============================================================================
 # Target rules for targets named ch5_s2_5
 
 # Build rule for target.
@@ -743,35 +756,65 @@ _4_string/StrMain.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_4_string/StrMain.c.s
 .PHONY : _4_string/StrMain.c.s
 
-_5_tree/TreeMain.o: _5_tree/TreeMain.c.o
+_5_tree/BiTreeMain.o: _5_tree/BiTreeMain.c.o
 
-.PHONY : _5_tree/TreeMain.o
+.PHONY : _5_tree/BiTreeMain.o
 
 # target to build an object file
-_5_tree/TreeMain.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_main.dir/build.make CMakeFiles/tree_main.dir/_5_tree/TreeMain.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_5_tree/TreeMain.c.o
-.PHONY : _5_tree/TreeMain.c.o
+_5_tree/BiTreeMain.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_main.dir/build.make CMakeFiles/tree_main.dir/_5_tree/BiTreeMain.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_5_tree/BiTreeMain.c.o
+.PHONY : _5_tree/BiTreeMain.c.o
 
-_5_tree/TreeMain.i: _5_tree/TreeMain.c.i
+_5_tree/BiTreeMain.i: _5_tree/BiTreeMain.c.i
 
-.PHONY : _5_tree/TreeMain.i
+.PHONY : _5_tree/BiTreeMain.i
 
 # target to preprocess a source file
-_5_tree/TreeMain.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_main.dir/build.make CMakeFiles/tree_main.dir/_5_tree/TreeMain.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_5_tree/TreeMain.c.i
-.PHONY : _5_tree/TreeMain.c.i
+_5_tree/BiTreeMain.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_main.dir/build.make CMakeFiles/tree_main.dir/_5_tree/BiTreeMain.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_5_tree/BiTreeMain.c.i
+.PHONY : _5_tree/BiTreeMain.c.i
 
-_5_tree/TreeMain.s: _5_tree/TreeMain.c.s
+_5_tree/BiTreeMain.s: _5_tree/BiTreeMain.c.s
 
-.PHONY : _5_tree/TreeMain.s
+.PHONY : _5_tree/BiTreeMain.s
 
 # target to generate assembly for a file
-_5_tree/TreeMain.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_main.dir/build.make CMakeFiles/tree_main.dir/_5_tree/TreeMain.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_5_tree/TreeMain.c.s
-.PHONY : _5_tree/TreeMain.c.s
+_5_tree/BiTreeMain.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_main.dir/build.make CMakeFiles/tree_main.dir/_5_tree/BiTreeMain.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_5_tree/BiTreeMain.c.s
+.PHONY : _5_tree/BiTreeMain.c.s
+
+_5_tree/ThreadTreeMain.o: _5_tree/ThreadTreeMain.c.o
+
+.PHONY : _5_tree/ThreadTreeMain.o
+
+# target to build an object file
+_5_tree/ThreadTreeMain.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_5_tree/ThreadTreeMain.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_tree_main.dir/build.make CMakeFiles/thread_tree_main.dir/_5_tree/ThreadTreeMain.c.o
+.PHONY : _5_tree/ThreadTreeMain.c.o
+
+_5_tree/ThreadTreeMain.i: _5_tree/ThreadTreeMain.c.i
+
+.PHONY : _5_tree/ThreadTreeMain.i
+
+# target to preprocess a source file
+_5_tree/ThreadTreeMain.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_5_tree/ThreadTreeMain.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_tree_main.dir/build.make CMakeFiles/thread_tree_main.dir/_5_tree/ThreadTreeMain.c.i
+.PHONY : _5_tree/ThreadTreeMain.c.i
+
+_5_tree/ThreadTreeMain.s: _5_tree/ThreadTreeMain.c.s
+
+.PHONY : _5_tree/ThreadTreeMain.s
+
+# target to generate assembly for a file
+_5_tree/ThreadTreeMain.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_5_tree/ThreadTreeMain.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_tree_main.dir/build.make CMakeFiles/thread_tree_main.dir/_5_tree/ThreadTreeMain.c.s
+.PHONY : _5_tree/ThreadTreeMain.c.s
 
 _5_tree/_ch5_se2_5.o: _5_tree/_ch5_se2_5.c.o
 
@@ -883,6 +926,7 @@ help:
 	@echo "... parent_match"
 	@echo "... sq_queue_main"
 	@echo "... str_main"
+	@echo "... thread_tree_main"
 	@echo "... tree_main"
 	@echo "... _3_stack_and_queue/application/_ch3_se3_3.o"
 	@echo "... _3_stack_and_queue/application/_ch3_se3_3.i"
@@ -926,9 +970,12 @@ help:
 	@echo "... _4_string/StrMain.o"
 	@echo "... _4_string/StrMain.i"
 	@echo "... _4_string/StrMain.s"
-	@echo "... _5_tree/TreeMain.o"
-	@echo "... _5_tree/TreeMain.i"
-	@echo "... _5_tree/TreeMain.s"
+	@echo "... _5_tree/BiTreeMain.o"
+	@echo "... _5_tree/BiTreeMain.i"
+	@echo "... _5_tree/BiTreeMain.s"
+	@echo "... _5_tree/ThreadTreeMain.o"
+	@echo "... _5_tree/ThreadTreeMain.i"
+	@echo "... _5_tree/ThreadTreeMain.s"
 	@echo "... _5_tree/_ch5_se2_5.o"
 	@echo "... _5_tree/_ch5_se2_5.i"
 	@echo "... _5_tree/_ch5_se2_5.s"

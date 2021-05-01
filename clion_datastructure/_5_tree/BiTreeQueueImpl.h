@@ -2,22 +2,22 @@
 // Created by han1254 on 4/30/21.
 //
 
-#ifndef CLION_DATASTRUCTURE_TREEQUEUEIMPL_H
-#define CLION_DATASTRUCTURE_TREEQUEUEIMPL_H
+#ifndef CLION_DATASTRUCTURE_BITREEQUEUEIMPL_H
+#define CLION_DATASTRUCTURE_BITREEQUEUEIMPL_H
 #define MaxTreeQueueSize 100
-#include "BiTNode.h"
+#include "BiTree.h"
 #include "stdio.h"
 typedef struct {
     BiTree queue[MaxTreeQueueSize];
     int front, rear;
-} TreeQueue;
+} ThreadTreeQueue;
 
 
-void InitQueue(TreeQueue* queue) {
+void InitQueue(ThreadTreeQueue* queue) {
     queue->rear = queue->front = 0;
 }
 
-int Enqueue(TreeQueue* queue, BiTree node) {
+int Enqueue(ThreadTreeQueue* queue, BiTree node) {
     if ((queue->rear + 1) % MaxTreeQueueSize == queue->front) {
         printf("Queue is full\n");
         return 0;
@@ -27,7 +27,7 @@ int Enqueue(TreeQueue* queue, BiTree node) {
     return 1;
 }
 
-int Dequeue(TreeQueue* queue, BiTree* res) {
+int Dequeue(ThreadTreeQueue* queue, BiTree* res) {
     if (queue->rear == queue->front) {
         printf("Queue is empty\n");
         return 0;
@@ -37,9 +37,9 @@ int Dequeue(TreeQueue* queue, BiTree* res) {
     return 1;
 }
 
-int QueueEmpty(TreeQueue queue) {
+int QueueEmpty(ThreadTreeQueue queue) {
     if (queue.rear == queue.front) return 1;
     return 0;
 }
 
-#endif //CLION_DATASTRUCTURE_TREEQUEUEIMPL_H
+#endif //CLION_DATASTRUCTURE_BITREEQUEUEIMPL_H

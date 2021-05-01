@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/tree_main.dir/_5_tree/TreeMain.c.o"
+  "CMakeFiles/tree_main.dir/_5_tree/BiTreeMain.c.o"
   "tree_main"
   "tree_main.pdb"
 )

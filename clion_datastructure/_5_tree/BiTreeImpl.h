@@ -6,9 +6,9 @@
 #define CLION_DATASTRUCTURE_BITREEIMPL_H
 
 #include <stdlib.h>
-#include "BiTNode.h"
-#include "TreeStackImpl.h"
-#include "TreeQueueImpl.h"
+#include "BiTree.h"
+#include "BiTreeStackImpl.h"
+#include "BiTreeQueueImpl.h"
 
 #include "stdio.h"
 void visit(BiTree tree) {
@@ -25,14 +25,14 @@ void visit(BiTree tree) {
  * @param s
  * @param len
  */
-void GenerateTree(BiTree* root, const char* s, int len) {
+void GenerateTree(BiTree root, const char* s, int len) {
     int index = 0;
     int n = 2;
-    TreeQueue queue;
+    ThreadTreeQueue queue;
     InitQueue(&queue);
-    Enqueue(&queue, *root);
+    Enqueue(&queue, root);
     BiTree tempTree;
-    (*root)->data = s[index++];
+    root->data = s[index++];
     while (!QueueEmpty(queue) && index < len) {
         int parentCount = queue.rear - queue.front;
         for (int j = 0; j < parentCount; ++j) {
@@ -67,18 +67,18 @@ void GenerateTree(BiTree* root, const char* s, int len) {
  * 通过输入的方式创建树
  * @param root
  */
-void GenerateTreeByInput(BiTree* root) {
+void GenerateTreeByInput(BiTree root) {
     int i = 2;
     int n = 2;
     char ch;
-    TreeQueue queue;
+    ThreadTreeQueue queue;
     InitQueue(&queue);
-    Enqueue(&queue, *root);
+    Enqueue(&queue, root);
     BiTree tempTree;
     printf("input root\n");
     ch = (char)getchar();
     while(getchar()!='\n');
-    (*root)->data = ch;
+    root->data = ch;
     while (!QueueEmpty(queue)) {
         printf("Now it's %dth level, you have to enter %d nodes(enter '#' as a symbol of null)\n", i, n);
         int parentCount = queue.rear - queue.front;
@@ -158,7 +158,7 @@ void PostOrder(BiTree tree) {
 
 void InOrder_Iter(BiTree root) {
     printf("非递归中序遍历\n");
-    TreeStack stack;
+    ThreadTreeStack stack;
     InitTreeStack(&stack);
     BiTree ptr = root;
     while (ptr || !StackEmpty(stack)) {//为何这里要判断ptr不为空的时候也可以？因为栈初始的时候是空的，必须通过这个
@@ -176,7 +176,7 @@ void InOrder_Iter(BiTree root) {
 
 void PreOrder_Iter(BiTree tree) {
     printf("非递归先序遍历\n");
-    TreeStack stack;
+    ThreadTreeStack stack;
     InitTreeStack(&stack);
     BiTree ptr = tree;
     while(ptr || !StackEmpty(stack)) {
@@ -193,7 +193,7 @@ void PreOrder_Iter(BiTree tree) {
 
 void PostOrder_Iter(BiTree tree) {
     printf("非递归后序遍历\n");
-    TreeStack stack;
+    ThreadTreeStack stack;
     InitTreeStack(&stack);
     BiTree ptr = tree;
     BiTree from = NULL;
@@ -219,7 +219,7 @@ void PostOrder_Iter(BiTree tree) {
 
 void LevelOrder(BiTree tree) {
     printf("层次遍历\n");
-    TreeQueue queue;
+    ThreadTreeQueue queue;
     InitQueue(&queue);
     Enqueue(&queue, tree);
     BiTree node;
