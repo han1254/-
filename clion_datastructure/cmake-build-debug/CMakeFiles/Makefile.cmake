@@ -44,16 +44,18 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/ch5_s3_6.dir/DependInfo.cmake"
+  "CMakeFiles/ch5_s3_5.dir/DependInfo.cmake"
   "CMakeFiles/tree_main.dir/DependInfo.cmake"
+  "CMakeFiles/ch5_s3_4.dir/DependInfo.cmake"
   "CMakeFiles/io_test.dir/DependInfo.cmake"
   "CMakeFiles/ch3_s3_4.dir/DependInfo.cmake"
   "CMakeFiles/parent_match.dir/DependInfo.cmake"
   "CMakeFiles/link_stack_main.dir/DependInfo.cmake"
-  "CMakeFiles/ch3_s2_1.dir/DependInfo.cmake"
-  "CMakeFiles/ch3_s2_2.dir/DependInfo.cmake"
   "CMakeFiles/str_main.dir/DependInfo.cmake"
   "CMakeFiles/ch3_s1_3.dir/DependInfo.cmake"
-  "CMakeFiles/ch3_s1_4.dir/DependInfo.cmake"
+  "CMakeFiles/ch3_s2_1.dir/DependInfo.cmake"
+  "CMakeFiles/ch3_s2_2.dir/DependInfo.cmake"
   "CMakeFiles/clion_datastructure.dir/DependInfo.cmake"
   "CMakeFiles/sq_queue_main.dir/DependInfo.cmake"
   "CMakeFiles/ch3_s2_3.dir/DependInfo.cmake"

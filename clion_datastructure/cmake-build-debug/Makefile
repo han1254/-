@@ -76,17 +76,6 @@ CMAKE_BINARY_DIR = /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/han1254/Downloads/clion-2020.2.5/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -97,6 +86,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/han1254/Downloads/clion-2020.2.5/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -131,6 +131,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named ch5_s3_6
+
+# Build rule for target.
+ch5_s3_6: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch5_s3_6
+.PHONY : ch5_s3_6
+
+# fast build rule for target.
+ch5_s3_6/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_6.dir/build.make CMakeFiles/ch5_s3_6.dir/build
+.PHONY : ch5_s3_6/fast
+
+#=============================================================================
+# Target rules for targets named ch5_s3_5
+
+# Build rule for target.
+ch5_s3_5: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch5_s3_5
+.PHONY : ch5_s3_5
+
+# fast build rule for target.
+ch5_s3_5/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_5.dir/build.make CMakeFiles/ch5_s3_5.dir/build
+.PHONY : ch5_s3_5/fast
+
+#=============================================================================
 # Target rules for targets named tree_main
 
 # Build rule for target.
@@ -142,6 +168,19 @@ tree_main: cmake_check_build_system
 tree_main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_main.dir/build.make CMakeFiles/tree_main.dir/build
 .PHONY : tree_main/fast
+
+#=============================================================================
+# Target rules for targets named ch5_s3_4
+
+# Build rule for target.
+ch5_s3_4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch5_s3_4
+.PHONY : ch5_s3_4
+
+# fast build rule for target.
+ch5_s3_4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_4.dir/build.make CMakeFiles/ch5_s3_4.dir/build
+.PHONY : ch5_s3_4/fast
 
 #=============================================================================
 # Target rules for targets named io_test
@@ -196,32 +235,6 @@ link_stack_main/fast:
 .PHONY : link_stack_main/fast
 
 #=============================================================================
-# Target rules for targets named ch3_s2_1
-
-# Build rule for target.
-ch3_s2_1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch3_s2_1
-.PHONY : ch3_s2_1
-
-# fast build rule for target.
-ch3_s2_1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_1.dir/build.make CMakeFiles/ch3_s2_1.dir/build
-.PHONY : ch3_s2_1/fast
-
-#=============================================================================
-# Target rules for targets named ch3_s2_2
-
-# Build rule for target.
-ch3_s2_2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch3_s2_2
-.PHONY : ch3_s2_2
-
-# fast build rule for target.
-ch3_s2_2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_2.dir/build.make CMakeFiles/ch3_s2_2.dir/build
-.PHONY : ch3_s2_2/fast
-
-#=============================================================================
 # Target rules for targets named str_main
 
 # Build rule for target.
@@ -248,17 +261,30 @@ ch3_s1_3/fast:
 .PHONY : ch3_s1_3/fast
 
 #=============================================================================
-# Target rules for targets named ch3_s1_4
+# Target rules for targets named ch3_s2_1
 
 # Build rule for target.
-ch3_s1_4: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch3_s1_4
-.PHONY : ch3_s1_4
+ch3_s2_1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch3_s2_1
+.PHONY : ch3_s2_1
 
 # fast build rule for target.
-ch3_s1_4/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_4.dir/build.make CMakeFiles/ch3_s1_4.dir/build
-.PHONY : ch3_s1_4/fast
+ch3_s2_1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_1.dir/build.make CMakeFiles/ch3_s2_1.dir/build
+.PHONY : ch3_s2_1/fast
+
+#=============================================================================
+# Target rules for targets named ch3_s2_2
+
+# Build rule for target.
+ch3_s2_2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch3_s2_2
+.PHONY : ch3_s2_2
+
+# fast build rule for target.
+ch3_s2_2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_2.dir/build.make CMakeFiles/ch3_s2_2.dir/build
+.PHONY : ch3_s2_2/fast
 
 #=============================================================================
 # Target rules for targets named clion_datastructure
@@ -351,33 +377,6 @@ expression_change/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/expression_change.dir/build.make CMakeFiles/expression_change.dir/build
 .PHONY : expression_change/fast
 
-_3_stack_and_queue/application/_ch3_se3_3.o: _3_stack_and_queue/application/_ch3_se3_3.c.o
-
-.PHONY : _3_stack_and_queue/application/_ch3_se3_3.o
-
-# target to build an object file
-_3_stack_and_queue/application/_ch3_se3_3.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/_ch3_se3_3.c.o
-.PHONY : _3_stack_and_queue/application/_ch3_se3_3.c.o
-
-_3_stack_and_queue/application/_ch3_se3_3.i: _3_stack_and_queue/application/_ch3_se3_3.c.i
-
-.PHONY : _3_stack_and_queue/application/_ch3_se3_3.i
-
-# target to preprocess a source file
-_3_stack_and_queue/application/_ch3_se3_3.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/_ch3_se3_3.c.i
-.PHONY : _3_stack_and_queue/application/_ch3_se3_3.c.i
-
-_3_stack_and_queue/application/_ch3_se3_3.s: _3_stack_and_queue/application/_ch3_se3_3.c.s
-
-.PHONY : _3_stack_and_queue/application/_ch3_se3_3.s
-
-# target to generate assembly for a file
-_3_stack_and_queue/application/_ch3_se3_3.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/_ch3_se3_3.c.s
-.PHONY : _3_stack_and_queue/application/_ch3_se3_3.c.s
-
 _3_stack_and_queue/application/_ch3_se3_4.o: _3_stack_and_queue/application/_ch3_se3_4.c.o
 
 .PHONY : _3_stack_and_queue/application/_ch3_se3_4.o
@@ -385,7 +384,6 @@ _3_stack_and_queue/application/_ch3_se3_4.o: _3_stack_and_queue/application/_ch3
 # target to build an object file
 _3_stack_and_queue/application/_ch3_se3_4.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s3_4.dir/build.make CMakeFiles/ch3_s3_4.dir/_3_stack_and_queue/application/_ch3_se3_4.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/_ch3_se3_4.c.o
 .PHONY : _3_stack_and_queue/application/_ch3_se3_4.c.o
 
 _3_stack_and_queue/application/_ch3_se3_4.i: _3_stack_and_queue/application/_ch3_se3_4.c.i
@@ -395,7 +393,6 @@ _3_stack_and_queue/application/_ch3_se3_4.i: _3_stack_and_queue/application/_ch3
 # target to preprocess a source file
 _3_stack_and_queue/application/_ch3_se3_4.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s3_4.dir/build.make CMakeFiles/ch3_s3_4.dir/_3_stack_and_queue/application/_ch3_se3_4.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/_ch3_se3_4.c.i
 .PHONY : _3_stack_and_queue/application/_ch3_se3_4.c.i
 
 _3_stack_and_queue/application/_ch3_se3_4.s: _3_stack_and_queue/application/_ch3_se3_4.c.s
@@ -405,7 +402,6 @@ _3_stack_and_queue/application/_ch3_se3_4.s: _3_stack_and_queue/application/_ch3
 # target to generate assembly for a file
 _3_stack_and_queue/application/_ch3_se3_4.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s3_4.dir/build.make CMakeFiles/ch3_s3_4.dir/_3_stack_and_queue/application/_ch3_se3_4.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/_ch3_se3_4.c.s
 .PHONY : _3_stack_and_queue/application/_ch3_se3_4.c.s
 
 _3_stack_and_queue/application/expression_change.o: _3_stack_and_queue/application/expression_change.c.o
@@ -414,7 +410,6 @@ _3_stack_and_queue/application/expression_change.o: _3_stack_and_queue/applicati
 
 # target to build an object file
 _3_stack_and_queue/application/expression_change.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/expression_change.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/expression_change.dir/build.make CMakeFiles/expression_change.dir/_3_stack_and_queue/application/expression_change.c.o
 .PHONY : _3_stack_and_queue/application/expression_change.c.o
 
@@ -424,7 +419,6 @@ _3_stack_and_queue/application/expression_change.i: _3_stack_and_queue/applicati
 
 # target to preprocess a source file
 _3_stack_and_queue/application/expression_change.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/expression_change.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/expression_change.dir/build.make CMakeFiles/expression_change.dir/_3_stack_and_queue/application/expression_change.c.i
 .PHONY : _3_stack_and_queue/application/expression_change.c.i
 
@@ -434,7 +428,6 @@ _3_stack_and_queue/application/expression_change.s: _3_stack_and_queue/applicati
 
 # target to generate assembly for a file
 _3_stack_and_queue/application/expression_change.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/expression_change.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/expression_change.dir/build.make CMakeFiles/expression_change.dir/_3_stack_and_queue/application/expression_change.c.s
 .PHONY : _3_stack_and_queue/application/expression_change.c.s
 
@@ -445,7 +438,6 @@ _3_stack_and_queue/application/parentheses_match.o: _3_stack_and_queue/applicati
 # target to build an object file
 _3_stack_and_queue/application/parentheses_match.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parent_match.dir/build.make CMakeFiles/parent_match.dir/_3_stack_and_queue/application/parentheses_match.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/parentheses_match.c.o
 .PHONY : _3_stack_and_queue/application/parentheses_match.c.o
 
 _3_stack_and_queue/application/parentheses_match.i: _3_stack_and_queue/application/parentheses_match.c.i
@@ -455,7 +447,6 @@ _3_stack_and_queue/application/parentheses_match.i: _3_stack_and_queue/applicati
 # target to preprocess a source file
 _3_stack_and_queue/application/parentheses_match.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parent_match.dir/build.make CMakeFiles/parent_match.dir/_3_stack_and_queue/application/parentheses_match.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/parentheses_match.c.i
 .PHONY : _3_stack_and_queue/application/parentheses_match.c.i
 
 _3_stack_and_queue/application/parentheses_match.s: _3_stack_and_queue/application/parentheses_match.c.s
@@ -465,35 +456,7 @@ _3_stack_and_queue/application/parentheses_match.s: _3_stack_and_queue/applicati
 # target to generate assembly for a file
 _3_stack_and_queue/application/parentheses_match.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parent_match.dir/build.make CMakeFiles/parent_match.dir/_3_stack_and_queue/application/parentheses_match.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/application/parentheses_match.c.s
 .PHONY : _3_stack_and_queue/application/parentheses_match.c.s
-
-_3_stack_and_queue/queue/LinkQueueMain.o: _3_stack_and_queue/queue/LinkQueueMain.c.o
-
-.PHONY : _3_stack_and_queue/queue/LinkQueueMain.o
-
-# target to build an object file
-_3_stack_and_queue/queue/LinkQueueMain.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/queue/LinkQueueMain.c.o
-.PHONY : _3_stack_and_queue/queue/LinkQueueMain.c.o
-
-_3_stack_and_queue/queue/LinkQueueMain.i: _3_stack_and_queue/queue/LinkQueueMain.c.i
-
-.PHONY : _3_stack_and_queue/queue/LinkQueueMain.i
-
-# target to preprocess a source file
-_3_stack_and_queue/queue/LinkQueueMain.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/queue/LinkQueueMain.c.i
-.PHONY : _3_stack_and_queue/queue/LinkQueueMain.c.i
-
-_3_stack_and_queue/queue/LinkQueueMain.s: _3_stack_and_queue/queue/LinkQueueMain.c.s
-
-.PHONY : _3_stack_and_queue/queue/LinkQueueMain.s
-
-# target to generate assembly for a file
-_3_stack_and_queue/queue/LinkQueueMain.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/queue/LinkQueueMain.c.s
-.PHONY : _3_stack_and_queue/queue/LinkQueueMain.c.s
 
 _3_stack_and_queue/queue/SqQueueMain.o: _3_stack_and_queue/queue/SqQueueMain.c.o
 
@@ -529,7 +492,6 @@ _3_stack_and_queue/queue/_ch3_se2_1.o: _3_stack_and_queue/queue/_ch3_se2_1.c.o
 # target to build an object file
 _3_stack_and_queue/queue/_ch3_se2_1.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_1.dir/build.make CMakeFiles/ch3_s2_1.dir/_3_stack_and_queue/queue/_ch3_se2_1.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/queue/_ch3_se2_1.c.o
 .PHONY : _3_stack_and_queue/queue/_ch3_se2_1.c.o
 
 _3_stack_and_queue/queue/_ch3_se2_1.i: _3_stack_and_queue/queue/_ch3_se2_1.c.i
@@ -539,7 +501,6 @@ _3_stack_and_queue/queue/_ch3_se2_1.i: _3_stack_and_queue/queue/_ch3_se2_1.c.i
 # target to preprocess a source file
 _3_stack_and_queue/queue/_ch3_se2_1.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_1.dir/build.make CMakeFiles/ch3_s2_1.dir/_3_stack_and_queue/queue/_ch3_se2_1.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/queue/_ch3_se2_1.c.i
 .PHONY : _3_stack_and_queue/queue/_ch3_se2_1.c.i
 
 _3_stack_and_queue/queue/_ch3_se2_1.s: _3_stack_and_queue/queue/_ch3_se2_1.c.s
@@ -549,7 +510,6 @@ _3_stack_and_queue/queue/_ch3_se2_1.s: _3_stack_and_queue/queue/_ch3_se2_1.c.s
 # target to generate assembly for a file
 _3_stack_and_queue/queue/_ch3_se2_1.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_1.dir/build.make CMakeFiles/ch3_s2_1.dir/_3_stack_and_queue/queue/_ch3_se2_1.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/queue/_ch3_se2_1.c.s
 .PHONY : _3_stack_and_queue/queue/_ch3_se2_1.c.s
 
 _3_stack_and_queue/queue/_ch3_se2_2.o: _3_stack_and_queue/queue/_ch3_se2_2.c.o
@@ -559,7 +519,6 @@ _3_stack_and_queue/queue/_ch3_se2_2.o: _3_stack_and_queue/queue/_ch3_se2_2.c.o
 # target to build an object file
 _3_stack_and_queue/queue/_ch3_se2_2.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_2.dir/build.make CMakeFiles/ch3_s2_2.dir/_3_stack_and_queue/queue/_ch3_se2_2.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/queue/_ch3_se2_2.c.o
 .PHONY : _3_stack_and_queue/queue/_ch3_se2_2.c.o
 
 _3_stack_and_queue/queue/_ch3_se2_2.i: _3_stack_and_queue/queue/_ch3_se2_2.c.i
@@ -569,7 +528,6 @@ _3_stack_and_queue/queue/_ch3_se2_2.i: _3_stack_and_queue/queue/_ch3_se2_2.c.i
 # target to preprocess a source file
 _3_stack_and_queue/queue/_ch3_se2_2.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_2.dir/build.make CMakeFiles/ch3_s2_2.dir/_3_stack_and_queue/queue/_ch3_se2_2.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/queue/_ch3_se2_2.c.i
 .PHONY : _3_stack_and_queue/queue/_ch3_se2_2.c.i
 
 _3_stack_and_queue/queue/_ch3_se2_2.s: _3_stack_and_queue/queue/_ch3_se2_2.c.s
@@ -579,7 +537,6 @@ _3_stack_and_queue/queue/_ch3_se2_2.s: _3_stack_and_queue/queue/_ch3_se2_2.c.s
 # target to generate assembly for a file
 _3_stack_and_queue/queue/_ch3_se2_2.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_2.dir/build.make CMakeFiles/ch3_s2_2.dir/_3_stack_and_queue/queue/_ch3_se2_2.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/queue/_ch3_se2_2.c.s
 .PHONY : _3_stack_and_queue/queue/_ch3_se2_2.c.s
 
 _3_stack_and_queue/queue/_ch3_se2_3.o: _3_stack_and_queue/queue/_ch3_se2_3.c.o
@@ -588,7 +545,6 @@ _3_stack_and_queue/queue/_ch3_se2_3.o: _3_stack_and_queue/queue/_ch3_se2_3.c.o
 
 # target to build an object file
 _3_stack_and_queue/queue/_ch3_se2_3.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/queue/_ch3_se2_3.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_3.dir/build.make CMakeFiles/ch3_s2_3.dir/_3_stack_and_queue/queue/_ch3_se2_3.c.o
 .PHONY : _3_stack_and_queue/queue/_ch3_se2_3.c.o
 
@@ -598,7 +554,6 @@ _3_stack_and_queue/queue/_ch3_se2_3.i: _3_stack_and_queue/queue/_ch3_se2_3.c.i
 
 # target to preprocess a source file
 _3_stack_and_queue/queue/_ch3_se2_3.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/queue/_ch3_se2_3.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_3.dir/build.make CMakeFiles/ch3_s2_3.dir/_3_stack_and_queue/queue/_ch3_se2_3.c.i
 .PHONY : _3_stack_and_queue/queue/_ch3_se2_3.c.i
 
@@ -608,7 +563,6 @@ _3_stack_and_queue/queue/_ch3_se2_3.s: _3_stack_and_queue/queue/_ch3_se2_3.c.s
 
 # target to generate assembly for a file
 _3_stack_and_queue/queue/_ch3_se2_3.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/queue/_ch3_se2_3.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_3.dir/build.make CMakeFiles/ch3_s2_3.dir/_3_stack_and_queue/queue/_ch3_se2_3.c.s
 .PHONY : _3_stack_and_queue/queue/_ch3_se2_3.c.s
 
@@ -618,7 +572,6 @@ _3_stack_and_queue/queue/_ch3_se2_4.o: _3_stack_and_queue/queue/_ch3_se2_4.c.o
 
 # target to build an object file
 _3_stack_and_queue/queue/_ch3_se2_4.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/queue/_ch3_se2_4.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_4.dir/build.make CMakeFiles/ch3_s2_4.dir/_3_stack_and_queue/queue/_ch3_se2_4.c.o
 .PHONY : _3_stack_and_queue/queue/_ch3_se2_4.c.o
 
@@ -628,7 +581,6 @@ _3_stack_and_queue/queue/_ch3_se2_4.i: _3_stack_and_queue/queue/_ch3_se2_4.c.i
 
 # target to preprocess a source file
 _3_stack_and_queue/queue/_ch3_se2_4.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/queue/_ch3_se2_4.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_4.dir/build.make CMakeFiles/ch3_s2_4.dir/_3_stack_and_queue/queue/_ch3_se2_4.c.i
 .PHONY : _3_stack_and_queue/queue/_ch3_se2_4.c.i
 
@@ -638,7 +590,6 @@ _3_stack_and_queue/queue/_ch3_se2_4.s: _3_stack_and_queue/queue/_ch3_se2_4.c.s
 
 # target to generate assembly for a file
 _3_stack_and_queue/queue/_ch3_se2_4.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/queue/_ch3_se2_4.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_4.dir/build.make CMakeFiles/ch3_s2_4.dir/_3_stack_and_queue/queue/_ch3_se2_4.c.s
 .PHONY : _3_stack_and_queue/queue/_ch3_se2_4.c.s
 
@@ -699,33 +650,6 @@ _3_stack_and_queue/stack/_ch3_se1_3.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/stack/_ch3_se1_3.c.s
 .PHONY : _3_stack_and_queue/stack/_ch3_se1_3.c.s
 
-_3_stack_and_queue/stack/_ch3_se1_4.o: _3_stack_and_queue/stack/_ch3_se1_4.c.o
-
-.PHONY : _3_stack_and_queue/stack/_ch3_se1_4.o
-
-# target to build an object file
-_3_stack_and_queue/stack/_ch3_se1_4.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_4.dir/build.make CMakeFiles/ch3_s1_4.dir/_3_stack_and_queue/stack/_ch3_se1_4.c.o
-.PHONY : _3_stack_and_queue/stack/_ch3_se1_4.c.o
-
-_3_stack_and_queue/stack/_ch3_se1_4.i: _3_stack_and_queue/stack/_ch3_se1_4.c.i
-
-.PHONY : _3_stack_and_queue/stack/_ch3_se1_4.i
-
-# target to preprocess a source file
-_3_stack_and_queue/stack/_ch3_se1_4.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_4.dir/build.make CMakeFiles/ch3_s1_4.dir/_3_stack_and_queue/stack/_ch3_se1_4.c.i
-.PHONY : _3_stack_and_queue/stack/_ch3_se1_4.c.i
-
-_3_stack_and_queue/stack/_ch3_se1_4.s: _3_stack_and_queue/stack/_ch3_se1_4.c.s
-
-.PHONY : _3_stack_and_queue/stack/_ch3_se1_4.s
-
-# target to generate assembly for a file
-_3_stack_and_queue/stack/_ch3_se1_4.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_4.dir/build.make CMakeFiles/ch3_s1_4.dir/_3_stack_and_queue/stack/_ch3_se1_4.c.s
-.PHONY : _3_stack_and_queue/stack/_ch3_se1_4.c.s
-
 _4_string/StrMain.o: _4_string/StrMain.c.o
 
 .PHONY : _4_string/StrMain.o
@@ -733,7 +657,6 @@ _4_string/StrMain.o: _4_string/StrMain.c.o
 # target to build an object file
 _4_string/StrMain.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/str_main.dir/build.make CMakeFiles/str_main.dir/_4_string/StrMain.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_4_string/StrMain.c.o
 .PHONY : _4_string/StrMain.c.o
 
 _4_string/StrMain.i: _4_string/StrMain.c.i
@@ -743,7 +666,6 @@ _4_string/StrMain.i: _4_string/StrMain.c.i
 # target to preprocess a source file
 _4_string/StrMain.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/str_main.dir/build.make CMakeFiles/str_main.dir/_4_string/StrMain.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_4_string/StrMain.c.i
 .PHONY : _4_string/StrMain.c.i
 
 _4_string/StrMain.s: _4_string/StrMain.c.s
@@ -753,7 +675,6 @@ _4_string/StrMain.s: _4_string/StrMain.c.s
 # target to generate assembly for a file
 _4_string/StrMain.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/str_main.dir/build.make CMakeFiles/str_main.dir/_4_string/StrMain.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_4_string/StrMain.c.s
 .PHONY : _4_string/StrMain.c.s
 
 _5_tree/BiTreeMain.o: _5_tree/BiTreeMain.c.o
@@ -763,7 +684,6 @@ _5_tree/BiTreeMain.o: _5_tree/BiTreeMain.c.o
 # target to build an object file
 _5_tree/BiTreeMain.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_main.dir/build.make CMakeFiles/tree_main.dir/_5_tree/BiTreeMain.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_5_tree/BiTreeMain.c.o
 .PHONY : _5_tree/BiTreeMain.c.o
 
 _5_tree/BiTreeMain.i: _5_tree/BiTreeMain.c.i
@@ -773,7 +693,6 @@ _5_tree/BiTreeMain.i: _5_tree/BiTreeMain.c.i
 # target to preprocess a source file
 _5_tree/BiTreeMain.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_main.dir/build.make CMakeFiles/tree_main.dir/_5_tree/BiTreeMain.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_5_tree/BiTreeMain.c.i
 .PHONY : _5_tree/BiTreeMain.c.i
 
 _5_tree/BiTreeMain.s: _5_tree/BiTreeMain.c.s
@@ -783,7 +702,6 @@ _5_tree/BiTreeMain.s: _5_tree/BiTreeMain.c.s
 # target to generate assembly for a file
 _5_tree/BiTreeMain.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_main.dir/build.make CMakeFiles/tree_main.dir/_5_tree/BiTreeMain.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_5_tree/BiTreeMain.c.s
 .PHONY : _5_tree/BiTreeMain.c.s
 
 _5_tree/ThreadTreeMain.o: _5_tree/ThreadTreeMain.c.o
@@ -792,7 +710,6 @@ _5_tree/ThreadTreeMain.o: _5_tree/ThreadTreeMain.c.o
 
 # target to build an object file
 _5_tree/ThreadTreeMain.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_5_tree/ThreadTreeMain.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_tree_main.dir/build.make CMakeFiles/thread_tree_main.dir/_5_tree/ThreadTreeMain.c.o
 .PHONY : _5_tree/ThreadTreeMain.c.o
 
@@ -802,7 +719,6 @@ _5_tree/ThreadTreeMain.i: _5_tree/ThreadTreeMain.c.i
 
 # target to preprocess a source file
 _5_tree/ThreadTreeMain.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_5_tree/ThreadTreeMain.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_tree_main.dir/build.make CMakeFiles/thread_tree_main.dir/_5_tree/ThreadTreeMain.c.i
 .PHONY : _5_tree/ThreadTreeMain.c.i
 
@@ -812,7 +728,6 @@ _5_tree/ThreadTreeMain.s: _5_tree/ThreadTreeMain.c.s
 
 # target to generate assembly for a file
 _5_tree/ThreadTreeMain.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_5_tree/ThreadTreeMain.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_tree_main.dir/build.make CMakeFiles/thread_tree_main.dir/_5_tree/ThreadTreeMain.c.s
 .PHONY : _5_tree/ThreadTreeMain.c.s
 
@@ -822,7 +737,6 @@ _5_tree/_ch5_se2_5.o: _5_tree/_ch5_se2_5.c.o
 
 # target to build an object file
 _5_tree/_ch5_se2_5.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_5_tree/_ch5_se2_5.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se2_5.c.o
 .PHONY : _5_tree/_ch5_se2_5.c.o
 
@@ -832,7 +746,6 @@ _5_tree/_ch5_se2_5.i: _5_tree/_ch5_se2_5.c.i
 
 # target to preprocess a source file
 _5_tree/_ch5_se2_5.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_5_tree/_ch5_se2_5.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se2_5.c.i
 .PHONY : _5_tree/_ch5_se2_5.c.i
 
@@ -842,9 +755,92 @@ _5_tree/_ch5_se2_5.s: _5_tree/_ch5_se2_5.c.s
 
 # target to generate assembly for a file
 _5_tree/_ch5_se2_5.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_5_tree/_ch5_se2_5.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se2_5.c.s
 .PHONY : _5_tree/_ch5_se2_5.c.s
+
+_5_tree/_ch5_se3_4.o: _5_tree/_ch5_se3_4.c.o
+
+.PHONY : _5_tree/_ch5_se3_4.o
+
+# target to build an object file
+_5_tree/_ch5_se3_4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_4.dir/build.make CMakeFiles/ch5_s3_4.dir/_5_tree/_ch5_se3_4.c.o
+.PHONY : _5_tree/_ch5_se3_4.c.o
+
+_5_tree/_ch5_se3_4.i: _5_tree/_ch5_se3_4.c.i
+
+.PHONY : _5_tree/_ch5_se3_4.i
+
+# target to preprocess a source file
+_5_tree/_ch5_se3_4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_4.dir/build.make CMakeFiles/ch5_s3_4.dir/_5_tree/_ch5_se3_4.c.i
+.PHONY : _5_tree/_ch5_se3_4.c.i
+
+_5_tree/_ch5_se3_4.s: _5_tree/_ch5_se3_4.c.s
+
+.PHONY : _5_tree/_ch5_se3_4.s
+
+# target to generate assembly for a file
+_5_tree/_ch5_se3_4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_4.dir/build.make CMakeFiles/ch5_s3_4.dir/_5_tree/_ch5_se3_4.c.s
+.PHONY : _5_tree/_ch5_se3_4.c.s
+
+_5_tree/_ch5_se3_5.o: _5_tree/_ch5_se3_5.c.o
+
+.PHONY : _5_tree/_ch5_se3_5.o
+
+# target to build an object file
+_5_tree/_ch5_se3_5.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_5.dir/build.make CMakeFiles/ch5_s3_5.dir/_5_tree/_ch5_se3_5.c.o
+.PHONY : _5_tree/_ch5_se3_5.c.o
+
+_5_tree/_ch5_se3_5.i: _5_tree/_ch5_se3_5.c.i
+
+.PHONY : _5_tree/_ch5_se3_5.i
+
+# target to preprocess a source file
+_5_tree/_ch5_se3_5.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_5.dir/build.make CMakeFiles/ch5_s3_5.dir/_5_tree/_ch5_se3_5.c.i
+.PHONY : _5_tree/_ch5_se3_5.c.i
+
+_5_tree/_ch5_se3_5.s: _5_tree/_ch5_se3_5.c.s
+
+.PHONY : _5_tree/_ch5_se3_5.s
+
+# target to generate assembly for a file
+_5_tree/_ch5_se3_5.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_5.dir/build.make CMakeFiles/ch5_s3_5.dir/_5_tree/_ch5_se3_5.c.s
+.PHONY : _5_tree/_ch5_se3_5.c.s
+
+_5_tree/_ch5_se3_6.o: _5_tree/_ch5_se3_6.c.o
+
+.PHONY : _5_tree/_ch5_se3_6.o
+
+# target to build an object file
+_5_tree/_ch5_se3_6.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_6.dir/build.make CMakeFiles/ch5_s3_6.dir/_5_tree/_ch5_se3_6.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_6.c.o
+.PHONY : _5_tree/_ch5_se3_6.c.o
+
+_5_tree/_ch5_se3_6.i: _5_tree/_ch5_se3_6.c.i
+
+.PHONY : _5_tree/_ch5_se3_6.i
+
+# target to preprocess a source file
+_5_tree/_ch5_se3_6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_6.dir/build.make CMakeFiles/ch5_s3_6.dir/_5_tree/_ch5_se3_6.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_6.c.i
+.PHONY : _5_tree/_ch5_se3_6.c.i
+
+_5_tree/_ch5_se3_6.s: _5_tree/_ch5_se3_6.c.s
+
+.PHONY : _5_tree/_ch5_se3_6.s
+
+# target to generate assembly for a file
+_5_tree/_ch5_se3_6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_6.dir/build.make CMakeFiles/ch5_s3_6.dir/_5_tree/_ch5_se3_6.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_6.c.s
+.PHONY : _5_tree/_ch5_se3_6.c.s
 
 main.o: main.c.o
 
@@ -880,7 +876,6 @@ test/io_test.o: test/io_test.c.o
 # target to build an object file
 test/io_test.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/io_test.dir/build.make CMakeFiles/io_test.dir/test/io_test.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/test/io_test.c.o
 .PHONY : test/io_test.c.o
 
 test/io_test.i: test/io_test.c.i
@@ -890,7 +885,6 @@ test/io_test.i: test/io_test.c.i
 # target to preprocess a source file
 test/io_test.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/io_test.dir/build.make CMakeFiles/io_test.dir/test/io_test.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/test/io_test.c.i
 .PHONY : test/io_test.c.i
 
 test/io_test.s: test/io_test.c.s
@@ -900,7 +894,6 @@ test/io_test.s: test/io_test.c.s
 # target to generate assembly for a file
 test/io_test.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/io_test.dir/build.make CMakeFiles/io_test.dir/test/io_test.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/test/io_test.c.s
 .PHONY : test/io_test.c.s
 
 # Help Target
@@ -912,13 +905,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ch3_s1_3"
-	@echo "... ch3_s1_4"
 	@echo "... ch3_s2_1"
 	@echo "... ch3_s2_2"
 	@echo "... ch3_s2_3"
 	@echo "... ch3_s2_4"
 	@echo "... ch3_s3_4"
 	@echo "... ch5_s2_5"
+	@echo "... ch5_s3_4"
+	@echo "... ch5_s3_5"
+	@echo "... ch5_s3_6"
 	@echo "... clion_datastructure"
 	@echo "... expression_change"
 	@echo "... io_test"
@@ -928,9 +923,6 @@ help:
 	@echo "... str_main"
 	@echo "... thread_tree_main"
 	@echo "... tree_main"
-	@echo "... _3_stack_and_queue/application/_ch3_se3_3.o"
-	@echo "... _3_stack_and_queue/application/_ch3_se3_3.i"
-	@echo "... _3_stack_and_queue/application/_ch3_se3_3.s"
 	@echo "... _3_stack_and_queue/application/_ch3_se3_4.o"
 	@echo "... _3_stack_and_queue/application/_ch3_se3_4.i"
 	@echo "... _3_stack_and_queue/application/_ch3_se3_4.s"
@@ -940,9 +932,6 @@ help:
 	@echo "... _3_stack_and_queue/application/parentheses_match.o"
 	@echo "... _3_stack_and_queue/application/parentheses_match.i"
 	@echo "... _3_stack_and_queue/application/parentheses_match.s"
-	@echo "... _3_stack_and_queue/queue/LinkQueueMain.o"
-	@echo "... _3_stack_and_queue/queue/LinkQueueMain.i"
-	@echo "... _3_stack_and_queue/queue/LinkQueueMain.s"
 	@echo "... _3_stack_and_queue/queue/SqQueueMain.o"
 	@echo "... _3_stack_and_queue/queue/SqQueueMain.i"
 	@echo "... _3_stack_and_queue/queue/SqQueueMain.s"
@@ -964,9 +953,6 @@ help:
 	@echo "... _3_stack_and_queue/stack/_ch3_se1_3.o"
 	@echo "... _3_stack_and_queue/stack/_ch3_se1_3.i"
 	@echo "... _3_stack_and_queue/stack/_ch3_se1_3.s"
-	@echo "... _3_stack_and_queue/stack/_ch3_se1_4.o"
-	@echo "... _3_stack_and_queue/stack/_ch3_se1_4.i"
-	@echo "... _3_stack_and_queue/stack/_ch3_se1_4.s"
 	@echo "... _4_string/StrMain.o"
 	@echo "... _4_string/StrMain.i"
 	@echo "... _4_string/StrMain.s"
@@ -979,6 +965,15 @@ help:
 	@echo "... _5_tree/_ch5_se2_5.o"
 	@echo "... _5_tree/_ch5_se2_5.i"
 	@echo "... _5_tree/_ch5_se2_5.s"
+	@echo "... _5_tree/_ch5_se3_4.o"
+	@echo "... _5_tree/_ch5_se3_4.i"
+	@echo "... _5_tree/_ch5_se3_4.s"
+	@echo "... _5_tree/_ch5_se3_5.o"
+	@echo "... _5_tree/_ch5_se3_5.i"
+	@echo "... _5_tree/_ch5_se3_5.s"
+	@echo "... _5_tree/_ch5_se3_6.o"
+	@echo "... _5_tree/_ch5_se3_6.i"
+	@echo "... _5_tree/_ch5_se3_6.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

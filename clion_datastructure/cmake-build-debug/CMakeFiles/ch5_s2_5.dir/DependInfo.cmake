@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/_ch5_se2_5.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se2_5.c.o"
+  "/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/_ch5_se3_6.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_6.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

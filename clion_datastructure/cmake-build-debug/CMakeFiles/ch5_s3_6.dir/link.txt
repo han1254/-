@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/ch5_s3_6.dir/_5_tree/_ch5_se3_6.c.o  -o ch5_s3_6 

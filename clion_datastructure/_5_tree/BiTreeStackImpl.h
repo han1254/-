@@ -13,14 +13,14 @@
 typedef struct {
     BiTree stack[MaxTreeStackSize];
     int top;
-} ThreadTreeStack;
+} BiTreeStack;
 
 
-void InitTreeStack(ThreadTreeStack* stack) {
+void InitTreeStack(BiTreeStack* stack) {
     stack->top = -1;
 }
 
-int Pop(ThreadTreeStack* stack, BiTree* tree) {
+int Pop(BiTreeStack* stack, BiTree* tree) {
     if (stack->top == -1) {
         printf("Stack is empty\n");
         return 0;
@@ -29,7 +29,7 @@ int Pop(ThreadTreeStack* stack, BiTree* tree) {
     return 1;
 }
 
-int Push(ThreadTreeStack* stack, BiTree tree) {
+int Push(BiTreeStack* stack, BiTree tree) {
     if (stack->top == MaxTreeStackSize - 1) {
         printf("Stack is full\n");
         return 0;
@@ -38,7 +38,7 @@ int Push(ThreadTreeStack* stack, BiTree tree) {
     return 1;
 }
 
-int GetTop(ThreadTreeStack stack, BiTree* tree) {
+int GetTop(BiTreeStack stack, BiTree* tree) {
     if (stack.top == -1) {
         return 0;
     }
@@ -46,7 +46,7 @@ int GetTop(ThreadTreeStack stack, BiTree* tree) {
     return 1;
 }
 
-int StackEmpty(ThreadTreeStack stack) {
+int StackEmpty(BiTreeStack stack) {
     if (stack.top == -1) return 1;
     return 0;
 }

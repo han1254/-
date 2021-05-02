@@ -10,14 +10,14 @@
 typedef struct {
     BiTree queue[MaxTreeQueueSize];
     int front, rear;
-} ThreadTreeQueue;
+} BiTreeQueue;
 
 
-void InitQueue(ThreadTreeQueue* queue) {
+void InitQueue(BiTreeQueue* queue) {
     queue->rear = queue->front = 0;
 }
 
-int Enqueue(ThreadTreeQueue* queue, BiTree node) {
+int Enqueue(BiTreeQueue* queue, BiTree node) {
     if ((queue->rear + 1) % MaxTreeQueueSize == queue->front) {
         printf("Queue is full\n");
         return 0;
@@ -27,7 +27,7 @@ int Enqueue(ThreadTreeQueue* queue, BiTree node) {
     return 1;
 }
 
-int Dequeue(ThreadTreeQueue* queue, BiTree* res) {
+int Dequeue(BiTreeQueue* queue, BiTree* res) {
     if (queue->rear == queue->front) {
         printf("Queue is empty\n");
         return 0;
@@ -37,7 +37,7 @@ int Dequeue(ThreadTreeQueue* queue, BiTree* res) {
     return 1;
 }
 
-int QueueEmpty(ThreadTreeQueue queue) {
+int QueueEmpty(BiTreeQueue queue) {
     if (queue.rear == queue.front) return 1;
     return 0;
 }

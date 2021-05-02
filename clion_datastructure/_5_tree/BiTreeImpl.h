@@ -11,6 +11,45 @@
 #include "BiTreeQueueImpl.h"
 
 #include "stdio.h"
+
+static char bra[] = {"-/\\<"};
+
+void print_liner_tree(BiTree tree, int level) {
+    if (tree == NULL) return;
+
+    for (int i = 0; i < level; ++i) {
+        printf("|");
+    }
+    printf("[%c]\n", tree->data);
+
+    print_liner_tree(tree->lchild, level+1);
+    print_liner_tree(tree->rchild, level+1);
+}
+
+void print_tree(BiTree tree) {
+    print_liner_tree(tree, 1);
+}
+
+void puttree(BiTree t, int h) {
+    int i;
+
+    if (t != NULL) {
+        puttree(t->rchild, h + 1);
+
+        for (i = 0; i < h; i++)putchar('\t');
+
+        printf("%c ", t->data);
+
+
+        putchar(bra[((NULL != (t->lchild)) << 1) | (NULL != (t->rchild))]);
+
+        putchar('\n');
+
+        puttree(t->lchild, h + 1);
+
+    }
+}
+
 void visit(BiTree tree) {
     if (tree == NULL || tree->data == '#') {
         printf("Null node\n");
@@ -25,10 +64,10 @@ void visit(BiTree tree) {
  * @param s
  * @param len
  */
-void GenerateTree(BiTree root, const char* s, int len) {
+void GenerateTree(BiTree root, const char *s, int len) {
     int index = 0;
     int n = 2;
-    ThreadTreeQueue queue;
+    BiTreeQueue queue;
     InitQueue(&queue);
     Enqueue(&queue, root);
     BiTree tempTree;
@@ -37,17 +76,17 @@ void GenerateTree(BiTree root, const char* s, int len) {
         int parentCount = queue.rear - queue.front;
         for (int j = 0; j < parentCount; ++j) {
             Dequeue(&queue, &tempTree);
-            BiTNode* nodeL = NULL;
-            BiTNode* nodeR = NULL;
+            BiTNode *nodeL = NULL;
+            BiTNode *nodeR = NULL;
             if (tempTree != NULL) {
                 if (s[index] != '#') {
-                    nodeL = (BiTree)malloc(sizeof(BiTNode));
+                    nodeL = (BiTree) malloc(sizeof(BiTNode));
                     nodeL->data = s[index];
                 }
                 index++;
                 if (index >= len) break;
                 if (s[index] != '#') {
-                    nodeR = (BiTree)malloc(sizeof(BiTNode));
+                    nodeR = (BiTree) malloc(sizeof(BiTNode));
                     nodeR->data = s[index];
                 }
                 index++;
@@ -71,34 +110,34 @@ void GenerateTreeByInput(BiTree root) {
     int i = 2;
     int n = 2;
     char ch;
-    ThreadTreeQueue queue;
+    BiTreeQueue queue;
     InitQueue(&queue);
     Enqueue(&queue, root);
     BiTree tempTree;
     printf("input root\n");
-    ch = (char)getchar();
-    while(getchar()!='\n');
+    ch = (char) getchar();
+    while (getchar() != '\n');
     root->data = ch;
     while (!QueueEmpty(queue)) {
         printf("Now it's %dth level, you have to enter %d nodes(enter '#' as a symbol of null)\n", i, n);
         int parentCount = queue.rear - queue.front;
         for (int j = 0; j < parentCount; ++j) {
             Dequeue(&queue, &tempTree);
-            BiTNode* nodeL = NULL;
-            BiTNode* nodeR = NULL;
-            ch = (char)getchar();
+            BiTNode *nodeL = NULL;
+            BiTNode *nodeR = NULL;
+            ch = (char) getchar();
             if (tempTree != NULL) {
                 if (ch != '#') {
-                    nodeL = (BiTree)malloc(sizeof(BiTNode));
+                    nodeL = (BiTree) malloc(sizeof(BiTNode));
                     nodeL->data = ch;
                 }
                 tempTree->lchild = nodeL;
             }
 
-            ch = (char)getchar();
+            ch = (char) getchar();
             if (tempTree != NULL) {
                 if (ch != '#') {
-                    nodeR = (BiTree)malloc(sizeof(BiTNode));
+                    nodeR = (BiTree) malloc(sizeof(BiTNode));
                     nodeR->data = ch;
                 }
                 tempTree->rchild = nodeR;
@@ -109,7 +148,7 @@ void GenerateTreeByInput(BiTree root) {
         }
         i++;
         n *= 2;
-        while(getchar()!='\n');
+        while (getchar() != '\n');
         printf("end the input?(y or n)\n");
         if (getchar() == 'y' || getchar() == 'Y') {
             break;
@@ -158,7 +197,7 @@ void PostOrder(BiTree tree) {
 
 void InOrder_Iter(BiTree root) {
     printf("非递归中序遍历\n");
-    ThreadTreeStack stack;
+    BiTreeStack stack;
     InitTreeStack(&stack);
     BiTree ptr = root;
     while (ptr || !StackEmpty(stack)) {//为何这里要判断ptr不为空的时候也可以？因为栈初始的时候是空的，必须通过这个
@@ -176,10 +215,10 @@ void InOrder_Iter(BiTree root) {
 
 void PreOrder_Iter(BiTree tree) {
     printf("非递归先序遍历\n");
-    ThreadTreeStack stack;
+    BiTreeStack stack;
     InitTreeStack(&stack);
     BiTree ptr = tree;
-    while(ptr || !StackEmpty(stack)) {
+    while (ptr || !StackEmpty(stack)) {
         if (ptr) {
             visit(ptr);//他与中序遍历的区别就在打印节点的时刻
             Push(&stack, ptr);
@@ -193,7 +232,7 @@ void PreOrder_Iter(BiTree tree) {
 
 void PostOrder_Iter(BiTree tree) {
     printf("非递归后序遍历\n");
-    ThreadTreeStack stack;
+    BiTreeStack stack;
     InitTreeStack(&stack);
     BiTree ptr = tree;
     BiTree from = NULL;
@@ -219,11 +258,11 @@ void PostOrder_Iter(BiTree tree) {
 
 void LevelOrder(BiTree tree) {
     printf("层次遍历\n");
-    ThreadTreeQueue queue;
+    BiTreeQueue queue;
     InitQueue(&queue);
     Enqueue(&queue, tree);
     BiTree node;
-    while(!QueueEmpty(queue)) {
+    while (!QueueEmpty(queue)) {
         Dequeue(&queue, &node);
         visit(node);
         if (node->lchild != NULL)
