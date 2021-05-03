@@ -76,17 +76,6 @@ CMAKE_BINARY_DIR = /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/han1254/Downloads/clion-2020.2.5/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -97,6 +86,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/home/han1254/Downloads/clion-2020.2.5/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -131,225 +131,56 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ch5_s3_6
+# Target rules for targets named ch5_s3_12
 
 # Build rule for target.
-ch5_s3_6: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch5_s3_6
-.PHONY : ch5_s3_6
+ch5_s3_12: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch5_s3_12
+.PHONY : ch5_s3_12
 
 # fast build rule for target.
-ch5_s3_6/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_6.dir/build.make CMakeFiles/ch5_s3_6.dir/build
-.PHONY : ch5_s3_6/fast
+ch5_s3_12/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_12.dir/build.make CMakeFiles/ch5_s3_12.dir/build
+.PHONY : ch5_s3_12/fast
 
 #=============================================================================
-# Target rules for targets named ch5_s3_5
+# Target rules for targets named ch5_s3_11
 
 # Build rule for target.
-ch5_s3_5: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch5_s3_5
-.PHONY : ch5_s3_5
+ch5_s3_11: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch5_s3_11
+.PHONY : ch5_s3_11
 
 # fast build rule for target.
-ch5_s3_5/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_5.dir/build.make CMakeFiles/ch5_s3_5.dir/build
-.PHONY : ch5_s3_5/fast
+ch5_s3_11/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_11.dir/build.make CMakeFiles/ch5_s3_11.dir/build
+.PHONY : ch5_s3_11/fast
 
 #=============================================================================
-# Target rules for targets named tree_main
+# Target rules for targets named ch5_s3_10
 
 # Build rule for target.
-tree_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tree_main
-.PHONY : tree_main
+ch5_s3_10: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch5_s3_10
+.PHONY : ch5_s3_10
 
 # fast build rule for target.
-tree_main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_main.dir/build.make CMakeFiles/tree_main.dir/build
-.PHONY : tree_main/fast
+ch5_s3_10/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_10.dir/build.make CMakeFiles/ch5_s3_10.dir/build
+.PHONY : ch5_s3_10/fast
 
 #=============================================================================
-# Target rules for targets named ch5_s3_4
+# Target rules for targets named ch5_s3_9
 
 # Build rule for target.
-ch5_s3_4: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch5_s3_4
-.PHONY : ch5_s3_4
+ch5_s3_9: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch5_s3_9
+.PHONY : ch5_s3_9
 
 # fast build rule for target.
-ch5_s3_4/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_4.dir/build.make CMakeFiles/ch5_s3_4.dir/build
-.PHONY : ch5_s3_4/fast
-
-#=============================================================================
-# Target rules for targets named io_test
-
-# Build rule for target.
-io_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 io_test
-.PHONY : io_test
-
-# fast build rule for target.
-io_test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/io_test.dir/build.make CMakeFiles/io_test.dir/build
-.PHONY : io_test/fast
-
-#=============================================================================
-# Target rules for targets named ch3_s3_4
-
-# Build rule for target.
-ch3_s3_4: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch3_s3_4
-.PHONY : ch3_s3_4
-
-# fast build rule for target.
-ch3_s3_4/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s3_4.dir/build.make CMakeFiles/ch3_s3_4.dir/build
-.PHONY : ch3_s3_4/fast
-
-#=============================================================================
-# Target rules for targets named parent_match
-
-# Build rule for target.
-parent_match: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parent_match
-.PHONY : parent_match
-
-# fast build rule for target.
-parent_match/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parent_match.dir/build.make CMakeFiles/parent_match.dir/build
-.PHONY : parent_match/fast
-
-#=============================================================================
-# Target rules for targets named link_stack_main
-
-# Build rule for target.
-link_stack_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 link_stack_main
-.PHONY : link_stack_main
-
-# fast build rule for target.
-link_stack_main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/link_stack_main.dir/build.make CMakeFiles/link_stack_main.dir/build
-.PHONY : link_stack_main/fast
-
-#=============================================================================
-# Target rules for targets named str_main
-
-# Build rule for target.
-str_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 str_main
-.PHONY : str_main
-
-# fast build rule for target.
-str_main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/str_main.dir/build.make CMakeFiles/str_main.dir/build
-.PHONY : str_main/fast
-
-#=============================================================================
-# Target rules for targets named ch3_s1_3
-
-# Build rule for target.
-ch3_s1_3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch3_s1_3
-.PHONY : ch3_s1_3
-
-# fast build rule for target.
-ch3_s1_3/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/build
-.PHONY : ch3_s1_3/fast
-
-#=============================================================================
-# Target rules for targets named ch3_s2_1
-
-# Build rule for target.
-ch3_s2_1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch3_s2_1
-.PHONY : ch3_s2_1
-
-# fast build rule for target.
-ch3_s2_1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_1.dir/build.make CMakeFiles/ch3_s2_1.dir/build
-.PHONY : ch3_s2_1/fast
-
-#=============================================================================
-# Target rules for targets named ch3_s2_2
-
-# Build rule for target.
-ch3_s2_2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch3_s2_2
-.PHONY : ch3_s2_2
-
-# fast build rule for target.
-ch3_s2_2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_2.dir/build.make CMakeFiles/ch3_s2_2.dir/build
-.PHONY : ch3_s2_2/fast
-
-#=============================================================================
-# Target rules for targets named clion_datastructure
-
-# Build rule for target.
-clion_datastructure: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clion_datastructure
-.PHONY : clion_datastructure
-
-# fast build rule for target.
-clion_datastructure/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clion_datastructure.dir/build.make CMakeFiles/clion_datastructure.dir/build
-.PHONY : clion_datastructure/fast
-
-#=============================================================================
-# Target rules for targets named sq_queue_main
-
-# Build rule for target.
-sq_queue_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sq_queue_main
-.PHONY : sq_queue_main
-
-# fast build rule for target.
-sq_queue_main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sq_queue_main.dir/build.make CMakeFiles/sq_queue_main.dir/build
-.PHONY : sq_queue_main/fast
-
-#=============================================================================
-# Target rules for targets named ch3_s2_3
-
-# Build rule for target.
-ch3_s2_3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch3_s2_3
-.PHONY : ch3_s2_3
-
-# fast build rule for target.
-ch3_s2_3/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_3.dir/build.make CMakeFiles/ch3_s2_3.dir/build
-.PHONY : ch3_s2_3/fast
-
-#=============================================================================
-# Target rules for targets named thread_tree_main
-
-# Build rule for target.
-thread_tree_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 thread_tree_main
-.PHONY : thread_tree_main
-
-# fast build rule for target.
-thread_tree_main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_tree_main.dir/build.make CMakeFiles/thread_tree_main.dir/build
-.PHONY : thread_tree_main/fast
-
-#=============================================================================
-# Target rules for targets named ch5_s2_5
-
-# Build rule for target.
-ch5_s2_5: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch5_s2_5
-.PHONY : ch5_s2_5
-
-# fast build rule for target.
-ch5_s2_5/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/build
-.PHONY : ch5_s2_5/fast
+ch5_s3_9/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_9.dir/build.make CMakeFiles/ch5_s3_9.dir/build
+.PHONY : ch5_s3_9/fast
 
 #=============================================================================
 # Target rules for targets named ch3_s2_4
@@ -365,6 +196,240 @@ ch3_s2_4/fast:
 .PHONY : ch3_s2_4/fast
 
 #=============================================================================
+# Target rules for targets named ch3_s2_3
+
+# Build rule for target.
+ch3_s2_3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch3_s2_3
+.PHONY : ch3_s2_3
+
+# fast build rule for target.
+ch3_s2_3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_3.dir/build.make CMakeFiles/ch3_s2_3.dir/build
+.PHONY : ch3_s2_3/fast
+
+#=============================================================================
+# Target rules for targets named sq_queue_main
+
+# Build rule for target.
+sq_queue_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sq_queue_main
+.PHONY : sq_queue_main
+
+# fast build rule for target.
+sq_queue_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sq_queue_main.dir/build.make CMakeFiles/sq_queue_main.dir/build
+.PHONY : sq_queue_main/fast
+
+#=============================================================================
+# Target rules for targets named clion_datastructure
+
+# Build rule for target.
+clion_datastructure: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clion_datastructure
+.PHONY : clion_datastructure
+
+# fast build rule for target.
+clion_datastructure/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clion_datastructure.dir/build.make CMakeFiles/clion_datastructure.dir/build
+.PHONY : clion_datastructure/fast
+
+#=============================================================================
+# Target rules for targets named ch3_s2_2
+
+# Build rule for target.
+ch3_s2_2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch3_s2_2
+.PHONY : ch3_s2_2
+
+# fast build rule for target.
+ch3_s2_2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_2.dir/build.make CMakeFiles/ch3_s2_2.dir/build
+.PHONY : ch3_s2_2/fast
+
+#=============================================================================
+# Target rules for targets named ch3_s1_3
+
+# Build rule for target.
+ch3_s1_3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch3_s1_3
+.PHONY : ch3_s1_3
+
+# fast build rule for target.
+ch3_s1_3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/build
+.PHONY : ch3_s1_3/fast
+
+#=============================================================================
+# Target rules for targets named str_main
+
+# Build rule for target.
+str_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 str_main
+.PHONY : str_main
+
+# fast build rule for target.
+str_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/str_main.dir/build.make CMakeFiles/str_main.dir/build
+.PHONY : str_main/fast
+
+#=============================================================================
+# Target rules for targets named link_stack_main
+
+# Build rule for target.
+link_stack_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 link_stack_main
+.PHONY : link_stack_main
+
+# fast build rule for target.
+link_stack_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/link_stack_main.dir/build.make CMakeFiles/link_stack_main.dir/build
+.PHONY : link_stack_main/fast
+
+#=============================================================================
+# Target rules for targets named ch5_s2_5
+
+# Build rule for target.
+ch5_s2_5: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch5_s2_5
+.PHONY : ch5_s2_5
+
+# fast build rule for target.
+ch5_s2_5/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/build
+.PHONY : ch5_s2_5/fast
+
+#=============================================================================
+# Target rules for targets named parent_match
+
+# Build rule for target.
+parent_match: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parent_match
+.PHONY : parent_match
+
+# fast build rule for target.
+parent_match/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parent_match.dir/build.make CMakeFiles/parent_match.dir/build
+.PHONY : parent_match/fast
+
+#=============================================================================
+# Target rules for targets named ch5_s3_7
+
+# Build rule for target.
+ch5_s3_7: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch5_s3_7
+.PHONY : ch5_s3_7
+
+# fast build rule for target.
+ch5_s3_7/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_7.dir/build.make CMakeFiles/ch5_s3_7.dir/build
+.PHONY : ch5_s3_7/fast
+
+#=============================================================================
+# Target rules for targets named ch3_s3_4
+
+# Build rule for target.
+ch3_s3_4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch3_s3_4
+.PHONY : ch3_s3_4
+
+# fast build rule for target.
+ch3_s3_4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s3_4.dir/build.make CMakeFiles/ch3_s3_4.dir/build
+.PHONY : ch3_s3_4/fast
+
+#=============================================================================
+# Target rules for targets named ch3_s2_1
+
+# Build rule for target.
+ch3_s2_1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch3_s2_1
+.PHONY : ch3_s2_1
+
+# fast build rule for target.
+ch3_s2_1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s2_1.dir/build.make CMakeFiles/ch3_s2_1.dir/build
+.PHONY : ch3_s2_1/fast
+
+#=============================================================================
+# Target rules for targets named io_test
+
+# Build rule for target.
+io_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 io_test
+.PHONY : io_test
+
+# fast build rule for target.
+io_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/io_test.dir/build.make CMakeFiles/io_test.dir/build
+.PHONY : io_test/fast
+
+#=============================================================================
+# Target rules for targets named ch5_s3_4
+
+# Build rule for target.
+ch5_s3_4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch5_s3_4
+.PHONY : ch5_s3_4
+
+# fast build rule for target.
+ch5_s3_4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_4.dir/build.make CMakeFiles/ch5_s3_4.dir/build
+.PHONY : ch5_s3_4/fast
+
+#=============================================================================
+# Target rules for targets named tree_main
+
+# Build rule for target.
+tree_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tree_main
+.PHONY : tree_main
+
+# fast build rule for target.
+tree_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_main.dir/build.make CMakeFiles/tree_main.dir/build
+.PHONY : tree_main/fast
+
+#=============================================================================
+# Target rules for targets named ch5_s3_5
+
+# Build rule for target.
+ch5_s3_5: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch5_s3_5
+.PHONY : ch5_s3_5
+
+# fast build rule for target.
+ch5_s3_5/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_5.dir/build.make CMakeFiles/ch5_s3_5.dir/build
+.PHONY : ch5_s3_5/fast
+
+#=============================================================================
+# Target rules for targets named thread_tree_main
+
+# Build rule for target.
+thread_tree_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 thread_tree_main
+.PHONY : thread_tree_main
+
+# fast build rule for target.
+thread_tree_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_tree_main.dir/build.make CMakeFiles/thread_tree_main.dir/build
+.PHONY : thread_tree_main/fast
+
+#=============================================================================
+# Target rules for targets named ch5_s3_6
+
+# Build rule for target.
+ch5_s3_6: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch5_s3_6
+.PHONY : ch5_s3_6
+
+# fast build rule for target.
+ch5_s3_6/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_6.dir/build.make CMakeFiles/ch5_s3_6.dir/build
+.PHONY : ch5_s3_6/fast
+
+#=============================================================================
 # Target rules for targets named expression_change
 
 # Build rule for target.
@@ -376,6 +441,19 @@ expression_change: cmake_check_build_system
 expression_change/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/expression_change.dir/build.make CMakeFiles/expression_change.dir/build
 .PHONY : expression_change/fast
+
+#=============================================================================
+# Target rules for targets named ch5_s3_8
+
+# Build rule for target.
+ch5_s3_8: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch5_s3_8
+.PHONY : ch5_s3_8
+
+# fast build rule for target.
+ch5_s3_8/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_8.dir/build.make CMakeFiles/ch5_s3_8.dir/build
+.PHONY : ch5_s3_8/fast
 
 _3_stack_and_queue/application/_ch3_se3_4.o: _3_stack_and_queue/application/_ch3_se3_4.c.o
 
@@ -599,8 +677,8 @@ _3_stack_and_queue/stack/LinkStackMain.o: _3_stack_and_queue/stack/LinkStackMain
 
 # target to build an object file
 _3_stack_and_queue/stack/LinkStackMain.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/link_stack_main.dir/build.make CMakeFiles/link_stack_main.dir/_3_stack_and_queue/stack/LinkStackMain.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clion_datastructure.dir/build.make CMakeFiles/clion_datastructure.dir/_3_stack_and_queue/stack/LinkStackMain.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/link_stack_main.dir/build.make CMakeFiles/link_stack_main.dir/_3_stack_and_queue/stack/LinkStackMain.c.o
 .PHONY : _3_stack_and_queue/stack/LinkStackMain.c.o
 
 _3_stack_and_queue/stack/LinkStackMain.i: _3_stack_and_queue/stack/LinkStackMain.c.i
@@ -609,8 +687,8 @@ _3_stack_and_queue/stack/LinkStackMain.i: _3_stack_and_queue/stack/LinkStackMain
 
 # target to preprocess a source file
 _3_stack_and_queue/stack/LinkStackMain.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/link_stack_main.dir/build.make CMakeFiles/link_stack_main.dir/_3_stack_and_queue/stack/LinkStackMain.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clion_datastructure.dir/build.make CMakeFiles/clion_datastructure.dir/_3_stack_and_queue/stack/LinkStackMain.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/link_stack_main.dir/build.make CMakeFiles/link_stack_main.dir/_3_stack_and_queue/stack/LinkStackMain.c.i
 .PHONY : _3_stack_and_queue/stack/LinkStackMain.c.i
 
 _3_stack_and_queue/stack/LinkStackMain.s: _3_stack_and_queue/stack/LinkStackMain.c.s
@@ -619,8 +697,8 @@ _3_stack_and_queue/stack/LinkStackMain.s: _3_stack_and_queue/stack/LinkStackMain
 
 # target to generate assembly for a file
 _3_stack_and_queue/stack/LinkStackMain.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/link_stack_main.dir/build.make CMakeFiles/link_stack_main.dir/_3_stack_and_queue/stack/LinkStackMain.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clion_datastructure.dir/build.make CMakeFiles/clion_datastructure.dir/_3_stack_and_queue/stack/LinkStackMain.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/link_stack_main.dir/build.make CMakeFiles/link_stack_main.dir/_3_stack_and_queue/stack/LinkStackMain.c.s
 .PHONY : _3_stack_and_queue/stack/LinkStackMain.c.s
 
 _3_stack_and_queue/stack/_ch3_se1_3.o: _3_stack_and_queue/stack/_ch3_se1_3.c.o
@@ -758,6 +836,96 @@ _5_tree/_ch5_se2_5.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se2_5.c.s
 .PHONY : _5_tree/_ch5_se2_5.c.s
 
+_5_tree/_ch5_se3_10.o: _5_tree/_ch5_se3_10.c.o
+
+.PHONY : _5_tree/_ch5_se3_10.o
+
+# target to build an object file
+_5_tree/_ch5_se3_10.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_10.dir/build.make CMakeFiles/ch5_s3_10.dir/_5_tree/_ch5_se3_10.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_10.c.o
+.PHONY : _5_tree/_ch5_se3_10.c.o
+
+_5_tree/_ch5_se3_10.i: _5_tree/_ch5_se3_10.c.i
+
+.PHONY : _5_tree/_ch5_se3_10.i
+
+# target to preprocess a source file
+_5_tree/_ch5_se3_10.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_10.dir/build.make CMakeFiles/ch5_s3_10.dir/_5_tree/_ch5_se3_10.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_10.c.i
+.PHONY : _5_tree/_ch5_se3_10.c.i
+
+_5_tree/_ch5_se3_10.s: _5_tree/_ch5_se3_10.c.s
+
+.PHONY : _5_tree/_ch5_se3_10.s
+
+# target to generate assembly for a file
+_5_tree/_ch5_se3_10.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_10.dir/build.make CMakeFiles/ch5_s3_10.dir/_5_tree/_ch5_se3_10.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_10.c.s
+.PHONY : _5_tree/_ch5_se3_10.c.s
+
+_5_tree/_ch5_se3_11.o: _5_tree/_ch5_se3_11.c.o
+
+.PHONY : _5_tree/_ch5_se3_11.o
+
+# target to build an object file
+_5_tree/_ch5_se3_11.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_11.dir/build.make CMakeFiles/ch5_s3_11.dir/_5_tree/_ch5_se3_11.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_11.c.o
+.PHONY : _5_tree/_ch5_se3_11.c.o
+
+_5_tree/_ch5_se3_11.i: _5_tree/_ch5_se3_11.c.i
+
+.PHONY : _5_tree/_ch5_se3_11.i
+
+# target to preprocess a source file
+_5_tree/_ch5_se3_11.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_11.dir/build.make CMakeFiles/ch5_s3_11.dir/_5_tree/_ch5_se3_11.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_11.c.i
+.PHONY : _5_tree/_ch5_se3_11.c.i
+
+_5_tree/_ch5_se3_11.s: _5_tree/_ch5_se3_11.c.s
+
+.PHONY : _5_tree/_ch5_se3_11.s
+
+# target to generate assembly for a file
+_5_tree/_ch5_se3_11.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_11.dir/build.make CMakeFiles/ch5_s3_11.dir/_5_tree/_ch5_se3_11.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_11.c.s
+.PHONY : _5_tree/_ch5_se3_11.c.s
+
+_5_tree/_ch5_se3_12.o: _5_tree/_ch5_se3_12.c.o
+
+.PHONY : _5_tree/_ch5_se3_12.o
+
+# target to build an object file
+_5_tree/_ch5_se3_12.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_12.dir/build.make CMakeFiles/ch5_s3_12.dir/_5_tree/_ch5_se3_12.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_12.c.o
+.PHONY : _5_tree/_ch5_se3_12.c.o
+
+_5_tree/_ch5_se3_12.i: _5_tree/_ch5_se3_12.c.i
+
+.PHONY : _5_tree/_ch5_se3_12.i
+
+# target to preprocess a source file
+_5_tree/_ch5_se3_12.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_12.dir/build.make CMakeFiles/ch5_s3_12.dir/_5_tree/_ch5_se3_12.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_12.c.i
+.PHONY : _5_tree/_ch5_se3_12.c.i
+
+_5_tree/_ch5_se3_12.s: _5_tree/_ch5_se3_12.c.s
+
+.PHONY : _5_tree/_ch5_se3_12.s
+
+# target to generate assembly for a file
+_5_tree/_ch5_se3_12.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_12.dir/build.make CMakeFiles/ch5_s3_12.dir/_5_tree/_ch5_se3_12.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_12.c.s
+.PHONY : _5_tree/_ch5_se3_12.c.s
+
 _5_tree/_ch5_se3_4.o: _5_tree/_ch5_se3_4.c.o
 
 .PHONY : _5_tree/_ch5_se3_4.o
@@ -818,8 +986,8 @@ _5_tree/_ch5_se3_6.o: _5_tree/_ch5_se3_6.c.o
 
 # target to build an object file
 _5_tree/_ch5_se3_6.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_6.dir/build.make CMakeFiles/ch5_s3_6.dir/_5_tree/_ch5_se3_6.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_6.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_6.dir/build.make CMakeFiles/ch5_s3_6.dir/_5_tree/_ch5_se3_6.c.o
 .PHONY : _5_tree/_ch5_se3_6.c.o
 
 _5_tree/_ch5_se3_6.i: _5_tree/_ch5_se3_6.c.i
@@ -828,8 +996,8 @@ _5_tree/_ch5_se3_6.i: _5_tree/_ch5_se3_6.c.i
 
 # target to preprocess a source file
 _5_tree/_ch5_se3_6.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_6.dir/build.make CMakeFiles/ch5_s3_6.dir/_5_tree/_ch5_se3_6.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_6.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_6.dir/build.make CMakeFiles/ch5_s3_6.dir/_5_tree/_ch5_se3_6.c.i
 .PHONY : _5_tree/_ch5_se3_6.c.i
 
 _5_tree/_ch5_se3_6.s: _5_tree/_ch5_se3_6.c.s
@@ -838,9 +1006,99 @@ _5_tree/_ch5_se3_6.s: _5_tree/_ch5_se3_6.c.s
 
 # target to generate assembly for a file
 _5_tree/_ch5_se3_6.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_6.dir/build.make CMakeFiles/ch5_s3_6.dir/_5_tree/_ch5_se3_6.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_6.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_6.dir/build.make CMakeFiles/ch5_s3_6.dir/_5_tree/_ch5_se3_6.c.s
 .PHONY : _5_tree/_ch5_se3_6.c.s
+
+_5_tree/_ch5_se3_7.o: _5_tree/_ch5_se3_7.c.o
+
+.PHONY : _5_tree/_ch5_se3_7.o
+
+# target to build an object file
+_5_tree/_ch5_se3_7.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_7.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_7.dir/build.make CMakeFiles/ch5_s3_7.dir/_5_tree/_ch5_se3_7.c.o
+.PHONY : _5_tree/_ch5_se3_7.c.o
+
+_5_tree/_ch5_se3_7.i: _5_tree/_ch5_se3_7.c.i
+
+.PHONY : _5_tree/_ch5_se3_7.i
+
+# target to preprocess a source file
+_5_tree/_ch5_se3_7.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_7.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_7.dir/build.make CMakeFiles/ch5_s3_7.dir/_5_tree/_ch5_se3_7.c.i
+.PHONY : _5_tree/_ch5_se3_7.c.i
+
+_5_tree/_ch5_se3_7.s: _5_tree/_ch5_se3_7.c.s
+
+.PHONY : _5_tree/_ch5_se3_7.s
+
+# target to generate assembly for a file
+_5_tree/_ch5_se3_7.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_7.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_7.dir/build.make CMakeFiles/ch5_s3_7.dir/_5_tree/_ch5_se3_7.c.s
+.PHONY : _5_tree/_ch5_se3_7.c.s
+
+_5_tree/_ch5_se3_8.o: _5_tree/_ch5_se3_8.c.o
+
+.PHONY : _5_tree/_ch5_se3_8.o
+
+# target to build an object file
+_5_tree/_ch5_se3_8.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_8.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_8.dir/build.make CMakeFiles/ch5_s3_8.dir/_5_tree/_ch5_se3_8.c.o
+.PHONY : _5_tree/_ch5_se3_8.c.o
+
+_5_tree/_ch5_se3_8.i: _5_tree/_ch5_se3_8.c.i
+
+.PHONY : _5_tree/_ch5_se3_8.i
+
+# target to preprocess a source file
+_5_tree/_ch5_se3_8.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_8.dir/build.make CMakeFiles/ch5_s3_8.dir/_5_tree/_ch5_se3_8.c.i
+.PHONY : _5_tree/_ch5_se3_8.c.i
+
+_5_tree/_ch5_se3_8.s: _5_tree/_ch5_se3_8.c.s
+
+.PHONY : _5_tree/_ch5_se3_8.s
+
+# target to generate assembly for a file
+_5_tree/_ch5_se3_8.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_8.dir/build.make CMakeFiles/ch5_s3_8.dir/_5_tree/_ch5_se3_8.c.s
+.PHONY : _5_tree/_ch5_se3_8.c.s
+
+_5_tree/_ch5_se3_9.o: _5_tree/_ch5_se3_9.c.o
+
+.PHONY : _5_tree/_ch5_se3_9.o
+
+# target to build an object file
+_5_tree/_ch5_se3_9.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_9.dir/build.make CMakeFiles/ch5_s3_9.dir/_5_tree/_ch5_se3_9.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_9.c.o
+.PHONY : _5_tree/_ch5_se3_9.c.o
+
+_5_tree/_ch5_se3_9.i: _5_tree/_ch5_se3_9.c.i
+
+.PHONY : _5_tree/_ch5_se3_9.i
+
+# target to preprocess a source file
+_5_tree/_ch5_se3_9.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_9.dir/build.make CMakeFiles/ch5_s3_9.dir/_5_tree/_ch5_se3_9.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_9.c.i
+.PHONY : _5_tree/_ch5_se3_9.c.i
+
+_5_tree/_ch5_se3_9.s: _5_tree/_ch5_se3_9.c.s
+
+.PHONY : _5_tree/_ch5_se3_9.s
+
+# target to generate assembly for a file
+_5_tree/_ch5_se3_9.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_9.dir/build.make CMakeFiles/ch5_s3_9.dir/_5_tree/_ch5_se3_9.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_9.c.s
+.PHONY : _5_tree/_ch5_se3_9.c.s
 
 main.o: main.c.o
 
@@ -911,9 +1169,15 @@ help:
 	@echo "... ch3_s2_4"
 	@echo "... ch3_s3_4"
 	@echo "... ch5_s2_5"
+	@echo "... ch5_s3_10"
+	@echo "... ch5_s3_11"
+	@echo "... ch5_s3_12"
 	@echo "... ch5_s3_4"
 	@echo "... ch5_s3_5"
 	@echo "... ch5_s3_6"
+	@echo "... ch5_s3_7"
+	@echo "... ch5_s3_8"
+	@echo "... ch5_s3_9"
 	@echo "... clion_datastructure"
 	@echo "... expression_change"
 	@echo "... io_test"
@@ -965,6 +1229,15 @@ help:
 	@echo "... _5_tree/_ch5_se2_5.o"
 	@echo "... _5_tree/_ch5_se2_5.i"
 	@echo "... _5_tree/_ch5_se2_5.s"
+	@echo "... _5_tree/_ch5_se3_10.o"
+	@echo "... _5_tree/_ch5_se3_10.i"
+	@echo "... _5_tree/_ch5_se3_10.s"
+	@echo "... _5_tree/_ch5_se3_11.o"
+	@echo "... _5_tree/_ch5_se3_11.i"
+	@echo "... _5_tree/_ch5_se3_11.s"
+	@echo "... _5_tree/_ch5_se3_12.o"
+	@echo "... _5_tree/_ch5_se3_12.i"
+	@echo "... _5_tree/_ch5_se3_12.s"
 	@echo "... _5_tree/_ch5_se3_4.o"
 	@echo "... _5_tree/_ch5_se3_4.i"
 	@echo "... _5_tree/_ch5_se3_4.s"
@@ -974,6 +1247,15 @@ help:
 	@echo "... _5_tree/_ch5_se3_6.o"
 	@echo "... _5_tree/_ch5_se3_6.i"
 	@echo "... _5_tree/_ch5_se3_6.s"
+	@echo "... _5_tree/_ch5_se3_7.o"
+	@echo "... _5_tree/_ch5_se3_7.i"
+	@echo "... _5_tree/_ch5_se3_7.s"
+	@echo "... _5_tree/_ch5_se3_8.o"
+	@echo "... _5_tree/_ch5_se3_8.i"
+	@echo "... _5_tree/_ch5_se3_8.s"
+	@echo "... _5_tree/_ch5_se3_9.o"
+	@echo "... _5_tree/_ch5_se3_9.i"
+	@echo "... _5_tree/_ch5_se3_9.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
