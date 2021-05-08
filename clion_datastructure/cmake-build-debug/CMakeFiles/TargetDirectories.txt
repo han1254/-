@@ -1,3 +1,8 @@
+/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s3_17.dir
+/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s3_15.dir
+/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s3_14.dir
+/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s3_16.dir
+/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s3_13.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s3_12.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s3_11.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/rebuild_cache.dir
@@ -23,5 +28,6 @@
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s3_5.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/thread_tree_main.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s3_6.dir
+/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s3_18.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/expression_change.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s3_8.dir

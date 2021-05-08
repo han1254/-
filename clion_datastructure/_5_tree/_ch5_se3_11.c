@@ -13,7 +13,6 @@ void free_tree(BiTree tree) {
     }
 }
 /**
- * 错误，无法找到其与父结点的联系，导致无法删除父结点对他的指针
  * @param tree
  * @param x
  */
@@ -48,7 +47,7 @@ int main() {
     GenerateTree(tree1, t, strlen(t));//可以使用这个方法直接用字符串创建树
     char res;
     int index = 0;
-    in_free(tree1, '+');
+    in_free(tree1, '*');
 
     print_tree(tree1);
 }
