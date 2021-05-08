@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/_ch5_se3_17.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_17.c.o"
   "/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/_ch5_se3_18.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_18.c.o"
   "/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/_ch5_se3_19.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_19.c.o"
+  "/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/_ch5_se3_20.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_20.c.o"
   "/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/_ch5_se3_6.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_6.c.o"
   "/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/_ch5_se3_7.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_7.c.o"
   "/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/_ch5_se3_8.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_8.c.o"

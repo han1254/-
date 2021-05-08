@@ -8,11 +8,12 @@
 /**
  * 基于先序遍历的求WPL的方法
  * 有可能是我做错了？比书上的少
+ * copyright: han1254
  * @param root
  * @param depth
  * @return
  */
-int WPL_Pre(BiTree tree, int depth) {
+int wPlPre(BiTree tree, int depth) {
     if (tree == NULL) {
         return 0;
     }
@@ -20,11 +21,43 @@ int WPL_Pre(BiTree tree, int depth) {
         printf("%c: %d（路径） * %d（权值）\n", tree->data, depth, tree->weight);
         return depth * tree->weight;
     }
-    return (WPL_Pre(tree->lchild, depth + 1) + WPL_Pre(tree->rchild, depth + 1));
+    return (wPlPre(tree->lchild, depth + 1) + wPlPre(tree->rchild, depth + 1));
 }
-int WPL(BiTree root) {
-    return WPL_Pre(root, 0);//注意是0，因为WPL是用路径数乘权值
+/**
+ * copyright:han1254
+ * @param root
+ * @return
+ */
+int wPl(BiTree root) {
+    return wPlPre(root, 0);//注意是0，因为WPL是用路径数乘权值
 }
+
+/**
+ * 王道：基于先序遍历
+ * @param tree
+ * @param deep
+ * @return
+ */
+int wpl_PreOrder(BiTree tree, int deep) {
+    static int wpl = 0;
+    if (tree->lchild == NULL && tree->rchild == NULL)
+        wpl += deep * tree->weight;
+    if (tree->lchild != NULL)
+        wpl_PreOrder(tree->lchild, deep + 1);
+    if (tree->rchild != NULL)
+        wpl_PreOrder(tree->rchild, deep + 1);
+    return wpl;
+}
+/**
+ * 王道：基于先序遍历
+ * @param root
+ * @return
+ */
+int WPL1(BiTree root) {
+    return wpl_PreOrder(root, 0);
+}
+
+
 
 
 int main() {
@@ -47,5 +80,7 @@ int main() {
     setWeight(tree1, 'H', 1, 4);
     setWeight(tree1, 'I', 1, 1);
 
-    printf("WPL = %d\n", WPL(tree1));
+    printf("WPL = %d\n", wPl(tree1));
+
+    printf("WPL（王道书：基于先序遍历）:%d\n", WPL1(tree1));
 }
