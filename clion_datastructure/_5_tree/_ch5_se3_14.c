@@ -3,6 +3,11 @@
 //
 #include <memory.h>
 #include "BiTreeImpl.h"
+/**
+ *
+ * @param tree
+ * @return
+ */
 int max_width(BiTree tree) {
     BiTreeQueue queue;
     InitQueue(&queue);

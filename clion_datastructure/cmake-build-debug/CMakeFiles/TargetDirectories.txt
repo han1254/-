@@ -1,3 +1,4 @@
+/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s3_19.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s3_17.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s3_15.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s3_14.dir

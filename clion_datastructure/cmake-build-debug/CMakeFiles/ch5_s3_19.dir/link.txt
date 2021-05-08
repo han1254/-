@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/ch5_s3_19.dir/_5_tree/_ch5_se3_19.c.o  -o ch5_s3_19 
