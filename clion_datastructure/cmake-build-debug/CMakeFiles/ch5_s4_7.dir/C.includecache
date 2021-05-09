@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTree.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTreeImpl.h
+stdlib.h
+-
+BiTree.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTree.h
+BiTreeStackImpl.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTreeStackImpl.h
+BiTreeQueueImpl.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTreeQueueImpl.h
+stdio.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/stdio.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTreeQueueImpl.h
+BiTree.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTree.h
+stdio.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/stdio.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTreeStackImpl.h
+BiTree.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTree.h
+stdio.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/stdio.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/_ch5_se4_7.c
+memory.h
+-
+BiTreeImpl.h
+/home/han1254/Documents/PGEE/clion_datastructure/_5_tree/BiTreeImpl.h
+

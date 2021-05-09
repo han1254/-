@@ -104,6 +104,44 @@ void GenerateTree(BiTree root, const char *s, int len) {
     }
 }
 
+//void GenerateTree2(BTree* root, const char *s, int len) {
+//    int index = 0;
+//    int n = 2;
+//    BiTreeQueue queue;
+//    InitQueue(&queue);
+//    Enqueue(&queue, root);
+//    BiTree tempTree;
+//    root->data[0] = s[index++];
+//    while (!QueueEmpty(queue) && index < len) {
+//        int parentCount = queue.rear - queue.front;
+//        for (int j = 0; j < parentCount; ++j) {
+//            Dequeue(&queue, &tempTree);
+//            BTree *nodeL = NULL;
+//            BTree *nodeR = NULL;
+//            if (tempTree != NULL) {
+//                if (s[index] != '#') {
+//                    nodeL = (BTree*) malloc(sizeof(BTree));
+//                    nodeL->data[0] = s[index];
+//                }
+//                index++;
+//                if (index >= len) break;
+//                if (s[index] != '#') {
+//                    nodeR = (BTree*) malloc(sizeof(BTree));
+//                    nodeR->data[0] = s[index];
+//                }
+//                index++;
+//                tempTree->lchild = nodeL;
+//                tempTree->rchild = nodeR;
+//            } else {
+//                index += 2;
+//            }
+//            Enqueue(&queue, nodeL);
+//            Enqueue(&queue, nodeR);
+//        }
+//        n *= 2;
+//    }
+//}
+
 
 
 #endif //CLION_DATASTRUCTURE__5_3_20_UTIL_H

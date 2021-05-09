@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/ch5_s4_7.dir/_5_tree/_ch5_se4_7.c.o  -o ch5_s4_7 
