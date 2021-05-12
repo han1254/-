@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_7.c.o"
   "CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_8.c.o"
   "CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_9.c.o"
+  "CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se4_10.c.o"
+  "CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se4_12.c.o"
   "CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se4_6.c.o"
   "CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se4_7.c.o"
   "CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se4_8.c.o"

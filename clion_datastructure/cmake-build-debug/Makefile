@@ -131,6 +131,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named ch5_s4_12
+
+# Build rule for target.
+ch5_s4_12: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch5_s4_12
+.PHONY : ch5_s4_12
+
+# fast build rule for target.
+ch5_s4_12/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s4_12.dir/build.make CMakeFiles/ch5_s4_12.dir/build
+.PHONY : ch5_s4_12/fast
+
+#=============================================================================
+# Target rules for targets named ch5_s4_10
+
+# Build rule for target.
+ch5_s4_10: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch5_s4_10
+.PHONY : ch5_s4_10
+
+# fast build rule for target.
+ch5_s4_10/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s4_10.dir/build.make CMakeFiles/ch5_s4_10.dir/build
+.PHONY : ch5_s4_10/fast
+
+#=============================================================================
 # Target rules for targets named ch5_s4_9
 
 # Build rule for target.
@@ -1496,6 +1522,66 @@ _5_tree/_ch5_se3_9.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se3_9.c.s
 .PHONY : _5_tree/_ch5_se3_9.c.s
 
+_5_tree/_ch5_se4_10.o: _5_tree/_ch5_se4_10.c.o
+
+.PHONY : _5_tree/_ch5_se4_10.o
+
+# target to build an object file
+_5_tree/_ch5_se4_10.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s4_10.dir/build.make CMakeFiles/ch5_s4_10.dir/_5_tree/_ch5_se4_10.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se4_10.c.o
+.PHONY : _5_tree/_ch5_se4_10.c.o
+
+_5_tree/_ch5_se4_10.i: _5_tree/_ch5_se4_10.c.i
+
+.PHONY : _5_tree/_ch5_se4_10.i
+
+# target to preprocess a source file
+_5_tree/_ch5_se4_10.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s4_10.dir/build.make CMakeFiles/ch5_s4_10.dir/_5_tree/_ch5_se4_10.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se4_10.c.i
+.PHONY : _5_tree/_ch5_se4_10.c.i
+
+_5_tree/_ch5_se4_10.s: _5_tree/_ch5_se4_10.c.s
+
+.PHONY : _5_tree/_ch5_se4_10.s
+
+# target to generate assembly for a file
+_5_tree/_ch5_se4_10.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s4_10.dir/build.make CMakeFiles/ch5_s4_10.dir/_5_tree/_ch5_se4_10.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se4_10.c.s
+.PHONY : _5_tree/_ch5_se4_10.c.s
+
+_5_tree/_ch5_se4_12.o: _5_tree/_ch5_se4_12.c.o
+
+.PHONY : _5_tree/_ch5_se4_12.o
+
+# target to build an object file
+_5_tree/_ch5_se4_12.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s4_12.dir/build.make CMakeFiles/ch5_s4_12.dir/_5_tree/_ch5_se4_12.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se4_12.c.o
+.PHONY : _5_tree/_ch5_se4_12.c.o
+
+_5_tree/_ch5_se4_12.i: _5_tree/_ch5_se4_12.c.i
+
+.PHONY : _5_tree/_ch5_se4_12.i
+
+# target to preprocess a source file
+_5_tree/_ch5_se4_12.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s4_12.dir/build.make CMakeFiles/ch5_s4_12.dir/_5_tree/_ch5_se4_12.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se4_12.c.i
+.PHONY : _5_tree/_ch5_se4_12.c.i
+
+_5_tree/_ch5_se4_12.s: _5_tree/_ch5_se4_12.c.s
+
+.PHONY : _5_tree/_ch5_se4_12.s
+
+# target to generate assembly for a file
+_5_tree/_ch5_se4_12.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s4_12.dir/build.make CMakeFiles/ch5_s4_12.dir/_5_tree/_ch5_se4_12.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se4_12.c.s
+.PHONY : _5_tree/_ch5_se4_12.c.s
+
 _5_tree/_ch5_se4_6.o: _5_tree/_ch5_se4_6.c.o
 
 .PHONY : _5_tree/_ch5_se4_6.o
@@ -1702,6 +1788,8 @@ help:
 	@echo "... ch5_s3_7"
 	@echo "... ch5_s3_8"
 	@echo "... ch5_s3_9"
+	@echo "... ch5_s4_10"
+	@echo "... ch5_s4_12"
 	@echo "... ch5_s4_6"
 	@echo "... ch5_s4_7"
 	@echo "... ch5_s4_8"
@@ -1808,6 +1896,12 @@ help:
 	@echo "... _5_tree/_ch5_se3_9.o"
 	@echo "... _5_tree/_ch5_se3_9.i"
 	@echo "... _5_tree/_ch5_se3_9.s"
+	@echo "... _5_tree/_ch5_se4_10.o"
+	@echo "... _5_tree/_ch5_se4_10.i"
+	@echo "... _5_tree/_ch5_se4_10.s"
+	@echo "... _5_tree/_ch5_se4_12.o"
+	@echo "... _5_tree/_ch5_se4_12.i"
+	@echo "... _5_tree/_ch5_se4_12.s"
 	@echo "... _5_tree/_ch5_se4_6.o"
 	@echo "... _5_tree/_ch5_se4_6.i"
 	@echo "... _5_tree/_ch5_se4_6.s"
