@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named mGraphMain
+
+# Build rule for target.
+mGraphMain: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mGraphMain
+.PHONY : mGraphMain
+
+# fast build rule for target.
+mGraphMain/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mGraphMain.dir/build.make CMakeFiles/mGraphMain.dir/build
+.PHONY : mGraphMain/fast
+
+#=============================================================================
 # Target rules for targets named ch5_s4_12
 
 # Build rule for target.
@@ -1702,6 +1715,36 @@ _5_tree/_ch5_se4_9.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se4_9.c.s
 .PHONY : _5_tree/_ch5_se4_9.c.s
 
+_6_graph/MGraphMain.o: _6_graph/MGraphMain.c.o
+
+.PHONY : _6_graph/MGraphMain.o
+
+# target to build an object file
+_6_graph/MGraphMain.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mGraphMain.dir/build.make CMakeFiles/mGraphMain.dir/_6_graph/MGraphMain.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/MGraphMain.c.o
+.PHONY : _6_graph/MGraphMain.c.o
+
+_6_graph/MGraphMain.i: _6_graph/MGraphMain.c.i
+
+.PHONY : _6_graph/MGraphMain.i
+
+# target to preprocess a source file
+_6_graph/MGraphMain.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mGraphMain.dir/build.make CMakeFiles/mGraphMain.dir/_6_graph/MGraphMain.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/MGraphMain.c.i
+.PHONY : _6_graph/MGraphMain.c.i
+
+_6_graph/MGraphMain.s: _6_graph/MGraphMain.c.s
+
+.PHONY : _6_graph/MGraphMain.s
+
+# target to generate assembly for a file
+_6_graph/MGraphMain.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mGraphMain.dir/build.make CMakeFiles/mGraphMain.dir/_6_graph/MGraphMain.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/MGraphMain.c.s
+.PHONY : _6_graph/MGraphMain.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -1798,6 +1841,7 @@ help:
 	@echo "... expression_change"
 	@echo "... io_test"
 	@echo "... link_stack_main"
+	@echo "... mGraphMain"
 	@echo "... parent_match"
 	@echo "... sq_queue_main"
 	@echo "... str_main"
@@ -1914,6 +1958,9 @@ help:
 	@echo "... _5_tree/_ch5_se4_9.o"
 	@echo "... _5_tree/_ch5_se4_9.i"
 	@echo "... _5_tree/_ch5_se4_9.s"
+	@echo "... _6_graph/MGraphMain.o"
+	@echo "... _6_graph/MGraphMain.i"
+	@echo "... _6_graph/MGraphMain.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
