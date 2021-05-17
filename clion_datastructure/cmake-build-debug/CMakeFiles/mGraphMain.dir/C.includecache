@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/MGraph.h
+../common_status.h
+/home/han1254/Documents/PGEE/clion_datastructure/common_status.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/MGraphImpl.h
+stdlib.h
+-
+MGraph.h
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/MGraph.h
+stdio.h
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/stdio.h
+
 /home/han1254/Documents/PGEE/clion_datastructure/_6_graph/MGraphMain.c
 stdio.h
 -
@@ -13,4 +25,8 @@ stdlib.h
 -
 unistd.h
 -
+MGraphImpl.h
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/MGraphImpl.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/common_status.h
 

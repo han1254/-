@@ -13,13 +13,13 @@ typedef enum {DG, DN, UDG, UDN} GraphKind;//有向图，有向网，无向图，
 typedef struct ArcCell{//定义“边”结构体
     int adj;
     char* info;
-}ArcCell, AdjMatrix[MAX_VERTEX_NUM][MAX_VERTEX_NUM];
+}ArcCell, **AdjMatrix;
 typedef struct {
-    char* vexs[MAX_VERTEX_NUM];//每个结点的内容
-    AdjMatrix arcs;//判断结点之间的连接情况
-    int vex_num, arc_num;
     GraphKind kind;
-} MGraphKind;
+    int vex_num, arc_num;
+    char** vexs;//每个结点的内容
+    AdjMatrix arcs;//判断结点之间的连接情况
+} MGraph;
 
 
 
