@@ -17,6 +17,46 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="listCompare">
+				<Option output="/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/listCompare" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 listCompare"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="listCompare/fast">
+				<Option output="/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/listCompare" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 listCompare/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="mGraphMain">
 				<Option output="/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/mGraphMain" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug"/>
@@ -1638,6 +1678,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_2_linear_list/compare.c">
+			<Option target="listCompare"/>
+			<Option target="ch3_s1_3"/>
+		</Unit>
 		<Unit filename="/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/application/_ch3_se3_4.c">
 			<Option target="ch3_s3_4"/>
 		</Unit>

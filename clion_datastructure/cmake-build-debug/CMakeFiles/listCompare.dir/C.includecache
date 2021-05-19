@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/han1254/Documents/PGEE/clion_datastructure/_2_linear_list/compare.c
+stdio.h
+-
+string.h
+/home/han1254/Documents/PGEE/clion_datastructure/_2_linear_list/string.h
+

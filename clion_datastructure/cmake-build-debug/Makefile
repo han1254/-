@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named listCompare
+
+# Build rule for target.
+listCompare: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 listCompare
+.PHONY : listCompare
+
+# fast build rule for target.
+listCompare/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/listCompare.dir/build.make CMakeFiles/listCompare.dir/build
+.PHONY : listCompare/fast
+
+#=============================================================================
 # Target rules for targets named mGraphMain
 
 # Build rule for target.
@@ -649,6 +662,36 @@ ch5_s3_8: cmake_check_build_system
 ch5_s3_8/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_8.dir/build.make CMakeFiles/ch5_s3_8.dir/build
 .PHONY : ch5_s3_8/fast
+
+_2_linear_list/compare.o: _2_linear_list/compare.c.o
+
+.PHONY : _2_linear_list/compare.o
+
+# target to build an object file
+_2_linear_list/compare.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/listCompare.dir/build.make CMakeFiles/listCompare.dir/_2_linear_list/compare.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_2_linear_list/compare.c.o
+.PHONY : _2_linear_list/compare.c.o
+
+_2_linear_list/compare.i: _2_linear_list/compare.c.i
+
+.PHONY : _2_linear_list/compare.i
+
+# target to preprocess a source file
+_2_linear_list/compare.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/listCompare.dir/build.make CMakeFiles/listCompare.dir/_2_linear_list/compare.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_2_linear_list/compare.c.i
+.PHONY : _2_linear_list/compare.c.i
+
+_2_linear_list/compare.s: _2_linear_list/compare.c.s
+
+.PHONY : _2_linear_list/compare.s
+
+# target to generate assembly for a file
+_2_linear_list/compare.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/listCompare.dir/build.make CMakeFiles/listCompare.dir/_2_linear_list/compare.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_2_linear_list/compare.c.s
+.PHONY : _2_linear_list/compare.c.s
 
 _3_stack_and_queue/application/_ch3_se3_4.o: _3_stack_and_queue/application/_ch3_se3_4.c.o
 
@@ -1841,12 +1884,16 @@ help:
 	@echo "... expression_change"
 	@echo "... io_test"
 	@echo "... link_stack_main"
+	@echo "... listCompare"
 	@echo "... mGraphMain"
 	@echo "... parent_match"
 	@echo "... sq_queue_main"
 	@echo "... str_main"
 	@echo "... thread_tree_main"
 	@echo "... tree_main"
+	@echo "... _2_linear_list/compare.o"
+	@echo "... _2_linear_list/compare.i"
+	@echo "... _2_linear_list/compare.s"
 	@echo "... _3_stack_and_queue/application/_ch3_se3_4.o"
 	@echo "... _3_stack_and_queue/application/_ch3_se3_4.i"
 	@echo "... _3_stack_and_queue/application/_ch3_se3_4.s"

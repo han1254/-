@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/listCompare.dir/_2_linear_list/compare.c.o  -o listCompare 

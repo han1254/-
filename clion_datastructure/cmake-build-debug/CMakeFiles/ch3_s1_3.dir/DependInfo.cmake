@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/han1254/Documents/PGEE/clion_datastructure/_2_linear_list/compare.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch3_s1_3.dir/_2_linear_list/compare.c.o"
   "/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/stack/_ch3_se1_3.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/stack/_ch3_se1_3.c.o"
   "/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/MGraphMain.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch3_s1_3.dir/_6_graph/MGraphMain.c.o"
   )
