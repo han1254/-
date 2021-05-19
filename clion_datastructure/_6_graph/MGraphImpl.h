@@ -20,12 +20,15 @@ int ReadBaseInfo(FILE* fpread, MGraph* graph, int* vexNum, int* arcNum) {
     printf("vexNum: %d, arcNum: %d\n", graph->vex_num, graph->arc_num);
     *vexNum = graph->vex_num;
     *arcNum = graph->arc_num;
-    graph->vexs = (char**)malloc(sizeof(char*) * graph->vex_num);
-    for (int i = 0; i < graph->vex_num; ++i)
-        graph->vexs[i] = (char*)malloc(sizeof(char) * 10);
+    graph->vexs = (VexType*)malloc(sizeof(VexType*) * graph->vex_num);
+    for (int i = 0; i < graph->vex_num; ++i) {
+        graph->vexs[i].content = (char*)malloc(sizeof(char) * 10);
+        graph->vexs[i].id = i;
+    }
+
     int count = 0;
-    while(count < graph->vex_num && fgets(graph->vexs[count], 10, fpread) != NULL){
-        printf("%s", graph->vexs[count]);
+    while(count < graph->vex_num && fgets(graph->vexs[count].content, 10, fpread) != NULL){
+        printf("%s", graph->vexs[count].content);
         count++;
     }
     graph->arcs = (ArcCell**)malloc(sizeof(ArcCell*) * graph->vex_num);
@@ -43,43 +46,32 @@ int CreateDG(char* path, MGraph* graph) {
     FILE* fpread;
     int vexNum;
     int arcNum;
-    int realArcNum = 0;
     fpread = fopen(path, "r");
     if (fpread == NULL) {
         printf("file is error.");
         return -1;
     }
-//    fscanf(fpread, "%d\n", &graph->kind);//读入图的类型
-//    printf("type:%d\n", graph->kind);
-//    fscanf(fpread, "%d %d\n", &graph->vex_num, &graph->arc_num);//
-//    printf("vexNum: %d, arcNum: %d\n", graph->vex_num, graph->arc_num);
-//    vexNum = graph->vex_num;
-//    graph->vexs = (char**)malloc(sizeof(char*) * vexNum);
-//    for (int i = 0; i < vexNum; ++i)
-//        graph->vexs[i] = (char*)malloc(sizeof(char) * 10);
-//    int count = 0;
-//    while(count < vexNum && fgets(graph->vexs[count], 10, fpread) != NULL){
-//        printf("%s", graph->vexs[count]);
-//        count++;
-//    }
     ReadBaseInfo(fpread, graph, &vexNum, &arcNum);
-//    graph->arcs = (ArcCell**)malloc(sizeof(ArcCell*) * vexNum);
-//    for (int i = 0; i < vexNum; ++i)
-//        graph->arcs[i] = (ArcCell*)malloc(sizeof(ArcCell) * vexNum);
-    for (int i = 0; i < vexNum; i++) {
-        for (int j = 0; j < vexNum; j++) {
-            fscanf(fpread, "%d", &graph->arcs[i][j].adj);
-            if (graph->arcs[i][j].adj == 1) realArcNum++;
+    for (int i = 0; i < vexNum; ++i) {
+        for (int j = 0; j < vexNum; ++j) {
+            graph->arcs[i][j].adj = 0;
         }
     }
-    if (realArcNum != graph->arc_num) {
-        printf("输入边的个数与文件中实际个数不一致！\n");
-        return 0;
+    int row, col;
+    for (int i = 0; i < arcNum; ++i) {
+        fscanf(fpread, "%d %d", &row, &col);
+        graph->arcs[row][col].adj = 1;
     }
     fclose(fpread);
     return 1;
 }
 
+/**
+ * 创建有向网
+ * @param path
+ * @param graph
+ * @return
+ */
 int CreateDN(char* path, MGraph* graph) {
     FILE *fp;
     int vexNum = 0;
@@ -98,6 +90,62 @@ int CreateDN(char* path, MGraph* graph) {
         printf("%d %d:", tempIndexI, tempIndexJ);
         fscanf(fp, "%d", &graph->arcs[tempIndexI][tempIndexJ].adj);
         printf("%d\n", graph->arcs[tempIndexI][tempIndexJ].adj);
+    }
+    fclose(fp);
+    return 1;
+}
+
+/**
+ * 建立无向图
+ * @param path
+ * @param graph
+ * @return
+ */
+int CreateUDG(char* path, MGraph* graph) {
+    FILE *fp;
+    int vexNum = 0;
+    int arcNum = 0;
+    fp = fopen(path, "r");
+    ReadBaseInfo(fp, graph, &vexNum, &arcNum);
+    for (int i = 0; i < vexNum; ++i) {
+        for (int j = 0; j < vexNum; ++j) {
+            graph->arcs[i][j].adj = 0;
+        }
+    }
+    int row, col;
+    for (int i = 0; i < arcNum; ++i) {
+        fscanf(fp, "%d", &row);
+        fscanf(fp, "%d", &col);
+        graph->arcs[row][col].adj = 1;
+        graph->arcs[col][row].adj = 1;
+    }
+    fclose(fp);
+    return 1;
+}
+/**
+ * 建立无向网
+ * @param path
+ * @param graph
+ * @return
+ */
+int CreateUDN(char* path, MGraph* graph) {
+    FILE *fp;
+    int vexNum = 0;
+    int arcNum = 0;
+    fp = fopen(path, "r");
+    ReadBaseInfo(fp, graph, &vexNum, &arcNum);
+    for (int i = 0; i < vexNum; ++i) {
+        for (int j = 0; j < vexNum; ++j) {
+            graph->arcs[i][j].adj = INFINITY;
+        }
+    }
+    int row, col, val;
+    for (int i = 0; i < arcNum; ++i) {
+        fscanf(fp, "%d", &row);
+        fscanf(fp, "%d", &col);
+        fscanf(fp, "%d", &val);
+        graph->arcs[row][col].adj = val;
+        graph->arcs[col][row].adj = val;
     }
     return 1;
 }

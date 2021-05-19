@@ -9,6 +9,13 @@
 
 #define INFINITY INT_MAX
 #define MAX_VERTEX_NUM 100
+typedef struct VexType {
+    int id;
+    char* content;
+    int inDegree;//in degree
+    int outDegree;//out degree
+    int degree;
+}VexType;
 typedef enum {DG, DN, UDG, UDN} GraphKind;//有向图，有向网，无向图，无向网
 typedef struct ArcCell{//定义“边”结构体
     int adj;
@@ -17,7 +24,7 @@ typedef struct ArcCell{//定义“边”结构体
 typedef struct {
     GraphKind kind;
     int vex_num, arc_num;
-    char** vexs;//每个结点的内容
+    VexType* vexs;//每个结点的内容
     AdjMatrix arcs;//判断结点之间的连接情况
 } MGraph;
 
