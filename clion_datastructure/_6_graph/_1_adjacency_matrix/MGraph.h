@@ -5,7 +5,7 @@
 
 #ifndef CLION_DATASTRUCTURE_MGRAPH_H
 #define CLION_DATASTRUCTURE_MGRAPH_H
-#include "../common_status.h"
+#include "../../common_status.h"
 
 #define INFINITY INT_MAX
 #define MAX_VERTEX_NUM 100

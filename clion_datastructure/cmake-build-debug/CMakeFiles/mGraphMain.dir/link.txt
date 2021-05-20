@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/mGraphMain.dir/_6_graph/MGraphMain.c.o  -o mGraphMain 
+/usr/bin/cc -g   CMakeFiles/mGraphMain.dir/_6_graph/_1_adjacency_matrix/MGraphMain.c.o  -o mGraphMain 

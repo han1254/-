@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/mGraphMain.dir/_6_graph/MGraphMain.c.o"
+  "CMakeFiles/mGraphMain.dir/_6_graph/_1_adjacency_matrix/MGraphMain.c.o"
   "mGraphMain"
   "mGraphMain.pdb"
 )

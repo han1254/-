@@ -1,4 +1,5 @@
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/listCompare.dir
+/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/mALGraphMain.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/mGraphMain.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s4_12.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s4_10.dir

@@ -44,4 +44,8 @@ int main() {
 //    puttree(tree, 5);
     printf("\n");
     print_liner_tree(tree, 1);
+
+    PreOrder_Iter(tree);
+    printf("\n");
+    PreOrder_Iter_Simple(tree);
 }

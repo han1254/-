@@ -77,27 +77,27 @@ include CMakeFiles/mGraphMain.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/mGraphMain.dir/flags.make
 
-CMakeFiles/mGraphMain.dir/_6_graph/MGraphMain.c.o: CMakeFiles/mGraphMain.dir/flags.make
-CMakeFiles/mGraphMain.dir/_6_graph/MGraphMain.c.o: ../_6_graph/MGraphMain.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/mGraphMain.dir/_6_graph/MGraphMain.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mGraphMain.dir/_6_graph/MGraphMain.c.o   -c /home/han1254/Documents/PGEE/clion_datastructure/_6_graph/MGraphMain.c
+CMakeFiles/mGraphMain.dir/_6_graph/_1_adjacency_matrix/MGraphMain.c.o: CMakeFiles/mGraphMain.dir/flags.make
+CMakeFiles/mGraphMain.dir/_6_graph/_1_adjacency_matrix/MGraphMain.c.o: ../_6_graph/_1_adjacency_matrix/MGraphMain.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/mGraphMain.dir/_6_graph/_1_adjacency_matrix/MGraphMain.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mGraphMain.dir/_6_graph/_1_adjacency_matrix/MGraphMain.c.o   -c /home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_1_adjacency_matrix/MGraphMain.c
 
-CMakeFiles/mGraphMain.dir/_6_graph/MGraphMain.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mGraphMain.dir/_6_graph/MGraphMain.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/han1254/Documents/PGEE/clion_datastructure/_6_graph/MGraphMain.c > CMakeFiles/mGraphMain.dir/_6_graph/MGraphMain.c.i
+CMakeFiles/mGraphMain.dir/_6_graph/_1_adjacency_matrix/MGraphMain.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mGraphMain.dir/_6_graph/_1_adjacency_matrix/MGraphMain.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_1_adjacency_matrix/MGraphMain.c > CMakeFiles/mGraphMain.dir/_6_graph/_1_adjacency_matrix/MGraphMain.c.i
 
-CMakeFiles/mGraphMain.dir/_6_graph/MGraphMain.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mGraphMain.dir/_6_graph/MGraphMain.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/han1254/Documents/PGEE/clion_datastructure/_6_graph/MGraphMain.c -o CMakeFiles/mGraphMain.dir/_6_graph/MGraphMain.c.s
+CMakeFiles/mGraphMain.dir/_6_graph/_1_adjacency_matrix/MGraphMain.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mGraphMain.dir/_6_graph/_1_adjacency_matrix/MGraphMain.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_1_adjacency_matrix/MGraphMain.c -o CMakeFiles/mGraphMain.dir/_6_graph/_1_adjacency_matrix/MGraphMain.c.s
 
 # Object files for target mGraphMain
 mGraphMain_OBJECTS = \
-"CMakeFiles/mGraphMain.dir/_6_graph/MGraphMain.c.o"
+"CMakeFiles/mGraphMain.dir/_6_graph/_1_adjacency_matrix/MGraphMain.c.o"
 
 # External object files for target mGraphMain
 mGraphMain_EXTERNAL_OBJECTS =
 
-mGraphMain: CMakeFiles/mGraphMain.dir/_6_graph/MGraphMain.c.o
+mGraphMain: CMakeFiles/mGraphMain.dir/_6_graph/_1_adjacency_matrix/MGraphMain.c.o
 mGraphMain: CMakeFiles/mGraphMain.dir/build.make
 mGraphMain: CMakeFiles/mGraphMain.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable mGraphMain"

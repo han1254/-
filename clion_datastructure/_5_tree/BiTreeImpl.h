@@ -230,6 +230,28 @@ void PreOrder_Iter(BiTree tree) {
     }
 }
 
+/**
+ * 强烈推荐这种写法，灵感是来自王道书232页DFS算法的非递归算法
+ * @param tree
+ */
+void PreOrder_Iter_Simple(BiTree tree) {
+    printf("PreOrderIterSimple\n");
+    BiTreeStack stack;
+    InitTreeStack(&stack);
+    Push(&stack, tree);
+    BiTree tempTree;
+    while(!StackEmpty(stack)) {
+        Pop(&stack, &tempTree);
+        visit(tempTree);
+        if (tempTree->rchild != NULL) {
+            Push(&stack, tempTree->rchild);
+        }
+        if (tempTree->lchild != NULL) {
+            Push(&stack, tempTree->lchild);
+        }
+    }
+}
+
 void PostOrder_Iter(BiTree tree) {
     printf("非递归后序遍历\n");
     BiTreeStack stack;

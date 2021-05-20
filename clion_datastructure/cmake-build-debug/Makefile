@@ -144,6 +144,19 @@ listCompare/fast:
 .PHONY : listCompare/fast
 
 #=============================================================================
+# Target rules for targets named mALGraphMain
+
+# Build rule for target.
+mALGraphMain: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mALGraphMain
+.PHONY : mALGraphMain
+
+# fast build rule for target.
+mALGraphMain/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mALGraphMain.dir/build.make CMakeFiles/mALGraphMain.dir/build
+.PHONY : mALGraphMain/fast
+
+#=============================================================================
 # Target rules for targets named mGraphMain
 
 # Build rule for target.
@@ -1758,35 +1771,65 @@ _5_tree/_ch5_se4_9.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s2_5.dir/build.make CMakeFiles/ch5_s2_5.dir/_5_tree/_ch5_se4_9.c.s
 .PHONY : _5_tree/_ch5_se4_9.c.s
 
-_6_graph/MGraphMain.o: _6_graph/MGraphMain.c.o
+_6_graph/_1_adjacency_matrix/MGraphMain.o: _6_graph/_1_adjacency_matrix/MGraphMain.c.o
 
-.PHONY : _6_graph/MGraphMain.o
+.PHONY : _6_graph/_1_adjacency_matrix/MGraphMain.o
 
 # target to build an object file
-_6_graph/MGraphMain.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mGraphMain.dir/build.make CMakeFiles/mGraphMain.dir/_6_graph/MGraphMain.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/MGraphMain.c.o
-.PHONY : _6_graph/MGraphMain.c.o
+_6_graph/_1_adjacency_matrix/MGraphMain.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mGraphMain.dir/build.make CMakeFiles/mGraphMain.dir/_6_graph/_1_adjacency_matrix/MGraphMain.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/_1_adjacency_matrix/MGraphMain.c.o
+.PHONY : _6_graph/_1_adjacency_matrix/MGraphMain.c.o
 
-_6_graph/MGraphMain.i: _6_graph/MGraphMain.c.i
+_6_graph/_1_adjacency_matrix/MGraphMain.i: _6_graph/_1_adjacency_matrix/MGraphMain.c.i
 
-.PHONY : _6_graph/MGraphMain.i
+.PHONY : _6_graph/_1_adjacency_matrix/MGraphMain.i
 
 # target to preprocess a source file
-_6_graph/MGraphMain.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mGraphMain.dir/build.make CMakeFiles/mGraphMain.dir/_6_graph/MGraphMain.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/MGraphMain.c.i
-.PHONY : _6_graph/MGraphMain.c.i
+_6_graph/_1_adjacency_matrix/MGraphMain.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mGraphMain.dir/build.make CMakeFiles/mGraphMain.dir/_6_graph/_1_adjacency_matrix/MGraphMain.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/_1_adjacency_matrix/MGraphMain.c.i
+.PHONY : _6_graph/_1_adjacency_matrix/MGraphMain.c.i
 
-_6_graph/MGraphMain.s: _6_graph/MGraphMain.c.s
+_6_graph/_1_adjacency_matrix/MGraphMain.s: _6_graph/_1_adjacency_matrix/MGraphMain.c.s
 
-.PHONY : _6_graph/MGraphMain.s
+.PHONY : _6_graph/_1_adjacency_matrix/MGraphMain.s
 
 # target to generate assembly for a file
-_6_graph/MGraphMain.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mGraphMain.dir/build.make CMakeFiles/mGraphMain.dir/_6_graph/MGraphMain.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/MGraphMain.c.s
-.PHONY : _6_graph/MGraphMain.c.s
+_6_graph/_1_adjacency_matrix/MGraphMain.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mGraphMain.dir/build.make CMakeFiles/mGraphMain.dir/_6_graph/_1_adjacency_matrix/MGraphMain.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/_1_adjacency_matrix/MGraphMain.c.s
+.PHONY : _6_graph/_1_adjacency_matrix/MGraphMain.c.s
+
+_6_graph/_2_adjacency_list/ALGraphMain.o: _6_graph/_2_adjacency_list/ALGraphMain.c.o
+
+.PHONY : _6_graph/_2_adjacency_list/ALGraphMain.o
+
+# target to build an object file
+_6_graph/_2_adjacency_list/ALGraphMain.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mALGraphMain.dir/build.make CMakeFiles/mALGraphMain.dir/_6_graph/_2_adjacency_list/ALGraphMain.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/_2_adjacency_list/ALGraphMain.c.o
+.PHONY : _6_graph/_2_adjacency_list/ALGraphMain.c.o
+
+_6_graph/_2_adjacency_list/ALGraphMain.i: _6_graph/_2_adjacency_list/ALGraphMain.c.i
+
+.PHONY : _6_graph/_2_adjacency_list/ALGraphMain.i
+
+# target to preprocess a source file
+_6_graph/_2_adjacency_list/ALGraphMain.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mALGraphMain.dir/build.make CMakeFiles/mALGraphMain.dir/_6_graph/_2_adjacency_list/ALGraphMain.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/_2_adjacency_list/ALGraphMain.c.i
+.PHONY : _6_graph/_2_adjacency_list/ALGraphMain.c.i
+
+_6_graph/_2_adjacency_list/ALGraphMain.s: _6_graph/_2_adjacency_list/ALGraphMain.c.s
+
+.PHONY : _6_graph/_2_adjacency_list/ALGraphMain.s
+
+# target to generate assembly for a file
+_6_graph/_2_adjacency_list/ALGraphMain.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mALGraphMain.dir/build.make CMakeFiles/mALGraphMain.dir/_6_graph/_2_adjacency_list/ALGraphMain.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/_2_adjacency_list/ALGraphMain.c.s
+.PHONY : _6_graph/_2_adjacency_list/ALGraphMain.c.s
 
 main.o: main.c.o
 
@@ -1885,6 +1928,7 @@ help:
 	@echo "... io_test"
 	@echo "... link_stack_main"
 	@echo "... listCompare"
+	@echo "... mALGraphMain"
 	@echo "... mGraphMain"
 	@echo "... parent_match"
 	@echo "... sq_queue_main"
@@ -2005,9 +2049,12 @@ help:
 	@echo "... _5_tree/_ch5_se4_9.o"
 	@echo "... _5_tree/_ch5_se4_9.i"
 	@echo "... _5_tree/_ch5_se4_9.s"
-	@echo "... _6_graph/MGraphMain.o"
-	@echo "... _6_graph/MGraphMain.i"
-	@echo "... _6_graph/MGraphMain.s"
+	@echo "... _6_graph/_1_adjacency_matrix/MGraphMain.o"
+	@echo "... _6_graph/_1_adjacency_matrix/MGraphMain.i"
+	@echo "... _6_graph/_1_adjacency_matrix/MGraphMain.s"
+	@echo "... _6_graph/_2_adjacency_list/ALGraphMain.o"
+	@echo "... _6_graph/_2_adjacency_list/ALGraphMain.i"
+	@echo "... _6_graph/_2_adjacency_list/ALGraphMain.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_1_adjacency_matrix/MGraphMain.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/mGraphMain.dir/_6_graph/_1_adjacency_matrix/MGraphMain.c.o"
+  "/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_2_adjacency_list/ALGraphMain.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/mALGraphMain.dir/_6_graph/_2_adjacency_list/ALGraphMain.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -6,7 +6,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/home/han1254/Documents/PGEE/clion_datastructure/_2_linear_list/compare.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch3_s1_3.dir/_2_linear_list/compare.c.o"
   "/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/stack/_ch3_se1_3.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch3_s1_3.dir/_3_stack_and_queue/stack/_ch3_se1_3.c.o"
-  "/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/MGraphMain.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch3_s1_3.dir/_6_graph/MGraphMain.c.o"
+  "/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_1_adjacency_matrix/MGraphMain.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch3_s1_3.dir/_6_graph/_1_adjacency_matrix/MGraphMain.c.o"
+  "/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_2_adjacency_list/ALGraphMain.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch3_s1_3.dir/_6_graph/_2_adjacency_list/ALGraphMain.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
