@@ -4,7 +4,7 @@ project(clion_datastructure C)
 set(CMAKE_C_STANDARD 99)
 
 add_executable(clion_datastructure main.c _3_stack_and_queue/stack/SqStack.h _3_stack_and_queue/stack/SqStackImpl.h _3_stack_and_queue/stack/SqStackMain.h _3_stack_and_queue/stack/LinkStack.h _3_stack_and_queue/stack/stack_common.h _3_stack_and_queue/stack/LinkStackImpl.h _3_stack_and_queue/stack/LinkStackMain.c common_status.h)
-add_executable(ch3_s1_3 _3_stack_and_queue/stack/_ch3_se1_3.c _6_graph/_1_adjacency_matrix/MGraph.h _6_graph/_1_adjacency_matrix/MGraphMain.c _6_graph/_1_adjacency_matrix/MGraphImpl.h _2_linear_list/compare.c _6_graph/_2_adjacency_list/ALGraph.h _6_graph/_2_adjacency_list/ALGraphImpl.h _6_graph/_2_adjacency_list/ALGraphMain.c)
+add_executable(ch3_s1_3 _3_stack_and_queue/stack/_ch3_se1_3.c _6_graph/_1_adjacency_matrix/MGraph.h _6_graph/_1_adjacency_matrix/MGraphMain.c _6_graph/_1_adjacency_matrix/MGraphImpl.h _2_linear_list/compare.c _6_graph/_2_adjacency_list/ALGraph.h _6_graph/_2_adjacency_list/ALGraphImpl.h _6_graph/_2_adjacency_list/ALGraphMain.c _6_graph/_3_orthogonal_list/OLGraph.h _6_graph/common.h _6_graph/_3_orthogonal_list/OLGraphImpl.h)
 add_executable(link_stack_main _3_stack_and_queue/stack/LinkStackMain.c)
 add_executable(sq_queue_main _3_stack_and_queue/queue/SqQueueMain.c)
 add_executable(ch3_s2_1 _3_stack_and_queue/queue/_ch3_se2_1.c)

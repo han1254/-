@@ -20,7 +20,7 @@ int ReadBaseInfo(FILE* fpread, MGraph* graph, int* vexNum, int* arcNum) {
     printf("vexNum: %d, arcNum: %d\n", graph->vex_num, graph->arc_num);
     *vexNum = graph->vex_num;
     *arcNum = graph->arc_num;
-    graph->vexs = (VexType*)malloc(sizeof(VexType*) * graph->vex_num);
+    graph->vexs = (VertexType *)malloc(sizeof(VertexType) * graph->vex_num);
     for (int i = 0; i < graph->vex_num; ++i) {
         graph->vexs[i].content = (char*)malloc(sizeof(char) * 10);
         graph->vexs[i].id = i;

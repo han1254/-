@@ -7,6 +7,8 @@
 #IncludeRegexTransform: 
 
 /home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_2_adjacency_list/ALGraph.h
+../common.h
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/common.h
 
 /home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_2_adjacency_list/ALGraphImpl.h
 bits/types/FILE.h
@@ -23,4 +25,6 @@ ALGraph.h
 /home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_2_adjacency_list/ALGraphMain.c
 ALGraphImpl.h
 /home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_2_adjacency_list/ALGraphImpl.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/common.h
 
