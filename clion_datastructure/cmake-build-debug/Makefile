@@ -378,6 +378,19 @@ ch3_s2_4/fast:
 .PHONY : ch3_s2_4/fast
 
 #=============================================================================
+# Target rules for targets named linklist
+
+# Build rule for target.
+linklist: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linklist
+.PHONY : linklist
+
+# fast build rule for target.
+linklist/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linklist.dir/build.make CMakeFiles/linklist.dir/build
+.PHONY : linklist/fast
+
+#=============================================================================
 # Target rules for targets named ch3_s2_3
 
 # Build rule for target.
@@ -454,6 +467,19 @@ str_main: cmake_check_build_system
 str_main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/str_main.dir/build.make CMakeFiles/str_main.dir/build
 .PHONY : str_main/fast
+
+#=============================================================================
+# Target rules for targets named ch6_se3_3
+
+# Build rule for target.
+ch6_se3_3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch6_se3_3
+.PHONY : ch6_se3_3
+
+# fast build rule for target.
+ch6_se3_3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch6_se3_3.dir/build.make CMakeFiles/ch6_se3_3.dir/build
+.PHONY : ch6_se3_3/fast
 
 #=============================================================================
 # Target rules for targets named link_stack_main
@@ -675,6 +701,36 @@ ch5_s3_8: cmake_check_build_system
 ch5_s3_8/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch5_s3_8.dir/build.make CMakeFiles/ch5_s3_8.dir/build
 .PHONY : ch5_s3_8/fast
+
+_2_linear_list/LinkListMain.o: _2_linear_list/LinkListMain.c.o
+
+.PHONY : _2_linear_list/LinkListMain.o
+
+# target to build an object file
+_2_linear_list/LinkListMain.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linklist.dir/build.make CMakeFiles/linklist.dir/_2_linear_list/LinkListMain.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clion_datastructure.dir/build.make CMakeFiles/clion_datastructure.dir/_2_linear_list/LinkListMain.c.o
+.PHONY : _2_linear_list/LinkListMain.c.o
+
+_2_linear_list/LinkListMain.i: _2_linear_list/LinkListMain.c.i
+
+.PHONY : _2_linear_list/LinkListMain.i
+
+# target to preprocess a source file
+_2_linear_list/LinkListMain.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linklist.dir/build.make CMakeFiles/linklist.dir/_2_linear_list/LinkListMain.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clion_datastructure.dir/build.make CMakeFiles/clion_datastructure.dir/_2_linear_list/LinkListMain.c.i
+.PHONY : _2_linear_list/LinkListMain.c.i
+
+_2_linear_list/LinkListMain.s: _2_linear_list/LinkListMain.c.s
+
+.PHONY : _2_linear_list/LinkListMain.s
+
+# target to generate assembly for a file
+_2_linear_list/LinkListMain.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linklist.dir/build.make CMakeFiles/linklist.dir/_2_linear_list/LinkListMain.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clion_datastructure.dir/build.make CMakeFiles/clion_datastructure.dir/_2_linear_list/LinkListMain.c.s
+.PHONY : _2_linear_list/LinkListMain.c.s
 
 _2_linear_list/compare.o: _2_linear_list/compare.c.o
 
@@ -1831,6 +1887,36 @@ _6_graph/_2_adjacency_list/ALGraphMain.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/_2_adjacency_list/ALGraphMain.c.s
 .PHONY : _6_graph/_2_adjacency_list/ALGraphMain.c.s
 
+_6_graph/se3/se3_3.o: _6_graph/se3/se3_3.c.o
+
+.PHONY : _6_graph/se3/se3_3.o
+
+# target to build an object file
+_6_graph/se3/se3_3.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/se3/se3_3.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch6_se3_3.dir/build.make CMakeFiles/ch6_se3_3.dir/_6_graph/se3/se3_3.c.o
+.PHONY : _6_graph/se3/se3_3.c.o
+
+_6_graph/se3/se3_3.i: _6_graph/se3/se3_3.c.i
+
+.PHONY : _6_graph/se3/se3_3.i
+
+# target to preprocess a source file
+_6_graph/se3/se3_3.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/se3/se3_3.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch6_se3_3.dir/build.make CMakeFiles/ch6_se3_3.dir/_6_graph/se3/se3_3.c.i
+.PHONY : _6_graph/se3/se3_3.c.i
+
+_6_graph/se3/se3_3.s: _6_graph/se3/se3_3.c.s
+
+.PHONY : _6_graph/se3/se3_3.s
+
+# target to generate assembly for a file
+_6_graph/se3/se3_3.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/se3/se3_3.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch6_se3_3.dir/build.make CMakeFiles/ch6_se3_3.dir/_6_graph/se3/se3_3.c.s
+.PHONY : _6_graph/se3/se3_3.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -1923,10 +2009,12 @@ help:
 	@echo "... ch5_s4_7"
 	@echo "... ch5_s4_8"
 	@echo "... ch5_s4_9"
+	@echo "... ch6_se3_3"
 	@echo "... clion_datastructure"
 	@echo "... expression_change"
 	@echo "... io_test"
 	@echo "... link_stack_main"
+	@echo "... linklist"
 	@echo "... listCompare"
 	@echo "... mALGraphMain"
 	@echo "... mGraphMain"
@@ -1935,6 +2023,9 @@ help:
 	@echo "... str_main"
 	@echo "... thread_tree_main"
 	@echo "... tree_main"
+	@echo "... _2_linear_list/LinkListMain.o"
+	@echo "... _2_linear_list/LinkListMain.i"
+	@echo "... _2_linear_list/LinkListMain.s"
 	@echo "... _2_linear_list/compare.o"
 	@echo "... _2_linear_list/compare.i"
 	@echo "... _2_linear_list/compare.s"
@@ -2055,6 +2146,9 @@ help:
 	@echo "... _6_graph/_2_adjacency_list/ALGraphMain.o"
 	@echo "... _6_graph/_2_adjacency_list/ALGraphMain.i"
 	@echo "... _6_graph/_2_adjacency_list/ALGraphMain.s"
+	@echo "... _6_graph/se3/se3_3.o"
+	@echo "... _6_graph/se3/se3_3.i"
+	@echo "... _6_graph/se3/se3_3.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

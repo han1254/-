@@ -18,6 +18,7 @@
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s3_10.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s3_9.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch3_s2_4.dir
+/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/linklist.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch3_s2_3.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/sq_queue_main.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/edit_cache.dir
@@ -25,6 +26,7 @@
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch3_s2_2.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch3_s1_3.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/str_main.dir
+/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch6_se3_3.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/link_stack_main.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s2_5.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/parent_match.dir

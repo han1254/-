@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/han1254/Documents/PGEE/clion_datastructure/_2_linear_list/LinkListMain.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/clion_datastructure.dir/_2_linear_list/LinkListMain.c.o"
   "/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/stack/LinkStackMain.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/clion_datastructure.dir/_3_stack_and_queue/stack/LinkStackMain.c.o"
   "/home/han1254/Documents/PGEE/clion_datastructure/main.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/clion_datastructure.dir/main.c.o"
   )

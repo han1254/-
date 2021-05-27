@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/han1254/Documents/PGEE/clion_datastructure/_2_linear_list/LinkList.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_2_linear_list/LinkListImpl.h
+stddef.h
+-
+stdlib.h
+-
+stdio.h
+-
+LinkList.h
+/home/han1254/Documents/PGEE/clion_datastructure/_2_linear_list/LinkList.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_2_linear_list/LinkListMain.c
+LinkListImpl.h
+/home/han1254/Documents/PGEE/clion_datastructure/_2_linear_list/LinkListImpl.h
+

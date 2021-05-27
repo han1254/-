@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/linklist.dir/_2_linear_list/LinkListMain.c.o  -o linklist 

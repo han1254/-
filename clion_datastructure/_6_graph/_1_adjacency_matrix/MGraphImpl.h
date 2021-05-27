@@ -9,6 +9,15 @@
 #include "MGraph.h"
 #include "stdio.h"
 
+void showUDG(MGraph graph) {
+    for (int i = 0; i < graph.vex_num; ++i) {
+        for (int j = 0; j < graph.vex_num; ++j) {
+            printf("%d ", graph.arcs[i][j].adj);
+        }
+        printf("\n");
+    }
+}
+
 int ReadBaseInfo(FILE* fpread, MGraph* graph, int* vexNum, int* arcNum) {
     if (fpread == NULL) {
         printf("file is error.");
@@ -149,5 +158,8 @@ int CreateUDN(char* path, MGraph* graph) {
     }
     return 1;
 }
+
+
+
 
 #endif //CLION_DATASTRUCTURE_MGRAPHIMPL_H

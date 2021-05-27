@@ -29,5 +29,19 @@ typedef struct {
 } MGraph;
 
 
+int FirstNeighbor(MGraph graph, int x) {
+    for (int i = 0; i < graph.vex_num; ++i) {
+        if (graph.arcs[x][i].adj == 1) return i;
+    }
+    return -1;
+}
+
+
+int NextNeighbor(MGraph graph, int x, int y) {
+    for (int i = y + 1; i < graph.vex_num; ++i) {
+        if (graph.arcs[x][i].adj == 1) return i;
+    }
+    return -1;
+}
 
 #endif //CLION_DATASTRUCTURE_MGRAPH_H

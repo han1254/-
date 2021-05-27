@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/clion_datastructure.dir/_2_linear_list/LinkListMain.c.o"
   "CMakeFiles/clion_datastructure.dir/_3_stack_and_queue/stack/LinkStackMain.c.o"
   "CMakeFiles/clion_datastructure.dir/main.c.o"
   "clion_datastructure"
