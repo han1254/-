@@ -10,36 +10,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "OLGraph.h"
-//void printGraph(OLGraph graph) {
-//    for (int i = 0; i < graph.vex_num; ++i) {
-//        printf("(%d)%s->", graph.vertices[i].data.id, graph.vertices[i].data.content);
-//        ArcNode* node = graph.vertices[i].firstarc;
-//        while (node != NULL) {
-//            printf("%d->", node->adjvex);
-//            node = node->nextarc;
-//        }
-//        printf("Null\n");
-//    }
-//}
-//
-//void printNet(ALGraph graph) {
-//    for (int i = 0; i < graph.vex_num; ++i) {
-//        printf("(%d)%s", graph.vertices[i].data.id, graph.vertices[i].data.content);
-//        ArcNode* node = graph.vertices[i].firstarc;
-//        while (node != NULL) {
-//            printf("-[cost:%d]->%d", node->val, node->adjvex);
-//            node = node->nextarc;
-//        }
-//        printf("->NULL\n");
-//    }
-//}
-//
-//void printALGraph(ALGraph graph, GraphKind kind) {
-//    if (kind == DG || kind == UDG)
-//        printGraph(graph);
-//    else
-//        printNet(graph);
-//}
+
+
 
 int ReadBaseInfo(FILE* fpread, OLGraph* graph, int* vexNum, int* arcNum) {
     if (fpread == NULL) {
@@ -67,19 +39,15 @@ int ReadBaseInfo(FILE* fpread, OLGraph* graph, int* vexNum, int* arcNum) {
     return 1;
 }
 
+/**
+ * tail ---> head
+ * from       to
+ * @param graph
+ * @param from
+ * @param to
+ * @return
+ */
 int CreateDG_Arc(OLGraph* graph, int from, int to) {
-//    OLGraph * node = (OLGraph *)malloc(sizeof(OLGraph));
-//    node-> = to;
-//    node->nextarc = NULL;
-//    if (isFirst[from]) {
-//        graph->vertices[from].firstarc = node;
-//        isFirst[from] = 0;
-//    } else {
-//        ArcNode* firstArc = graph->vertices[from].firstarc;
-//        ArcNode* ptr = firstArc;
-//        while (ptr->nextarc != NULL) ptr = ptr->nextarc;
-//        ptr->nextarc = node;
-//    }
     ArcBox* arc = (ArcBox*)malloc(sizeof(ArcBox));
     arc->tailvex = from;
     arc->headvex = to;
@@ -117,20 +85,15 @@ int CreateDG(char* path, OLGraph* graph) {
     fclose(fpread);
     return 1;
 }
-int CreateDN_CreateArc(OLGraph* graph, int from, int to, int val, int* isFirst) {
-//    ArcNode* node = (ArcNode*)malloc(sizeof(ArcNode));
-//    node->adjvex = to;
-//    node->val = val;//这个是我加上的，用来存储网络的边权值
-//    node->nextarc = NULL;
-//    if (isFirst[from]) {
-//        graph->vertices[from].firstarc = node;
-//        isFirst[from] = 0;
-//    } else {
-//        ArcNode* firstArc = graph->vertices[from].firstarc;
-//        ArcNode* ptr = firstArc;
-//        while (ptr->nextarc != NULL) ptr = ptr->nextarc;
-//        ptr->nextarc = node;
-//    }
+int CreateDN_CreateArc(OLGraph* graph, int from, int to, int val) {
+    ArcBox* arc = (ArcBox*)malloc(sizeof(ArcBox));
+    arc->tailvex = from;
+    arc->headvex = to;
+    arc->val = val;
+    arc->hlink = graph->xlist[to].first_in;
+    arc->tlink = graph->xlist[from].first_out;
+    graph->xlist[to].first_in = arc;
+    graph->xlist[from].first_out = arc;
     return 1;
 }
 /**
@@ -156,7 +119,7 @@ int CreateDN(char* path, OLGraph* graph) {
         int val;
         fscanf(fp, "%d", &val);
         printf("%d\n", val);
-        CreateDN_CreateArc(graph, from, to, val, isFirst);
+        CreateDN_CreateArc(graph, from, to, val);
     }
     fclose(fp);
     return 1;

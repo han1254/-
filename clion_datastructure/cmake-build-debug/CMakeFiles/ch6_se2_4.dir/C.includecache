@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_2_adjacency_list/ALGraph.h
+../common.h
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/common.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_2_adjacency_list/ALGraphImpl.h
+bits/types/FILE.h
+-
+stddef.h
+-
+stdio.h
+-
+stdlib.h
+-
+ALGraph.h
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_2_adjacency_list/ALGraph.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/common.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/se2/ch6_se2_4.c
+../_2_adjacency_list/ALGraphImpl.h
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_2_adjacency_list/ALGraphImpl.h
+

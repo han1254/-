@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/ch6_se2_4.dir/_6_graph/se2/ch6_se2_4.c.o  -o ch6_se2_4 

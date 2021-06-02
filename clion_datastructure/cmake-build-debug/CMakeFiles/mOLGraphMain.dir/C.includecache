@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_3_orthogonal_list/OLGraph.h
+../common.h
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/common.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_3_orthogonal_list/OLGraphImpl.h
+bits/types/FILE.h
+-
+stddef.h
+-
+stdio.h
+-
+stdlib.h
+-
+OLGraph.h
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_3_orthogonal_list/OLGraph.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_3_orthogonal_list/OLGraphMain.c
+OLGraphImpl.h
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_3_orthogonal_list/OLGraphImpl.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/common.h
+

@@ -68,10 +68,10 @@ int CreateDG_CreateArc(ALGraph* graph, int from, int to, int* isFirst) {
     ArcNode* node = (ArcNode*)malloc(sizeof(ArcNode));
     node->adjvex = to;
     node->nextarc = NULL;
-    if (isFirst[from]) {
+    if (isFirst[from]) {//这个结点之前没被访问过，那就让他的firstarc = node
         graph->vertices[from].firstarc = node;
         isFirst[from] = 0;
-    } else {
+    } else {//如果已经访问过该结点，则说明这个结点已经有firstrarc了
         ArcNode* firstArc = graph->vertices[from].firstarc;
         ArcNode* ptr = firstArc;
         while (ptr->nextarc != NULL) ptr = ptr->nextarc;

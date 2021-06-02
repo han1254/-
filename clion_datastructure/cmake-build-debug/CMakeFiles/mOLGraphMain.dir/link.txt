@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/mOLGraphMain.dir/_6_graph/_3_orthogonal_list/OLGraphMain.c.o  -o mOLGraphMain 

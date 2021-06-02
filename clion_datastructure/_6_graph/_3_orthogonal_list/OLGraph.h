@@ -1,5 +1,6 @@
 //
 // Created by han1254 on 5/21/21.
+// 十字链表法->有向图
 //
 
 #ifndef CLION_DATASTRUCTURE_OLGRAPH_H
