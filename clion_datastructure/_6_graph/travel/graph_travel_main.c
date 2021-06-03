@@ -14,6 +14,7 @@ int main() {
     //       h(7)
     CreateUDG("/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/travel/udg.txt", &graph);
     BFSTraverse(graph);
+    DFSTraverse(graph);
 
     BFS_MIN_Distance(graph, 0);
 }
