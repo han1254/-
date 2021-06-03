@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named ch6_travel
+
+# Build rule for target.
+ch6_travel: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch6_travel
+.PHONY : ch6_travel
+
+# fast build rule for target.
+ch6_travel/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch6_travel.dir/build.make CMakeFiles/ch6_travel.dir/build
+.PHONY : ch6_travel/fast
+
+#=============================================================================
 # Target rules for targets named expression_change
 
 # Build rule for target.
@@ -2003,6 +2016,36 @@ _6_graph/se3/se3_3.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch6_se3_3.dir/build.make CMakeFiles/ch6_se3_3.dir/_6_graph/se3/se3_3.c.s
 .PHONY : _6_graph/se3/se3_3.c.s
 
+_6_graph/travel/graph_travel_main.o: _6_graph/travel/graph_travel_main.c.o
+
+.PHONY : _6_graph/travel/graph_travel_main.o
+
+# target to build an object file
+_6_graph/travel/graph_travel_main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch6_travel.dir/build.make CMakeFiles/ch6_travel.dir/_6_graph/travel/graph_travel_main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/travel/graph_travel_main.c.o
+.PHONY : _6_graph/travel/graph_travel_main.c.o
+
+_6_graph/travel/graph_travel_main.i: _6_graph/travel/graph_travel_main.c.i
+
+.PHONY : _6_graph/travel/graph_travel_main.i
+
+# target to preprocess a source file
+_6_graph/travel/graph_travel_main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch6_travel.dir/build.make CMakeFiles/ch6_travel.dir/_6_graph/travel/graph_travel_main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/travel/graph_travel_main.c.i
+.PHONY : _6_graph/travel/graph_travel_main.c.i
+
+_6_graph/travel/graph_travel_main.s: _6_graph/travel/graph_travel_main.c.s
+
+.PHONY : _6_graph/travel/graph_travel_main.s
+
+# target to generate assembly for a file
+_6_graph/travel/graph_travel_main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch6_travel.dir/build.make CMakeFiles/ch6_travel.dir/_6_graph/travel/graph_travel_main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/travel/graph_travel_main.c.s
+.PHONY : _6_graph/travel/graph_travel_main.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -2097,6 +2140,7 @@ help:
 	@echo "... ch5_s4_9"
 	@echo "... ch6_se2_4"
 	@echo "... ch6_se3_3"
+	@echo "... ch6_travel"
 	@echo "... clion_datastructure"
 	@echo "... expression_change"
 	@echo "... io_test"
@@ -2243,6 +2287,9 @@ help:
 	@echo "... _6_graph/se3/se3_3.o"
 	@echo "... _6_graph/se3/se3_3.i"
 	@echo "... _6_graph/se3/se3_3.s"
+	@echo "... _6_graph/travel/graph_travel_main.o"
+	@echo "... _6_graph/travel/graph_travel_main.i"
+	@echo "... _6_graph/travel/graph_travel_main.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

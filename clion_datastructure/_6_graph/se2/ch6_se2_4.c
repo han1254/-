@@ -17,7 +17,8 @@ void Convert(ALGraph graph, int* arcs) {
 
 int main() {
     ALGraph alGraph;
-    CreateUDG("/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/data/UDG.txt", &alGraph);
+    CreateUDG("/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/data/UDG"
+              ".txt", &alGraph);
     int arcs[alGraph.vex_num][alGraph.vex_num];
     for (int i = 0; i < alGraph.vex_num; ++i) {
         for (int j = 0; j < alGraph.vex_num; ++j) {

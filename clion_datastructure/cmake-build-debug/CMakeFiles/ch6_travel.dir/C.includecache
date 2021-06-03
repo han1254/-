@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/queue/SqQueue.h
+stdio.h
+-
+stdlib.h
+-
+
+/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/queue/SqQueueImpl.h
+SqQueue.h
+/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/queue/SqQueue.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_1_adjacency_matrix/MGraph.h
+../../common_status.h
+/home/han1254/Documents/PGEE/clion_datastructure/common_status.h
+../common.h
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/common.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_1_adjacency_matrix/MGraphImpl.h
+stdlib.h
+-
+MGraph.h
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_1_adjacency_matrix/MGraph.h
+stdio.h
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_1_adjacency_matrix/stdio.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/common.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/travel/graph_travel.h
+../_1_adjacency_matrix/MGraphImpl.h
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_1_adjacency_matrix/MGraphImpl.h
+../../_3_stack_and_queue/queue/SqQueueImpl.h
+/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/queue/SqQueueImpl.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/travel/graph_travel_main.c
+graph_travel.h
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/travel/graph_travel.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/common_status.h
+
