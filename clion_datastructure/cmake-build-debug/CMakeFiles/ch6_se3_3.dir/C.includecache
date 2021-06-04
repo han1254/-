@@ -6,25 +6,43 @@
 
 #IncludeRegexTransform: 
 
-/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_1_adjacency_matrix/MGraph.h
-../../common_status.h
-/home/han1254/Documents/PGEE/clion_datastructure/common_status.h
+/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/stack/SqStack.h
+stack_common.h
+/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/stack/stack_common.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/stack/SqStackImpl.h
+malloc.h
+-
+stdio.h
+-
+SqStack.h
+/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/stack/SqStack.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/stack/stack_common.h
+malloc.h
+/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/stack/malloc.h
+
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_2_adjacency_list/ALGraph.h
 ../common.h
 /home/han1254/Documents/PGEE/clion_datastructure/_6_graph/common.h
 
-/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_1_adjacency_matrix/MGraphImpl.h
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_2_adjacency_list/ALGraphImpl.h
+bits/types/FILE.h
+-
+stddef.h
+-
+stdio.h
+-
 stdlib.h
 -
-MGraph.h
-/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_1_adjacency_matrix/MGraph.h
-stdio.h
-/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_1_adjacency_matrix/stdio.h
+ALGraph.h
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_2_adjacency_list/ALGraph.h
 
 /home/han1254/Documents/PGEE/clion_datastructure/_6_graph/common.h
 
 /home/han1254/Documents/PGEE/clion_datastructure/_6_graph/se3/se3_3.c
-../_1_adjacency_matrix/MGraphImpl.h
-/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_1_adjacency_matrix/MGraphImpl.h
-
-/home/han1254/Documents/PGEE/clion_datastructure/common_status.h
+../_2_adjacency_list/ALGraphImpl.h
+/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/_2_adjacency_list/ALGraphImpl.h
+../../_3_stack_and_queue/stack/SqStackImpl.h
+/home/han1254/Documents/PGEE/clion_datastructure/_3_stack_and_queue/stack/SqStackImpl.h
 

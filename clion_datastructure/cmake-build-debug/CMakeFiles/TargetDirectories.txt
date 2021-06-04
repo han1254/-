@@ -1,10 +1,12 @@
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch6_travel.dir
+/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch6_se2_4.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/expression_change.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s3_18.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/thread_tree_main.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/tree_main.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/io_test.dir
+/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch6_se3_4.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch3_s2_1.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s4_6.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s4_7.dir
@@ -39,11 +41,12 @@
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch6_se3_3.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s3_9.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s4_8.dir
+/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch6_se3_5.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s4_9.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s4_10.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s4_12.dir
-/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch6_se2_4.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch5_s3_15.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/mGraphMain.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/mALGraphMain.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/listCompare.dir
+/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch6_se3_2.dir

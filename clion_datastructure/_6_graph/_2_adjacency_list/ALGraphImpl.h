@@ -1,5 +1,6 @@
 //
 // Created by han1254 on 5/20/21.
+// 邻接表
 //
 
 #ifndef CLION_DATASTRUCTURE_ALGRAPHIMPL_H
@@ -40,6 +41,20 @@ void printALGraph(ALGraph graph, GraphKind kind) {
         printGraph(graph);
     else
         printNet(graph);
+}
+
+
+int FirstNeighbor(ALGraph g, int v) {
+    ArcNode* arc = g.vertices[v].firstarc;
+    if (arc == NULL) return -1;
+    return arc->adjvex;
+}
+
+int NextNeighbor(ALGraph g, int v, int w) {
+    ArcNode* arc = g.vertices[v].firstarc;
+    while (arc != NULL && arc->adjvex != w) arc = arc->nextarc;
+    if (arc == NULL || arc->nextarc == NULL) return -1;
+    return arc->nextarc->adjvex;
 }
 
 int ReadBaseInfo(FILE* fpread, ALGraph* graph, int* vexNum, int* arcNum) {

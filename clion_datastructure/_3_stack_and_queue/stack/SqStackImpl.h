@@ -23,8 +23,8 @@ void InitStack(SqStack* S)
 
 int StackEmpty(SqStack S)
 {
-    if(S.top == -1) return 0;
-    return 1;
+    if(S.top == -1) return 1;
+    return 0;
 }
 
 int Push(SqStack* S, int x)
