@@ -5,6 +5,7 @@
 #include "../_2_adjacency_list/ALGraphImpl.h"
 
 void printPath(int* path, int d) {
+    printf("路径：\n");
     for (int i = 0; i <= d; ++i) {
         printf("%d ", path[i]);
     }

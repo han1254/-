@@ -144,6 +144,19 @@ ch6_travel/fast:
 .PHONY : ch6_travel/fast
 
 #=============================================================================
+# Target rules for targets named topological_main
+
+# Build rule for target.
+topological_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 topological_main
+.PHONY : topological_main
+
+# fast build rule for target.
+topological_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/topological_main.dir/build.make CMakeFiles/topological_main.dir/build
+.PHONY : topological_main/fast
+
+#=============================================================================
 # Target rules for targets named ch6_se2_4
 
 # Build rule for target.
@@ -1995,6 +2008,36 @@ _6_graph/_3_orthogonal_list/OLGraphMain.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mOLGraphMain.dir/build.make CMakeFiles/mOLGraphMain.dir/_6_graph/_3_orthogonal_list/OLGraphMain.c.s
 .PHONY : _6_graph/_3_orthogonal_list/OLGraphMain.c.s
 
+_6_graph/aov/TopologicalSortMain.o: _6_graph/aov/TopologicalSortMain.c.o
+
+.PHONY : _6_graph/aov/TopologicalSortMain.o
+
+# target to build an object file
+_6_graph/aov/TopologicalSortMain.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/topological_main.dir/build.make CMakeFiles/topological_main.dir/_6_graph/aov/TopologicalSortMain.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/aov/TopologicalSortMain.c.o
+.PHONY : _6_graph/aov/TopologicalSortMain.c.o
+
+_6_graph/aov/TopologicalSortMain.i: _6_graph/aov/TopologicalSortMain.c.i
+
+.PHONY : _6_graph/aov/TopologicalSortMain.i
+
+# target to preprocess a source file
+_6_graph/aov/TopologicalSortMain.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/topological_main.dir/build.make CMakeFiles/topological_main.dir/_6_graph/aov/TopologicalSortMain.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/aov/TopologicalSortMain.c.i
+.PHONY : _6_graph/aov/TopologicalSortMain.c.i
+
+_6_graph/aov/TopologicalSortMain.s: _6_graph/aov/TopologicalSortMain.c.s
+
+.PHONY : _6_graph/aov/TopologicalSortMain.s
+
+# target to generate assembly for a file
+_6_graph/aov/TopologicalSortMain.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/topological_main.dir/build.make CMakeFiles/topological_main.dir/_6_graph/aov/TopologicalSortMain.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/aov/TopologicalSortMain.c.s
+.PHONY : _6_graph/aov/TopologicalSortMain.c.s
+
 _6_graph/se2/ch6_se2_4.o: _6_graph/se2/ch6_se2_4.c.o
 
 .PHONY : _6_graph/se2/ch6_se2_4.o
@@ -2286,6 +2329,7 @@ help:
 	@echo "... sq_queue_main"
 	@echo "... str_main"
 	@echo "... thread_tree_main"
+	@echo "... topological_main"
 	@echo "... tree_main"
 	@echo "... _2_linear_list/LinkListMain.o"
 	@echo "... _2_linear_list/LinkListMain.i"
@@ -2413,6 +2457,9 @@ help:
 	@echo "... _6_graph/_3_orthogonal_list/OLGraphMain.o"
 	@echo "... _6_graph/_3_orthogonal_list/OLGraphMain.i"
 	@echo "... _6_graph/_3_orthogonal_list/OLGraphMain.s"
+	@echo "... _6_graph/aov/TopologicalSortMain.o"
+	@echo "... _6_graph/aov/TopologicalSortMain.i"
+	@echo "... _6_graph/aov/TopologicalSortMain.s"
 	@echo "... _6_graph/se2/ch6_se2_4.o"
 	@echo "... _6_graph/se2/ch6_se2_4.i"
 	@echo "... _6_graph/se2/ch6_se2_4.s"
