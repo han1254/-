@@ -45,6 +45,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ch6_travel.dir/DependInfo.cmake"
+  "CMakeFiles/critical_path_main.dir/DependInfo.cmake"
   "CMakeFiles/topological_main.dir/DependInfo.cmake"
   "CMakeFiles/ch6_se2_4.dir/DependInfo.cmake"
   "CMakeFiles/expression_change.dir/DependInfo.cmake"
