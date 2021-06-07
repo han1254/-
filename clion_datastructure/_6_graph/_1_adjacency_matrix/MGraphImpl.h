@@ -159,7 +159,9 @@ int CreateUDN(char* path, MGraph* graph) {
     return 1;
 }
 
-
+int LocateVex(MGraph G, int v) {
+    return v;
+}
 
 
 #endif //CLION_DATASTRUCTURE_MGRAPHIMPL_H

@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named ch6_minimum_main
+
+# Build rule for target.
+ch6_minimum_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ch6_minimum_main
+.PHONY : ch6_minimum_main
+
+# fast build rule for target.
+ch6_minimum_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch6_minimum_main.dir/build.make CMakeFiles/ch6_minimum_main.dir/build
+.PHONY : ch6_minimum_main/fast
+
+#=============================================================================
 # Target rules for targets named ch6_travel
 
 # Build rule for target.
@@ -2081,6 +2094,36 @@ _6_graph/aov/TopologicalSortMain.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/aov/TopologicalSortMain.c.s
 .PHONY : _6_graph/aov/TopologicalSortMain.c.s
 
+_6_graph/minimum_cost_spanning_tree/minimum_main.o: _6_graph/minimum_cost_spanning_tree/minimum_main.c.o
+
+.PHONY : _6_graph/minimum_cost_spanning_tree/minimum_main.o
+
+# target to build an object file
+_6_graph/minimum_cost_spanning_tree/minimum_main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch6_minimum_main.dir/build.make CMakeFiles/ch6_minimum_main.dir/_6_graph/minimum_cost_spanning_tree/minimum_main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/minimum_cost_spanning_tree/minimum_main.c.o
+.PHONY : _6_graph/minimum_cost_spanning_tree/minimum_main.c.o
+
+_6_graph/minimum_cost_spanning_tree/minimum_main.i: _6_graph/minimum_cost_spanning_tree/minimum_main.c.i
+
+.PHONY : _6_graph/minimum_cost_spanning_tree/minimum_main.i
+
+# target to preprocess a source file
+_6_graph/minimum_cost_spanning_tree/minimum_main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch6_minimum_main.dir/build.make CMakeFiles/ch6_minimum_main.dir/_6_graph/minimum_cost_spanning_tree/minimum_main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/minimum_cost_spanning_tree/minimum_main.c.i
+.PHONY : _6_graph/minimum_cost_spanning_tree/minimum_main.c.i
+
+_6_graph/minimum_cost_spanning_tree/minimum_main.s: _6_graph/minimum_cost_spanning_tree/minimum_main.c.s
+
+.PHONY : _6_graph/minimum_cost_spanning_tree/minimum_main.s
+
+# target to generate assembly for a file
+_6_graph/minimum_cost_spanning_tree/minimum_main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch6_minimum_main.dir/build.make CMakeFiles/ch6_minimum_main.dir/_6_graph/minimum_cost_spanning_tree/minimum_main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/minimum_cost_spanning_tree/minimum_main.c.s
+.PHONY : _6_graph/minimum_cost_spanning_tree/minimum_main.c.s
+
 _6_graph/se2/ch6_se2_4.o: _6_graph/se2/ch6_se2_4.c.o
 
 .PHONY : _6_graph/se2/ch6_se2_4.o
@@ -2353,6 +2396,7 @@ help:
 	@echo "... ch5_s4_7"
 	@echo "... ch5_s4_8"
 	@echo "... ch5_s4_9"
+	@echo "... ch6_minimum_main"
 	@echo "... ch6_se2_4"
 	@echo "... ch6_se3_2"
 	@echo "... ch6_se3_3"
@@ -2507,6 +2551,9 @@ help:
 	@echo "... _6_graph/aov/TopologicalSortMain.o"
 	@echo "... _6_graph/aov/TopologicalSortMain.i"
 	@echo "... _6_graph/aov/TopologicalSortMain.s"
+	@echo "... _6_graph/minimum_cost_spanning_tree/minimum_main.o"
+	@echo "... _6_graph/minimum_cost_spanning_tree/minimum_main.i"
+	@echo "... _6_graph/minimum_cost_spanning_tree/minimum_main.s"
 	@echo "... _6_graph/se2/ch6_se2_4.o"
 	@echo "... _6_graph/se2/ch6_se2_4.i"
 	@echo "... _6_graph/se2/ch6_se2_4.s"

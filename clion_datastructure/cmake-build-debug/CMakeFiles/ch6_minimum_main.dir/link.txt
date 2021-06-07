@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/ch6_minimum_main.dir/_6_graph/minimum_cost_spanning_tree/minimum_main.c.o  -o ch6_minimum_main 
