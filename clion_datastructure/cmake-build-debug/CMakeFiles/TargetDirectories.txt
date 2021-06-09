@@ -1,5 +1,6 @@
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch6_minimum_main.dir
+/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch6_dij.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch6_travel.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/critical_path_main.dir
 /home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/topological_main.dir

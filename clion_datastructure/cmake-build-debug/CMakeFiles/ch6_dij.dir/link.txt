@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/DIJ_Main.c.o  -o ch6_dij 
