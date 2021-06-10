@@ -259,18 +259,18 @@ CMakeFiles/ch3_s1_3.dir/_6_graph/minimum_cost_spanning_tree/minimum_main.c.s: cm
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ch3_s1_3.dir/_6_graph/minimum_cost_spanning_tree/minimum_main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/han1254/Documents/PGEE/clion_datastructure/_6_graph/minimum_cost_spanning_tree/minimum_main.c -o CMakeFiles/ch3_s1_3.dir/_6_graph/minimum_cost_spanning_tree/minimum_main.c.s
 
-CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/DIJ_Main.c.o: CMakeFiles/ch3_s1_3.dir/flags.make
-CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/DIJ_Main.c.o: ../_6_graph/shortest_path/DIJ_Main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/DIJ_Main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/DIJ_Main.c.o   -c /home/han1254/Documents/PGEE/clion_datastructure/_6_graph/shortest_path/DIJ_Main.c
+CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/ShortestPath_Main.c.o: CMakeFiles/ch3_s1_3.dir/flags.make
+CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/ShortestPath_Main.c.o: ../_6_graph/shortest_path/ShortestPath_Main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/ShortestPath_Main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/ShortestPath_Main.c.o   -c /home/han1254/Documents/PGEE/clion_datastructure/_6_graph/shortest_path/ShortestPath_Main.c
 
-CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/DIJ_Main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/DIJ_Main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/han1254/Documents/PGEE/clion_datastructure/_6_graph/shortest_path/DIJ_Main.c > CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/DIJ_Main.c.i
+CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/ShortestPath_Main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/ShortestPath_Main.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/han1254/Documents/PGEE/clion_datastructure/_6_graph/shortest_path/ShortestPath_Main.c > CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/ShortestPath_Main.c.i
 
-CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/DIJ_Main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/DIJ_Main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/han1254/Documents/PGEE/clion_datastructure/_6_graph/shortest_path/DIJ_Main.c -o CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/DIJ_Main.c.s
+CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/ShortestPath_Main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/ShortestPath_Main.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/han1254/Documents/PGEE/clion_datastructure/_6_graph/shortest_path/ShortestPath_Main.c -o CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/ShortestPath_Main.c.s
 
 # Object files for target ch3_s1_3
 ch3_s1_3_OBJECTS = \
@@ -288,7 +288,7 @@ ch3_s1_3_OBJECTS = \
 "CMakeFiles/ch3_s1_3.dir/_6_graph/aov/TopologicalSortMain.c.o" \
 "CMakeFiles/ch3_s1_3.dir/_6_graph/aoe/aoe_main.c.o" \
 "CMakeFiles/ch3_s1_3.dir/_6_graph/minimum_cost_spanning_tree/minimum_main.c.o" \
-"CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/DIJ_Main.c.o"
+"CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/ShortestPath_Main.c.o"
 
 # External object files for target ch3_s1_3
 ch3_s1_3_EXTERNAL_OBJECTS =
@@ -307,7 +307,7 @@ ch3_s1_3: CMakeFiles/ch3_s1_3.dir/_6_graph/se3/se3_5.c.o
 ch3_s1_3: CMakeFiles/ch3_s1_3.dir/_6_graph/aov/TopologicalSortMain.c.o
 ch3_s1_3: CMakeFiles/ch3_s1_3.dir/_6_graph/aoe/aoe_main.c.o
 ch3_s1_3: CMakeFiles/ch3_s1_3.dir/_6_graph/minimum_cost_spanning_tree/minimum_main.c.o
-ch3_s1_3: CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/DIJ_Main.c.o
+ch3_s1_3: CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/ShortestPath_Main.c.o
 ch3_s1_3: CMakeFiles/ch3_s1_3.dir/build.make
 ch3_s1_3: CMakeFiles/ch3_s1_3.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking C executable ch3_s1_3"

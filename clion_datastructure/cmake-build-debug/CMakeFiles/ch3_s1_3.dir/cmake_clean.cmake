@@ -12,7 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ch3_s1_3.dir/_6_graph/se3/se3_3.c.o"
   "CMakeFiles/ch3_s1_3.dir/_6_graph/se3/se3_4.c.o"
   "CMakeFiles/ch3_s1_3.dir/_6_graph/se3/se3_5.c.o"
-  "CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/DIJ_Main.c.o"
+  "CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/ShortestPath_Main.c.o"
   "CMakeFiles/ch3_s1_3.dir/_6_graph/travel/graph_travel_main.c.o"
   "ch3_s1_3"
   "ch3_s1_3.pdb"

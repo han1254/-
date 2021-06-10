@@ -2287,35 +2287,35 @@ _6_graph/se3/se3_5.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch6_se3_5.dir/build.make CMakeFiles/ch6_se3_5.dir/_6_graph/se3/se3_5.c.s
 .PHONY : _6_graph/se3/se3_5.c.s
 
-_6_graph/shortest_path/DIJ_Main.o: _6_graph/shortest_path/DIJ_Main.c.o
+_6_graph/shortest_path/ShortestPath_Main.o: _6_graph/shortest_path/ShortestPath_Main.c.o
 
-.PHONY : _6_graph/shortest_path/DIJ_Main.o
+.PHONY : _6_graph/shortest_path/ShortestPath_Main.o
 
 # target to build an object file
-_6_graph/shortest_path/DIJ_Main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch6_dij.dir/build.make CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/DIJ_Main.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/DIJ_Main.c.o
-.PHONY : _6_graph/shortest_path/DIJ_Main.c.o
+_6_graph/shortest_path/ShortestPath_Main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch6_dij.dir/build.make CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/ShortestPath_Main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/ShortestPath_Main.c.o
+.PHONY : _6_graph/shortest_path/ShortestPath_Main.c.o
 
-_6_graph/shortest_path/DIJ_Main.i: _6_graph/shortest_path/DIJ_Main.c.i
+_6_graph/shortest_path/ShortestPath_Main.i: _6_graph/shortest_path/ShortestPath_Main.c.i
 
-.PHONY : _6_graph/shortest_path/DIJ_Main.i
+.PHONY : _6_graph/shortest_path/ShortestPath_Main.i
 
 # target to preprocess a source file
-_6_graph/shortest_path/DIJ_Main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch6_dij.dir/build.make CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/DIJ_Main.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/DIJ_Main.c.i
-.PHONY : _6_graph/shortest_path/DIJ_Main.c.i
+_6_graph/shortest_path/ShortestPath_Main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch6_dij.dir/build.make CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/ShortestPath_Main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/ShortestPath_Main.c.i
+.PHONY : _6_graph/shortest_path/ShortestPath_Main.c.i
 
-_6_graph/shortest_path/DIJ_Main.s: _6_graph/shortest_path/DIJ_Main.c.s
+_6_graph/shortest_path/ShortestPath_Main.s: _6_graph/shortest_path/ShortestPath_Main.c.s
 
-.PHONY : _6_graph/shortest_path/DIJ_Main.s
+.PHONY : _6_graph/shortest_path/ShortestPath_Main.s
 
 # target to generate assembly for a file
-_6_graph/shortest_path/DIJ_Main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch6_dij.dir/build.make CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/DIJ_Main.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/DIJ_Main.c.s
-.PHONY : _6_graph/shortest_path/DIJ_Main.c.s
+_6_graph/shortest_path/ShortestPath_Main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch6_dij.dir/build.make CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/ShortestPath_Main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ch3_s1_3.dir/build.make CMakeFiles/ch3_s1_3.dir/_6_graph/shortest_path/ShortestPath_Main.c.s
+.PHONY : _6_graph/shortest_path/ShortestPath_Main.c.s
 
 _6_graph/travel/graph_travel_main.o: _6_graph/travel/graph_travel_main.c.o
 
@@ -2613,9 +2613,9 @@ help:
 	@echo "... _6_graph/se3/se3_5.o"
 	@echo "... _6_graph/se3/se3_5.i"
 	@echo "... _6_graph/se3/se3_5.s"
-	@echo "... _6_graph/shortest_path/DIJ_Main.o"
-	@echo "... _6_graph/shortest_path/DIJ_Main.i"
-	@echo "... _6_graph/shortest_path/DIJ_Main.s"
+	@echo "... _6_graph/shortest_path/ShortestPath_Main.o"
+	@echo "... _6_graph/shortest_path/ShortestPath_Main.i"
+	@echo "... _6_graph/shortest_path/ShortestPath_Main.s"
 	@echo "... _6_graph/travel/graph_travel_main.o"
 	@echo "... _6_graph/travel/graph_travel_main.i"
 	@echo "... _6_graph/travel/graph_travel_main.s"

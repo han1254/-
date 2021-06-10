@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/shortest_path/DIJ_Main.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/DIJ_Main.c.o"
+  "/home/han1254/Documents/PGEE/clion_datastructure/_6_graph/shortest_path/ShortestPath_Main.c" "/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/ShortestPath_Main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -77,27 +77,27 @@ include CMakeFiles/ch6_dij.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ch6_dij.dir/flags.make
 
-CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/DIJ_Main.c.o: CMakeFiles/ch6_dij.dir/flags.make
-CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/DIJ_Main.c.o: ../_6_graph/shortest_path/DIJ_Main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/DIJ_Main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/DIJ_Main.c.o   -c /home/han1254/Documents/PGEE/clion_datastructure/_6_graph/shortest_path/DIJ_Main.c
+CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/ShortestPath_Main.c.o: CMakeFiles/ch6_dij.dir/flags.make
+CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/ShortestPath_Main.c.o: ../_6_graph/shortest_path/ShortestPath_Main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/ShortestPath_Main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/ShortestPath_Main.c.o   -c /home/han1254/Documents/PGEE/clion_datastructure/_6_graph/shortest_path/ShortestPath_Main.c
 
-CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/DIJ_Main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/DIJ_Main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/han1254/Documents/PGEE/clion_datastructure/_6_graph/shortest_path/DIJ_Main.c > CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/DIJ_Main.c.i
+CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/ShortestPath_Main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/ShortestPath_Main.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/han1254/Documents/PGEE/clion_datastructure/_6_graph/shortest_path/ShortestPath_Main.c > CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/ShortestPath_Main.c.i
 
-CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/DIJ_Main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/DIJ_Main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/han1254/Documents/PGEE/clion_datastructure/_6_graph/shortest_path/DIJ_Main.c -o CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/DIJ_Main.c.s
+CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/ShortestPath_Main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/ShortestPath_Main.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/han1254/Documents/PGEE/clion_datastructure/_6_graph/shortest_path/ShortestPath_Main.c -o CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/ShortestPath_Main.c.s
 
 # Object files for target ch6_dij
 ch6_dij_OBJECTS = \
-"CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/DIJ_Main.c.o"
+"CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/ShortestPath_Main.c.o"
 
 # External object files for target ch6_dij
 ch6_dij_EXTERNAL_OBJECTS =
 
-ch6_dij: CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/DIJ_Main.c.o
+ch6_dij: CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/ShortestPath_Main.c.o
 ch6_dij: CMakeFiles/ch6_dij.dir/build.make
 ch6_dij: CMakeFiles/ch6_dij.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/han1254/Documents/PGEE/clion_datastructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ch6_dij"

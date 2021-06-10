@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/DIJ_Main.c.o"
+  "CMakeFiles/ch6_dij.dir/_6_graph/shortest_path/ShortestPath_Main.c.o"
   "ch6_dij"
   "ch6_dij.pdb"
 )

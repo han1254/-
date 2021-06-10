@@ -7,12 +7,9 @@
 #include "../_1_adjacency_matrix/MGraphImpl.h"
 #define FALSE 0
 #define TRUE 1
-typedef int** PathMatrix;
-
-typedef int* ShortPathTable;
 
 
-void showPath(MGraph G, int v0, int matrix[G.vex_num][G.vex_num], ShortPathTable table, int n) {
+void showPath(MGraph G, int v0, int matrix[G.vex_num][G.vex_num], int table[], int n) {
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < n; ++j) {
             printf("%d ", matrix[i][j]);
